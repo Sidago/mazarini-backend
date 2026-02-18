@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_shared_hero_featureds",
+  "info": {
+    "displayName": "Hero Featured",
+    "icon": "star",
+    "description": "Featured project overlay on hero image"
+  },
+  "options": {},
+  "attributes": {
+    "projectName": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    },
+    "year": {
+      "type": "string"
+    }
+  }
+}
