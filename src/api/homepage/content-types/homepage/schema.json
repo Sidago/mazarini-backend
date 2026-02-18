@@ -28,22 +28,24 @@
     "heroImage": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "heroFeatured": {
       "type": "component",
-      "repeatable": false,
-      "component": "shared.hero-featured"
+      "component": "shared.hero-featured",
+      "repeatable": false
     },
     "heroCTAs": {
       "type": "component",
-      "repeatable": true,
-      "component": "shared.link"
+      "component": "shared.link",
+      "repeatable": true
     },
     "stats": {
       "type": "component",
-      "repeatable": true,
-      "component": "shared.stat"
+      "component": "shared.stat",
+      "repeatable": true
     },
     "expertiseHeading": {
       "type": "string"
@@ -53,6 +55,11 @@
     },
     "projectsHeading": {
       "type": "string"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project"
     },
     "ctaTitle": {
       "type": "string"
@@ -65,8 +72,8 @@
     },
     "ctaCTAs": {
       "type": "component",
-      "repeatable": true,
-      "component": "shared.link"
+      "component": "shared.link",
+      "repeatable": true
     }
   }
 }

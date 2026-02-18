@@ -29,11 +29,12 @@
       "type": "media",
       "multiple": false,
       "required": true,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
-    "order": {
-      "type": "integer",
-      "default": 0
+    "detail_discriptions": {
+      "type": "blocks"
     }
   }
 }
