@@ -1,0 +1,22 @@
+FROM node:24.13
+
+# Set working directory
+WORKDIR /app
+
+# Copy package files first (for better layer caching)
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install
+
+# Copy the rest of the project files
+COPY . .
+
+# Build the project
+RUN npm run build
+
+# Expose Vite dev server port
+EXPOSE 5002
+
+# Start the development server
+CMD ["npm", "run", "start"]

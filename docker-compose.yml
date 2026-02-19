@@ -1,0 +1,15 @@
+services:
+  strapi:
+    build: .
+    env_file:
+      - .env
+    ports:
+      - "1337:1337"
+    volumes:
+      - strapi-uploads:/app/public/uploads
+      - strapi-data:/app/.tmp
+    restart: unless-stopped
+
+volumes:
+  strapi-uploads:
+  strapi-data:
