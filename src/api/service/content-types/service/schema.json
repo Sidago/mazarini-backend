@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "expertises",
+  "collectionName": "services",
   "info": {
-    "singularName": "expertise",
-    "pluralName": "expertises",
-    "displayName": "Expertise",
-    "description": "Expertise areas with icon and image"
+    "singularName": "service",
+    "pluralName": "services",
+    "displayName": "Service"
   },
   "options": {
     "draftAndPublish": true
@@ -14,27 +13,28 @@
   "attributes": {
     "title": {
       "type": "string",
-      "required": true,
-      "unique": true
-    },
-    "description": {
-      "type": "text",
       "required": true
     },
-    "icon": {
-      "type": "string",
-      "required": false
+    "discriptions": {
+      "type": "text",
+      "required": true
     },
     "image": {
       "type": "media",
       "multiple": false,
       "required": true,
       "allowedTypes": [
-        "images"
+        "images",
+        "files",
+        "videos",
+        "audios"
       ]
     },
     "detail_discriptions": {
       "type": "blocks"
+    },
+    "catagory": {
+      "type": "string"
     }
   }
 }

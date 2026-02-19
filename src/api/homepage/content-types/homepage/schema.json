@@ -56,10 +56,20 @@
     "projectsHeading": {
       "type": "string"
     },
+    "expertise": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::expertise.expertise"
+    },
     "projects": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::project.project"
+    },
+    "testimonials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::testimonial.testimonial"
     },
     "ctaTitle": {
       "type": "string"
@@ -74,6 +84,16 @@
       "type": "component",
       "component": "shared.link",
       "repeatable": true
+    },
+    "services": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::service.service"
+    },
+    "our_clients": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::our-client.our-client"
     }
   }
 }
