@@ -125,6 +125,18 @@ export interface SharedStat extends Struct.ComponentSchema {
   };
 }
 
+export interface SubNavSubNav extends Struct.ComponentSchema {
+  collectionName: 'components_sub_nav_sub_navs';
+  info: {
+    displayName: 'Sub Nav';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    linkTo: Schema.Attribute.String;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -137,6 +149,7 @@ declare module '@strapi/strapi' {
       'shared.seo': SharedSeo;
       'shared.social-link': SharedSocialLink;
       'shared.stat': SharedStat;
+      'sub-nav.sub-nav': SubNavSubNav;
     }
   }
 }

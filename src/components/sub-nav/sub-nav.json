@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_sub_nav_sub_navs",
+  "info": {
+    "displayName": "Sub Nav"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "linkTo": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

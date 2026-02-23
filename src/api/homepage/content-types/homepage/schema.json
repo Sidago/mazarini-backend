@@ -32,6 +32,13 @@
         "images"
       ]
     },
+    "heroVideo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
     "heroFeatured": {
       "type": "component",
       "component": "shared.hero-featured",

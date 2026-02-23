@@ -566,7 +566,10 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
     siteDescription: Schema.Attribute.Text;
     siteName: Schema.Attribute.String & Schema.Attribute.Required;
     socialLinks: Schema.Attribute.Component<'shared.social-link', true>;
-    subNavLinks: Schema.Attribute.Component<'shared.link', true>;
+    sub_nav_items: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::sub-nav-item.sub-nav-item'
+    >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -605,6 +608,7 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
     heroImage: Schema.Attribute.Media<'images'>;
     heroSubtitle: Schema.Attribute.Text;
     heroTitle: Schema.Attribute.String & Schema.Attribute.Required;
+    heroVideo: Schema.Attribute.Media<'videos'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -721,6 +725,35 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiSubNavItemSubNavItem extends Struct.CollectionTypeSchema {
+  collectionName: 'sub_nav_items';
+  info: {
+    displayName: 'Sub Nav Item';
+    pluralName: 'sub-nav-items';
+    singularName: 'sub-nav-item';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::sub-nav-item.sub-nav-item'
+    > &
+      Schema.Attribute.Private;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    subItems: Schema.Attribute.Component<'sub-nav.sub-nav', true>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1278,6 +1311,7 @@ declare module '@strapi/strapi' {
       'api::our-client.our-client': ApiOurClientOurClient;
       'api::project.project': ApiProjectProject;
       'api::service.service': ApiServiceService;
+      'api::sub-nav-item.sub-nav-item': ApiSubNavItemSubNavItem;
       'api::testimonial.testimonial': ApiTestimonialTestimonial;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;

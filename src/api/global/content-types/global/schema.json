@@ -46,10 +46,10 @@
       "component": "shared.link",
       "repeatable": true
     },
-    "subNavLinks": {
-      "type": "component",
-      "component": "shared.link",
-      "repeatable": true
+    "sub_nav_items": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sub-nav-item.sub-nav-item"
     },
     "headerCtaText": {
       "type": "string"

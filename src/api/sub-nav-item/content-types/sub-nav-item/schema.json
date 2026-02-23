@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sub_nav_items",
+  "info": {
+    "singularName": "sub-nav-item",
+    "pluralName": "sub-nav-items",
+    "displayName": "Sub Nav Item"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "subItems": {
+      "type": "component",
+      "component": "sub-nav.sub-nav",
+      "repeatable": true
+    }
+  }
+}
