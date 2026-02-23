@@ -566,6 +566,7 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
     siteDescription: Schema.Attribute.Text;
     siteName: Schema.Attribute.String & Schema.Attribute.Required;
     socialLinks: Schema.Attribute.Component<'shared.social-link', true>;
+    subNavLinks: Schema.Attribute.Component<'shared.link', true>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

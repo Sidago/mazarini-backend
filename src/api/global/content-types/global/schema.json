@@ -46,6 +46,11 @@
       "component": "shared.link",
       "repeatable": true
     },
+    "subNavLinks": {
+      "type": "component",
+      "component": "shared.link",
+      "repeatable": true
+    },
     "headerCtaText": {
       "type": "string"
     },
