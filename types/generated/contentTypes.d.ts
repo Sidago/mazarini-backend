@@ -588,6 +588,10 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    belongCtaText: Schema.Attribute.String;
+    belongDescription: Schema.Attribute.Text;
+    belongHeading: Schema.Attribute.String;
+    belongImage: Schema.Attribute.Media<'images'>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

@@ -129,6 +129,22 @@
     },
     "experienceCtaText": {
       "type": "string"
+    },
+    "belongHeading": {
+      "type": "string"
+    },
+    "belongDescription": {
+      "type": "text"
+    },
+    "belongImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "belongCtaText": {
+      "type": "string"
     }
   }
 }
