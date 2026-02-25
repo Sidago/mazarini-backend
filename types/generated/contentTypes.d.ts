@@ -595,6 +595,11 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
     ctaHighlightWord: Schema.Attribute.String;
     ctaSubtitle: Schema.Attribute.Text;
     ctaTitle: Schema.Attribute.String;
+    experienceCtaText: Schema.Attribute.String;
+    experienceDescription: Schema.Attribute.Text;
+    experienceHeading: Schema.Attribute.Text;
+    experienceHighlightText: Schema.Attribute.String;
+    experienceImage: Schema.Attribute.Media<'images'>;
     expertise: Schema.Attribute.Relation<
       'oneToMany',
       'api::expertise.expertise'

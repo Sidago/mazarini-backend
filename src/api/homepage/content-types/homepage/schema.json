@@ -110,6 +110,25 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::our-client.our-client"
+    },
+    "experienceHeading": {
+      "type": "text"
+    },
+    "experienceHighlightText": {
+      "type": "string"
+    },
+    "experienceDescription": {
+      "type": "text"
+    },
+    "experienceImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "experienceCtaText": {
+      "type": "string"
     }
   }
 }
