@@ -609,6 +609,9 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
     heroSubtitle: Schema.Attribute.Text;
     heroTitle: Schema.Attribute.String & Schema.Attribute.Required;
     heroVideo: Schema.Attribute.Media<'videos'>;
+    introDescription: Schema.Attribute.Text;
+    introHeading: Schema.Attribute.Text;
+    introHighlightText: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',

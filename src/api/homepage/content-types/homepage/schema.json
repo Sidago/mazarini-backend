@@ -54,6 +54,15 @@
       "component": "shared.stat",
       "repeatable": true
     },
+    "introHeading": {
+      "type": "text"
+    },
+    "introHighlightText": {
+      "type": "string"
+    },
+    "introDescription": {
+      "type": "text"
+    },
     "expertiseHeading": {
       "type": "string"
     },
