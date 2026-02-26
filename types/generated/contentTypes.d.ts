@@ -627,6 +627,8 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
       'api::homepage.homepage'
     > &
       Schema.Attribute.Private;
+    news: Schema.Attribute.Relation<'oneToMany', 'api::news.news'>;
+    newsHeading: Schema.Attribute.Text;
     our_clients: Schema.Attribute.Relation<
       'oneToMany',
       'api::our-client.our-client'
@@ -640,6 +642,37 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
       'oneToMany',
       'api::testimonial.testimonial'
     >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiNewsNews extends Struct.CollectionTypeSchema {
+  collectionName: 'newses';
+  info: {
+    description: 'News and insights articles';
+    displayName: 'News';
+    pluralName: 'newses';
+    singularName: 'news';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    category: Schema.Attribute.String;
+    content: Schema.Attribute.Blocks;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::news.news'> &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1320,6 +1353,7 @@ declare module '@strapi/strapi' {
       'api::expertise.expertise': ApiExpertiseExpertise;
       'api::global.global': ApiGlobalGlobal;
       'api::homepage.homepage': ApiHomepageHomepage;
+      'api::news.news': ApiNewsNews;
       'api::our-client.our-client': ApiOurClientOurClient;
       'api::project.project': ApiProjectProject;
       'api::service.service': ApiServiceService;

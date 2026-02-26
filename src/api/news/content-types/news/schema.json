@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "newses",
+  "info": {
+    "singularName": "news",
+    "pluralName": "newses",
+    "displayName": "News",
+    "description": "News and insights articles"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "category": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "content": {
+      "type": "blocks"
+    }
+  }
+}

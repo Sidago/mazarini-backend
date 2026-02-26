@@ -145,6 +145,14 @@
     },
     "belongCtaText": {
       "type": "string"
+    },
+    "newsHeading": {
+      "type": "text"
+    },
+    "news": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::news.news"
     }
   }
 }
