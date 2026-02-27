@@ -25,6 +25,12 @@
       "type": "string",
       "required": true
     },
+    "location": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
     "image": {
       "type": "media",
       "multiple": true,

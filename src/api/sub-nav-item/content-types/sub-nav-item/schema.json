@@ -19,6 +19,9 @@
       "type": "component",
       "component": "sub-nav.sub-nav",
       "repeatable": true
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }
