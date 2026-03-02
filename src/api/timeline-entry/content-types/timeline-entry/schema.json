@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "timeline_entries",
+  "info": {
+    "singularName": "timeline-entry",
+    "pluralName": "timeline-entries",
+    "displayName": "Timeline Entry",
+    "description": "History timeline entries with decade, description, and image"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "decade": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

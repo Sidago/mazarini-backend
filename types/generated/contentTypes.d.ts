@@ -485,8 +485,10 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    heroImage: Schema.Attribute.Media<'images'>;
     heroText: Schema.Attribute.Text & Schema.Attribute.Required;
     heroTitle: Schema.Attribute.String & Schema.Attribute.Required;
+    heroVideo: Schema.Attribute.Media<'videos'>;
     introDiscription: Schema.Attribute.Text;
     introHeading: Schema.Attribute.Text;
     introHighlight: Schema.Attribute.String;
@@ -494,6 +496,8 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::about.about'> &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    timelineDescription: Schema.Attribute.Text;
+    timelineHeading: Schema.Attribute.Text;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -874,6 +878,40 @@ export interface ApiTestimonialTestimonial extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     quote: Schema.Attribute.Text & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiTimelineEntryTimelineEntry
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'timeline_entries';
+  info: {
+    description: 'History timeline entries with decade, description, and image';
+    displayName: 'Timeline Entry';
+    pluralName: 'timeline-entries';
+    singularName: 'timeline-entry';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    decade: Schema.Attribute.String & Schema.Attribute.Required;
+    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::timeline-entry.timeline-entry'
+    > &
+      Schema.Attribute.Private;
+    order: Schema.Attribute.Integer;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1403,6 +1441,7 @@ declare module '@strapi/strapi' {
       'api::service.service': ApiServiceService;
       'api::sub-nav-item.sub-nav-item': ApiSubNavItemSubNavItem;
       'api::testimonial.testimonial': ApiTestimonialTestimonial;
+      'api::timeline-entry.timeline-entry': ApiTimelineEntryTimelineEntry;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

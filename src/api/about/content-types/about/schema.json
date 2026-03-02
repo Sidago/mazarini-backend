@@ -40,6 +40,24 @@
     },
     "introDiscription": {
       "type": "text"
+    },
+    "heroVideo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["videos"]
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "timelineHeading": {
+      "type": "text"
+    },
+    "timelineDescription": {
+      "type": "text"
     }
   }
 }
