@@ -23,6 +23,23 @@
         "shared.media",
         "shared.quote"
       ]
+    },
+    "heroTitle": {
+      "type": "string",
+      "required": true
+    },
+    "heroText": {
+      "type": "text",
+      "required": true
+    },
+    "introHeading": {
+      "type": "text"
+    },
+    "introHighlight": {
+      "type": "string"
+    },
+    "introDiscription": {
+      "type": "text"
     }
   }
 }
