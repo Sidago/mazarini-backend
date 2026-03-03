@@ -1,21 +1,17 @@
 {
   "kind": "singleType",
-  "collectionName": "abouts",
+  "collectionName": "contacts",
   "info": {
-    "singularName": "about",
-    "pluralName": "abouts",
-    "displayName": "About",
-    "description": "About page with dynamic content blocks"
+    "singularName": "contact",
+    "pluralName": "contacts",
+    "displayName": "Contact",
+    "description": "Contact page hero and content settings"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string",
-      "required": true
-    },
     "heroTitle": {
       "type": "string",
       "required": true
@@ -23,15 +19,6 @@
     "heroText": {
       "type": "text",
       "required": true
-    },
-    "introHeading": {
-      "type": "text"
-    },
-    "introHighlight": {
-      "type": "string"
-    },
-    "introDiscription": {
-      "type": "text"
     },
     "heroVideo": {
       "type": "media",
@@ -49,10 +36,10 @@
         "images"
       ]
     },
-    "timelineHeading": {
-      "type": "text"
+    "formTitle": {
+      "type": "string"
     },
-    "timelineDescription": {
+    "formDescription": {
       "type": "text"
     }
   }

@@ -42,5 +42,7 @@ export default {
     await setPublicPermissions(strapi, "about", ["find"]);
     await setPublicPermissions(strapi, "expertise", ["find", "findOne"]);
     await setPublicPermissions(strapi, "project", ["find", "findOne"]);
+    await setPublicPermissions(strapi, "contact", ["find"]);
+    await setPublicPermissions(strapi, "contact-submission", ["create"]);
   },
 };

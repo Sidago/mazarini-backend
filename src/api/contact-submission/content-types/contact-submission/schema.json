@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_submissions",
+  "info": {
+    "singularName": "contact-submission",
+    "pluralName": "contact-submissions",
+    "displayName": "Contact Submission",
+    "description": "Stores contact form submissions from the website"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "lastName": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "maxLength": 30
+    },
+    "companyName": {
+      "type": "string",
+      "required": true,
+      "maxLength": 200
+    },
+    "inquiryType": {
+      "type": "enumeration",
+      "enum": [
+        "start-a-project",
+        "general-inquiry",
+        "partnership",
+        "careers",
+        "media",
+        "other"
+      ],
+      "required": true,
+      "default": "start-a-project"
+    },
+    "notes": {
+      "type": "text",
+      "required": true,
+      "maxLength": 5000
+    },
+    "attachments": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    }
+  }
+}

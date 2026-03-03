@@ -9,7 +9,7 @@
   "attributes": {
     "platform": {
       "type": "enumeration",
-      "enum": ["linkedin", "twitter", "instagram", "facebook"],
+      "enum": ["linkedin", "twitter", "instagram", "facebook", "youtube"],
       "required": true
     },
     "url": {
