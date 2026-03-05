@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "location_lists",
+  "info": {
+    "singularName": "location-list",
+    "pluralName": "location-lists",
+    "displayName": "Location List"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "state": {
+      "type": "string",
+      "required": true
+    },
+    "city": {
+      "type": "string",
+      "required": true
+    },
+    "phoneNumber": {
+      "type": "string",
+      "maxLength": 20
+    },
+    "address": {
+      "type": "text"
+    },
+    "email": {
+      "type": "email"
+    },
+    "mapEmbedUrl": {
+      "type": "string"
+    }
+  }
+}
