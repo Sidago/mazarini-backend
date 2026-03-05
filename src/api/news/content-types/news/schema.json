@@ -36,6 +36,9 @@
     },
     "content": {
       "type": "blocks"
+    },
+    "publishedDate": {
+      "type": "date"
     }
   }
 }

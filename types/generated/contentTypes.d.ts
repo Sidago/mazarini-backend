@@ -827,6 +827,38 @@ export interface ApiLocationLocation extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiNewsPageNewsPage extends Struct.SingleTypeSchema {
+  collectionName: 'news_pages';
+  info: {
+    description: 'News listing page settings and featured articles';
+    displayName: 'News Page';
+    pluralName: 'news-pages';
+    singularName: 'news-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    featuredCTA: Schema.Attribute.String;
+    featuredNews: Schema.Attribute.Relation<'oneToMany', 'api::news.news'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::news-page.news-page'
+    > &
+      Schema.Attribute.Private;
+    pageDescription: Schema.Attribute.Text;
+    pageTitle: Schema.Attribute.String & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiNewsNews extends Struct.CollectionTypeSchema {
   collectionName: 'newses';
   info: {
@@ -850,6 +882,7 @@ export interface ApiNewsNews extends Struct.CollectionTypeSchema {
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::news.news'> &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    publishedDate: Schema.Attribute.Date;
     slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
@@ -1608,6 +1641,7 @@ declare module '@strapi/strapi' {
       'api::homepage.homepage': ApiHomepageHomepage;
       'api::location-list.location-list': ApiLocationListLocationList;
       'api::location.location': ApiLocationLocation;
+      'api::news-page.news-page': ApiNewsPageNewsPage;
       'api::news.news': ApiNewsNews;
       'api::our-client.our-client': ApiOurClientOurClient;
       'api::project.project': ApiProjectProject;
