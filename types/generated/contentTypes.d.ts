@@ -603,6 +603,80 @@ export interface ApiContactContact extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiExperiencePageExperiencePage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'experience_pages';
+  info: {
+    description: 'Experience page with circular scroll animation';
+    displayName: 'Experience Page';
+    pluralName: 'experience-pages';
+    singularName: 'experience-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    experience_steps: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::experience-step.experience-step'
+    >;
+    heroImage: Schema.Attribute.Media<'images'>;
+    heroText: Schema.Attribute.Text;
+    heroTitle: Schema.Attribute.String & Schema.Attribute.Required;
+    heroVideo: Schema.Attribute.Media<'videos'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::experience-page.experience-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiExperienceStepExperienceStep
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'experience_steps';
+  info: {
+    description: 'Individual steps in the circular experience journey';
+    displayName: 'Experience Step';
+    pluralName: 'experience-steps';
+    singularName: 'experience-step';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    ctaText: Schema.Attribute.String;
+    ctaUrl: Schema.Attribute.String;
+    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    image: Schema.Attribute.Media<'images'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::experience-step.experience-step'
+    > &
+      Schema.Attribute.Private;
+    order: Schema.Attribute.Integer &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<0>;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiExpertiseExpertise extends Struct.CollectionTypeSchema {
   collectionName: 'expertises';
   info: {
@@ -1636,6 +1710,8 @@ declare module '@strapi/strapi' {
       'api::about.about': ApiAboutAbout;
       'api::contact-submission.contact-submission': ApiContactSubmissionContactSubmission;
       'api::contact.contact': ApiContactContact;
+      'api::experience-page.experience-page': ApiExperiencePageExperiencePage;
+      'api::experience-step.experience-step': ApiExperienceStepExperienceStep;
       'api::expertise.expertise': ApiExpertiseExpertise;
       'api::global.global': ApiGlobalGlobal;
       'api::homepage.homepage': ApiHomepageHomepage;

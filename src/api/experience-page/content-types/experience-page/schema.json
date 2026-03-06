@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "experience_pages",
+  "info": {
+    "singularName": "experience-page",
+    "pluralName": "experience-pages",
+    "displayName": "Experience Page",
+    "description": "Experience page with circular scroll animation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTitle": {
+      "type": "string",
+      "required": true
+    },
+    "heroText": {
+      "type": "text"
+    },
+    "heroVideo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["videos"]
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "experience_steps": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::experience-step.experience-step"
+    }
+  }
+}
