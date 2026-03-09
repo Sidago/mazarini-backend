@@ -19,6 +19,16 @@
       "type": "text",
       "required": true
     },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
     "image": {
       "type": "media",
       "multiple": false,
@@ -35,6 +45,11 @@
     },
     "catagory": {
       "type": "string"
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   }
 }
