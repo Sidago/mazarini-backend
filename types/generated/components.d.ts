@@ -1,5 +1,17 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface SharedAccordionItem extends Struct.ComponentSchema {
+  collectionName: 'components_shared_accordion_items';
+  info: {
+    description: 'Accordion item with title and description';
+    displayName: 'AccordionItem';
+  };
+  attributes: {
+    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface SharedFooterColumn extends Struct.ComponentSchema {
   collectionName: 'components_shared_footer_columns';
   info: {
@@ -140,6 +152,7 @@ export interface SubNavSubNav extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'shared.accordion-item': SharedAccordionItem;
       'shared.footer-column': SharedFooterColumn;
       'shared.hero-featured': SharedHeroFeatured;
       'shared.link': SharedLink;

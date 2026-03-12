@@ -50,6 +50,11 @@
       "type": "string",
       "required": true,
       "unique": true
+    },
+    "accordion_items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.accordion-item"
     }
   }
 }

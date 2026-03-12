@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2026-03-09T20:42:28.498Z"
+    "x-generation-date": "2026-03-11T16:01:34.899Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -23978,6 +23978,12 @@
                 "slug": {
                   "type": "string"
                 },
+                "accordion_items": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SharedAccordionItemComponent"
+                  }
+                },
                 "createdAt": {
                   "type": "string",
                   "format": "date-time"
@@ -26070,6 +26076,27 @@
             "type": "string"
           },
           "label": {
+            "type": "string"
+          }
+        }
+      },
+      "SharedAccordionItemComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "number"
+              }
+            ]
+          },
+          "title": {
+            "type": "string"
+          },
+          "description": {
             "type": "string"
           }
         }
@@ -34644,6 +34671,12 @@
               "slug": {
                 "type": "string"
               },
+              "accordion_items": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/SharedAccordionItemComponent"
+                }
+              },
               "locale": {
                 "type": "string"
               },
@@ -35717,6 +35750,12 @@
           "slug": {
             "type": "string"
           },
+          "accordion_items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SharedAccordionItemComponent"
+            }
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -36142,6 +36181,12 @@
                 },
                 "slug": {
                   "type": "string"
+                },
+                "accordion_items": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SharedAccordionItemComponent"
+                  }
                 },
                 "createdAt": {
                   "type": "string",
@@ -37739,6 +37784,12 @@
                 },
                 "slug": {
                   "type": "string"
+                },
+                "accordion_items": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SharedAccordionItemComponent"
+                  }
                 },
                 "createdAt": {
                   "type": "string",
