@@ -1,0 +1,87 @@
+{
+  "kind": "singleType",
+  "collectionName": "rd_pages",
+  "info": {
+    "singularName": "rd-page",
+    "pluralName": "rd-pages",
+    "displayName": "R&D Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTitle": { "type": "string", "required": true },
+    "heroText": { "type": "text" },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images", "videos", "files"]
+    },
+    "heroVideo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images", "videos", "files"]
+    },
+
+    "whyTitle": { "type": "string" },
+    "whyDescription": { "type": "text" },
+    "whyWatermark": { "type": "string" },
+    "whyCards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::rd-why-card.rd-why-card"
+    },
+
+    "pillarsTitle": { "type": "string" },
+    "pillarsDescription": { "type": "text" },
+    "pillarsWatermark": { "type": "string" },
+    "pillars": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::rd-pillar.rd-pillar"
+    },
+
+    "projectsTitle": { "type": "string" },
+    "projectsDescription": { "type": "text" },
+    "projectsWatermark": { "type": "string" },
+    "featuredProjects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project"
+    },
+
+    "newsTitle": { "type": "string" },
+    "newsWatermark": { "type": "string" },
+    "newsCtaText": { "type": "string" },
+    "newsCtaUrl": { "type": "string" },
+    "featuredNews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::news.news"
+    },
+
+    "partnersTitle": { "type": "string" },
+    "partnersDescription": { "type": "text" },
+    "partnersWatermark": { "type": "string" },
+    "partners": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::our-client.our-client"
+    },
+
+    "leadershipTitle": { "type": "string" },
+    "leadershipDescription": { "type": "text" },
+    "leadershipWatermark": { "type": "string" },
+    "featuredLeadership": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::team.team"
+    },
+
+    "contactTitle": { "type": "string" },
+    "contactDescription": { "type": "text" },
+    "contactCtaText": { "type": "string" },
+    "contactCtaUrl": { "type": "string" }
+  }
+}

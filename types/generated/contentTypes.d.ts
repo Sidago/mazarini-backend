@@ -1066,6 +1066,139 @@ export interface ApiProjectsPageProjectsPage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiRdPageRdPage extends Struct.SingleTypeSchema {
+  collectionName: 'rd_pages';
+  info: {
+    displayName: 'R&D Page';
+    pluralName: 'rd-pages';
+    singularName: 'rd-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    contactCtaText: Schema.Attribute.String;
+    contactCtaUrl: Schema.Attribute.String;
+    contactDescription: Schema.Attribute.Text;
+    contactTitle: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    featuredLeadership: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::team.team'
+    >;
+    featuredNews: Schema.Attribute.Relation<'oneToMany', 'api::news.news'>;
+    featuredProjects: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::project.project'
+    >;
+    heroImage: Schema.Attribute.Media<'images' | 'videos' | 'files'>;
+    heroText: Schema.Attribute.Text;
+    heroTitle: Schema.Attribute.String & Schema.Attribute.Required;
+    heroVideo: Schema.Attribute.Media<'images' | 'videos' | 'files'>;
+    leadershipDescription: Schema.Attribute.Text;
+    leadershipTitle: Schema.Attribute.String;
+    leadershipWatermark: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::rd-page.rd-page'
+    > &
+      Schema.Attribute.Private;
+    newsCtaText: Schema.Attribute.String;
+    newsCtaUrl: Schema.Attribute.String;
+    newsTitle: Schema.Attribute.String;
+    newsWatermark: Schema.Attribute.String;
+    partners: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::our-client.our-client'
+    >;
+    partnersDescription: Schema.Attribute.Text;
+    partnersTitle: Schema.Attribute.String;
+    partnersWatermark: Schema.Attribute.String;
+    pillars: Schema.Attribute.Relation<'oneToMany', 'api::rd-pillar.rd-pillar'>;
+    pillarsDescription: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
+    pillarsWatermark: Schema.Attribute.String;
+    projectsDescription: Schema.Attribute.Text;
+    projectsTitle: Schema.Attribute.String;
+    projectsWatermark: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    whyCards: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::rd-why-card.rd-why-card'
+    >;
+    whyDescription: Schema.Attribute.Text;
+    whyTitle: Schema.Attribute.String;
+    whyWatermark: Schema.Attribute.String;
+  };
+}
+
+export interface ApiRdPillarRdPillar extends Struct.CollectionTypeSchema {
+  collectionName: 'rd_pillars';
+  info: {
+    displayName: 'R&D Pillar';
+    pluralName: 'rd-pillars';
+    singularName: 'rd-pillar';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    image: Schema.Attribute.Media<'images'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::rd-pillar.rd-pillar'
+    > &
+      Schema.Attribute.Private;
+    order: Schema.Attribute.Integer;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiRdWhyCardRdWhyCard extends Struct.CollectionTypeSchema {
+  collectionName: 'rd_why_cards';
+  info: {
+    displayName: 'R&D Why Card';
+    pluralName: 'rd-why-cards';
+    singularName: 'rd-why-card';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::rd-why-card.rd-why-card'
+    > &
+      Schema.Attribute.Private;
+    order: Schema.Attribute.Integer;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiServiceService extends Struct.CollectionTypeSchema {
   collectionName: 'services';
   info: {
@@ -1834,6 +1967,9 @@ declare module '@strapi/strapi' {
       'api::our-client.our-client': ApiOurClientOurClient;
       'api::project.project': ApiProjectProject;
       'api::projects-page.projects-page': ApiProjectsPageProjectsPage;
+      'api::rd-page.rd-page': ApiRdPageRdPage;
+      'api::rd-pillar.rd-pillar': ApiRdPillarRdPillar;
+      'api::rd-why-card.rd-why-card': ApiRdWhyCardRdWhyCard;
       'api::service.service': ApiServiceService;
       'api::services-page.services-page': ApiServicesPageServicesPage;
       'api::sub-nav-item.sub-nav-item': ApiSubNavItemSubNavItem;

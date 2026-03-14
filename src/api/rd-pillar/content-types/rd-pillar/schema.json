@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rd_pillars",
+  "info": {
+    "singularName": "rd-pillar",
+    "pluralName": "rd-pillars",
+    "displayName": "R&D Pillar"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "description": { "type": "text", "required": true },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "order": { "type": "integer" }
+  }
+}

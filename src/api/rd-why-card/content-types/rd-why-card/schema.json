@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rd_why_cards",
+  "info": {
+    "singularName": "rd-why-card",
+    "pluralName": "rd-why-cards",
+    "displayName": "R&D Why Card"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "label": { "type": "string", "required": true },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "order": { "type": "integer" }
+  }
+}
