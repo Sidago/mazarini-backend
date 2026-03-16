@@ -1,0 +1,94 @@
+{
+  "kind": "singleType",
+  "collectionName": "subcontractors_pages",
+  "info": {
+    "singularName": "subcontractors-page",
+    "pluralName": "subcontractors-pages",
+    "displayName": "Subcontractors Page",
+    "description": "Subcontractors page with hero, quotes, onboarding, trade partners, and FAQ"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTitle": {
+      "type": "string",
+      "required": true
+    },
+    "heroText": {
+      "type": "text",
+      "required": true
+    },
+    "heroVideo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["videos"]
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "quoteTitle": {
+      "type": "string"
+    },
+    "quotes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.subcontractor-quote"
+    },
+    "onboardingTitle": {
+      "type": "string"
+    },
+    "onboardingCtaText": {
+      "type": "string"
+    },
+    "onboardingCtaUrl": {
+      "type": "string"
+    },
+    "onboardingRequirements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.onboarding-item"
+    },
+    "onboardingExtraTitle": {
+      "type": "string"
+    },
+    "onboardingExtraRequirements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.onboarding-item"
+    },
+    "formTitle": {
+      "type": "string"
+    },
+    "formDescription": {
+      "type": "text"
+    },
+    "tradePartnersTitle": {
+      "type": "string"
+    },
+    "tradePartnersDescription": {
+      "type": "text"
+    },
+    "tradePartnerTabs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.trade-partner-tab"
+    },
+    "faqTitle": {
+      "type": "string"
+    },
+    "faqDescription": {
+      "type": "text"
+    },
+    "faqItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.accordion-item"
+    }
+  }
+}

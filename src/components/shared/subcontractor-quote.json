@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_shared_subcontractor_quotes",
+  "info": {
+    "displayName": "SubcontractorQuote",
+    "description": "Quote with author name, company, and designation"
+  },
+  "options": {},
+  "attributes": {
+    "quote": {
+      "type": "text",
+      "required": true
+    },
+    "authorName": {
+      "type": "string",
+      "required": true
+    },
+    "company": {
+      "type": "string"
+    },
+    "designation": {
+      "type": "string"
+    }
+  }
+}

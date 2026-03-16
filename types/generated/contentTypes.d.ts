@@ -1306,6 +1306,64 @@ export interface ApiSubNavItemSubNavItem extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiSubcontractorsPageSubcontractorsPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'subcontractors_pages';
+  info: {
+    description: 'Subcontractors page with hero, quotes, onboarding, trade partners, and FAQ';
+    displayName: 'Subcontractors Page';
+    pluralName: 'subcontractors-pages';
+    singularName: 'subcontractors-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    faqDescription: Schema.Attribute.Text;
+    faqItems: Schema.Attribute.Component<'shared.accordion-item', true>;
+    faqTitle: Schema.Attribute.String;
+    formDescription: Schema.Attribute.Text;
+    formTitle: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Media<'images'>;
+    heroText: Schema.Attribute.Text & Schema.Attribute.Required;
+    heroTitle: Schema.Attribute.String & Schema.Attribute.Required;
+    heroVideo: Schema.Attribute.Media<'videos'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::subcontractors-page.subcontractors-page'
+    > &
+      Schema.Attribute.Private;
+    onboardingCtaText: Schema.Attribute.String;
+    onboardingCtaUrl: Schema.Attribute.String;
+    onboardingExtraRequirements: Schema.Attribute.Component<
+      'shared.onboarding-item',
+      true
+    >;
+    onboardingExtraTitle: Schema.Attribute.String;
+    onboardingRequirements: Schema.Attribute.Component<
+      'shared.onboarding-item',
+      true
+    >;
+    onboardingTitle: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    quotes: Schema.Attribute.Component<'shared.subcontractor-quote', true>;
+    quoteTitle: Schema.Attribute.String;
+    tradePartnersDescription: Schema.Attribute.Text;
+    tradePartnersTitle: Schema.Attribute.String;
+    tradePartnerTabs: Schema.Attribute.Component<
+      'shared.trade-partner-tab',
+      true
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiTeamPageTeamPage extends Struct.SingleTypeSchema {
   collectionName: 'team_pages';
   info: {
@@ -1973,6 +2031,7 @@ declare module '@strapi/strapi' {
       'api::service.service': ApiServiceService;
       'api::services-page.services-page': ApiServicesPageServicesPage;
       'api::sub-nav-item.sub-nav-item': ApiSubNavItemSubNavItem;
+      'api::subcontractors-page.subcontractors-page': ApiSubcontractorsPageSubcontractorsPage;
       'api::team-page.team-page': ApiTeamPageTeamPage;
       'api::team.team': ApiTeamTeam;
       'api::testimonial.testimonial': ApiTestimonialTestimonial;

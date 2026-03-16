@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shared_onboarding_items",
+  "info": {
+    "displayName": "OnboardingItem",
+    "description": "Single onboarding requirement text"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

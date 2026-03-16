@@ -68,6 +68,17 @@ export interface SharedMedia extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedOnboardingItem extends Struct.ComponentSchema {
+  collectionName: 'components_shared_onboarding_items';
+  info: {
+    description: 'Single onboarding requirement text';
+    displayName: 'OnboardingItem';
+  };
+  attributes: {
+    text: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface SharedQuote extends Struct.ComponentSchema {
   collectionName: 'components_shared_quotes';
   info: {
@@ -137,6 +148,34 @@ export interface SharedStat extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedSubcontractorQuote extends Struct.ComponentSchema {
+  collectionName: 'components_shared_subcontractor_quotes';
+  info: {
+    description: 'Quote with author name, company, and designation';
+    displayName: 'SubcontractorQuote';
+  };
+  attributes: {
+    authorName: Schema.Attribute.String & Schema.Attribute.Required;
+    company: Schema.Attribute.String;
+    designation: Schema.Attribute.String;
+    quote: Schema.Attribute.Text & Schema.Attribute.Required;
+  };
+}
+
+export interface SharedTradePartnerTab extends Struct.ComponentSchema {
+  collectionName: 'components_shared_trade_partner_tabs';
+  info: {
+    description: 'Tab for celebrating trade partners section';
+    displayName: 'TradePartnerTab';
+  };
+  attributes: {
+    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    image: Schema.Attribute.Media<'images'>;
+    tabName: Schema.Attribute.String & Schema.Attribute.Required;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface SubNavSubNav extends Struct.ComponentSchema {
   collectionName: 'components_sub_nav_sub_navs';
   info: {
@@ -157,11 +196,14 @@ declare module '@strapi/strapi' {
       'shared.hero-featured': SharedHeroFeatured;
       'shared.link': SharedLink;
       'shared.media': SharedMedia;
+      'shared.onboarding-item': SharedOnboardingItem;
       'shared.quote': SharedQuote;
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.social-link': SharedSocialLink;
       'shared.stat': SharedStat;
+      'shared.subcontractor-quote': SharedSubcontractorQuote;
+      'shared.trade-partner-tab': SharedTradePartnerTab;
       'sub-nav.sub-nav': SubNavSubNav;
     }
   }
