@@ -142,6 +142,7 @@ export interface SharedStat extends Struct.ComponentSchema {
     icon: 'chartBubble';
   };
   attributes: {
+    description: Schema.Attribute.Text;
     label: Schema.Attribute.String & Schema.Attribute.Required;
     suffix: Schema.Attribute.String;
     value: Schema.Attribute.String & Schema.Attribute.Required;
