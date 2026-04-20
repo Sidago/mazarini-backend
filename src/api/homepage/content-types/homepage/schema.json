@@ -146,6 +146,25 @@
     "belongCtaText": {
       "type": "string"
     },
+    "sparkHeading": {
+      "type": "string"
+    },
+    "sparkDescription": {
+      "type": "text"
+    },
+    "sparkImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "sparkCtaText": {
+      "type": "string"
+    },
+    "sparkCtaUrl": {
+      "type": "string"
+    },
     "newsHeading": {
       "type": "text"
     },

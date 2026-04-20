@@ -818,6 +818,11 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
     projectsHeading: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     services: Schema.Attribute.Relation<'oneToMany', 'api::service.service'>;
+    sparkCtaText: Schema.Attribute.String;
+    sparkCtaUrl: Schema.Attribute.String;
+    sparkDescription: Schema.Attribute.Text;
+    sparkHeading: Schema.Attribute.String;
+    sparkImage: Schema.Attribute.Media<'images'>;
     stats: Schema.Attribute.Component<'shared.stat', true>;
     testimonials: Schema.Attribute.Relation<
       'oneToMany',
