@@ -627,6 +627,8 @@ export interface ApiExperiencePageExperiencePage
       'oneToMany',
       'api::experience-step.experience-step'
     >;
+    heroCtaText: Schema.Attribute.String;
+    heroCtaUrl: Schema.Attribute.String;
     heroImage: Schema.Attribute.Media<'images'>;
     heroText: Schema.Attribute.Text;
     heroTitle: Schema.Attribute.String & Schema.Attribute.Required;
@@ -889,6 +891,8 @@ export interface ApiLocationLocation extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    heroCtaText: Schema.Attribute.String;
+    heroCtaUrl: Schema.Attribute.String;
     heroImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     > &
@@ -1102,6 +1106,8 @@ export interface ApiRdPageRdPage extends Struct.SingleTypeSchema {
       'oneToMany',
       'api::project.project'
     >;
+    heroCtaText: Schema.Attribute.String;
+    heroCtaUrl: Schema.Attribute.String;
     heroImage: Schema.Attribute.Media<'images' | 'videos' | 'files'>;
     heroText: Schema.Attribute.Text;
     heroTitle: Schema.Attribute.String & Schema.Attribute.Required;
@@ -1336,6 +1342,8 @@ export interface ApiSubcontractorsPageSubcontractorsPage
     faqTitle: Schema.Attribute.String;
     formDescription: Schema.Attribute.Text;
     formTitle: Schema.Attribute.String;
+    heroCtaText: Schema.Attribute.String;
+    heroCtaUrl: Schema.Attribute.String;
     heroImage: Schema.Attribute.Media<'images'>;
     heroText: Schema.Attribute.Text & Schema.Attribute.Required;
     heroTitle: Schema.Attribute.String & Schema.Attribute.Required;
@@ -1387,6 +1395,8 @@ export interface ApiTeamPageTeamPage extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    heroCtaText: Schema.Attribute.String;
+    heroCtaUrl: Schema.Attribute.String;
     heroImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     > &

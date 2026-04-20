@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2026-04-20T08:39:53.829Z"
+    "x-generation-date": "2026-04-20T09:47:42.752Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -17170,6 +17170,12 @@
                 ],
                 "example": "string or id"
               },
+              "heroCtaText": {
+                "type": "string"
+              },
+              "heroCtaUrl": {
+                "type": "string"
+              },
               "experience_steps": {
                 "type": "array",
                 "items": {
@@ -18247,6 +18253,12 @@
               }
             }
           },
+          "heroCtaText": {
+            "type": "string"
+          },
+          "heroCtaUrl": {
+            "type": "string"
+          },
           "experience_steps": {
             "type": "array",
             "items": {
@@ -18945,6 +18957,12 @@
                       }
                     }
                   }
+                },
+                "heroCtaText": {
+                  "type": "string"
+                },
+                "heroCtaUrl": {
+                  "type": "string"
                 },
                 "experience_steps": {
                   "type": "array",
@@ -29064,6 +29082,12 @@
                 ],
                 "example": "string or id"
               },
+              "heroCtaText": {
+                "type": "string"
+              },
+              "heroCtaUrl": {
+                "type": "string"
+              },
               "locale": {
                 "type": "string"
               },
@@ -30109,6 +30133,12 @@
               }
             }
           },
+          "heroCtaText": {
+            "type": "string"
+          },
+          "heroCtaUrl": {
+            "type": "string"
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -30530,6 +30560,12 @@
                       }
                     }
                   }
+                },
+                "heroCtaText": {
+                  "type": "string"
+                },
+                "heroCtaUrl": {
+                  "type": "string"
                 },
                 "createdAt": {
                   "type": "string",
@@ -37578,6 +37614,12 @@
                 ],
                 "example": "string or id"
               },
+              "heroCtaText": {
+                "type": "string"
+              },
+              "heroCtaUrl": {
+                "type": "string"
+              },
               "whyTitle": {
                 "type": "string"
               },
@@ -38793,6 +38835,12 @@
                 }
               }
             }
+          },
+          "heroCtaText": {
+            "type": "string"
+          },
+          "heroCtaUrl": {
+            "type": "string"
           },
           "whyTitle": {
             "type": "string"
@@ -40944,6 +40992,12 @@
                       }
                     }
                   }
+                },
+                "heroCtaText": {
+                  "type": "string"
+                },
+                "heroCtaUrl": {
+                  "type": "string"
                 },
                 "whyTitle": {
                   "type": "string"
@@ -47857,6 +47911,12 @@
                 ],
                 "example": "string or id"
               },
+              "heroCtaText": {
+                "type": "string"
+              },
+              "heroCtaUrl": {
+                "type": "string"
+              },
               "quoteTitle": {
                 "type": "string"
               },
@@ -48984,6 +49044,12 @@
               }
             }
           },
+          "heroCtaText": {
+            "type": "string"
+          },
+          "heroCtaUrl": {
+            "type": "string"
+          },
           "quoteTitle": {
             "type": "string"
           },
@@ -49465,6 +49531,12 @@
                       }
                     }
                   }
+                },
+                "heroCtaText": {
+                  "type": "string"
+                },
+                "heroCtaUrl": {
+                  "type": "string"
                 },
                 "quoteTitle": {
                   "type": "string"
@@ -51200,6 +51272,12 @@
                 ],
                 "example": "string or id"
               },
+              "heroCtaText": {
+                "type": "string"
+              },
+              "heroCtaUrl": {
+                "type": "string"
+              },
               "locale": {
                 "type": "string"
               },
@@ -52265,6 +52343,12 @@
               }
             }
           },
+          "heroCtaText": {
+            "type": "string"
+          },
+          "heroCtaUrl": {
+            "type": "string"
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -52683,6 +52767,12 @@
                       }
                     }
                   }
+                },
+                "heroCtaText": {
+                  "type": "string"
+                },
+                "heroCtaUrl": {
+                  "type": "string"
                 },
                 "createdAt": {
                   "type": "string",
