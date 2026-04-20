@@ -23,6 +23,8 @@
       "multiple": false,
       "allowedTypes": ["images", "videos", "files"]
     },
+    "heroCtaText": { "type": "string" },
+    "heroCtaUrl": { "type": "string" },
 
     "whyTitle": { "type": "string" },
     "whyDescription": { "type": "text" },

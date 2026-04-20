@@ -482,6 +482,8 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    heroCtaText: Schema.Attribute.String;
+    heroCtaUrl: Schema.Attribute.String;
     heroImage: Schema.Attribute.Media<'images'>;
     heroText: Schema.Attribute.Text & Schema.Attribute.Required;
     heroTitle: Schema.Attribute.String & Schema.Attribute.Required;
@@ -586,6 +588,8 @@ export interface ApiContactContact extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     formDescription: Schema.Attribute.Text;
     formTitle: Schema.Attribute.String;
+    heroCtaText: Schema.Attribute.String;
+    heroCtaUrl: Schema.Attribute.String;
     heroImage: Schema.Attribute.Media<'images'>;
     heroText: Schema.Attribute.Text & Schema.Attribute.Required;
     heroTitle: Schema.Attribute.String & Schema.Attribute.Required;

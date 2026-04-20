@@ -36,6 +36,12 @@
         "images"
       ]
     },
+    "heroCtaText": {
+      "type": "string"
+    },
+    "heroCtaUrl": {
+      "type": "string"
+    },
     "formTitle": {
       "type": "string"
     },

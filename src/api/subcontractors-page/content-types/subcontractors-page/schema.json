@@ -32,6 +32,12 @@
       "required": false,
       "allowedTypes": ["images"]
     },
+    "heroCtaText": {
+      "type": "string"
+    },
+    "heroCtaUrl": {
+      "type": "string"
+    },
     "quoteTitle": {
       "type": "string"
     },

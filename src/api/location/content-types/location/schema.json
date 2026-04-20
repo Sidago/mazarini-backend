@@ -43,6 +43,12 @@
         "videos",
         "audios"
       ]
+    },
+    "heroCtaText": {
+      "type": "string"
+    },
+    "heroCtaUrl": {
+      "type": "string"
     }
   }
 }

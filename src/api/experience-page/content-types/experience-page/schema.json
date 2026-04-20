@@ -31,6 +31,12 @@
       "required": false,
       "allowedTypes": ["images"]
     },
+    "heroCtaText": {
+      "type": "string"
+    },
+    "heroCtaUrl": {
+      "type": "string"
+    },
     "experience_steps": {
       "type": "relation",
       "relation": "oneToMany",
