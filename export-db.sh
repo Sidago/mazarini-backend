@@ -4,12 +4,12 @@
 DB_HOST="localhost"
 DB_PORT="5432"
 DB_NAME="mazarini"
-DB_USER="strapi"
+DB_USER="postgres"
 
 TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
 OUTPUT_FILE="$(dirname "$0")/database-export_${TIMESTAMP}.dump"
 
-export PGPASSWORD="strapi"
+export PGPASSWORD="postgres"
 
 echo "Exporting database '${DB_NAME}' from ${DB_HOST}:${DB_PORT}..."
 
