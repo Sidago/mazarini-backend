@@ -11,13 +11,23 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "label": { "type": "string", "required": true },
+    "label": {
+      "type": "string",
+      "required": true
+    },
     "image": {
       "type": "media",
       "multiple": false,
       "required": true,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
-    "order": { "type": "integer" }
+    "order": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "text"
+    }
   }
 }
