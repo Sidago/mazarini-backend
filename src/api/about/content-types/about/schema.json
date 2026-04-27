@@ -60,6 +60,11 @@
     },
     "timelineDescription": {
       "type": "text"
+    },
+    "stats": {
+      "type": "component",
+      "component": "shared.stat",
+      "repeatable": true
     }
   }
 }

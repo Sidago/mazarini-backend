@@ -458,6 +458,7 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::about.about'> &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
+    stats: Schema.Attribute.Component<'shared.stat', true>;
     timelineDescription: Schema.Attribute.Text;
     timelineHeading: Schema.Attribute.Text;
     title: Schema.Attribute.String & Schema.Attribute.Required;

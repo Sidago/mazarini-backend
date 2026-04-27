@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2026-04-27T14:28:10.877Z"
+    "x-generation-date": "2026-04-27T17:18:10.587Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -12516,6 +12516,12 @@
               "timelineDescription": {
                 "type": "string"
               },
+              "stats": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/SharedStatComponent"
+                }
+              },
               "locale": {
                 "type": "string"
               },
@@ -13605,6 +13611,12 @@
           "timelineDescription": {
             "type": "string"
           },
+          "stats": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SharedStatComponent"
+            }
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -14048,6 +14060,12 @@
                 "timelineDescription": {
                   "type": "string"
                 },
+                "stats": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SharedStatComponent"
+                  }
+                },
                 "createdAt": {
                   "type": "string",
                   "format": "date-time"
@@ -14133,6 +14151,33 @@
           },
           "meta": {
             "type": "object"
+          }
+        }
+      },
+      "SharedStatComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "number"
+              }
+            ]
+          },
+          "value": {
+            "type": "string"
+          },
+          "suffix": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
           }
         }
       },
@@ -28984,33 +29029,6 @@
             "type": "string"
           },
           "year": {
-            "type": "string"
-          }
-        }
-      },
-      "SharedStatComponent": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "oneOf": [
-              {
-                "type": "string"
-              },
-              {
-                "type": "number"
-              }
-            ]
-          },
-          "value": {
-            "type": "string"
-          },
-          "suffix": {
-            "type": "string"
-          },
-          "label": {
-            "type": "string"
-          },
-          "description": {
             "type": "string"
           }
         }
