@@ -23,6 +23,7 @@
       "type": "enumeration",
       "required": true,
       "enum": [
+        "Key Leadership",
         "Executive Leadership",
         "Senior Leadership"
       ]

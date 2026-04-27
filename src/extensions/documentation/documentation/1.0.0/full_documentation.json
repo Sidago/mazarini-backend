@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2026-04-22T06:38:13.235Z"
+    "x-generation-date": "2026-04-27T14:28:10.877Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -40308,6 +40308,7 @@
                 "catagory": {
                   "type": "string",
                   "enum": [
+                    "Key Leadership",
                     "Executive Leadership",
                     "Senior Leadership"
                   ]
@@ -49966,6 +49967,7 @@
               "catagory": {
                 "type": "string",
                 "enum": [
+                  "Key Leadership",
                   "Executive Leadership",
                   "Senior Leadership"
                 ]
@@ -50074,6 +50076,7 @@
           "catagory": {
             "type": "string",
             "enum": [
+              "Key Leadership",
               "Executive Leadership",
               "Senior Leadership"
             ]
@@ -50972,6 +50975,7 @@
                 "catagory": {
                   "type": "string",
                   "enum": [
+                    "Key Leadership",
                     "Executive Leadership",
                     "Senior Leadership"
                   ]

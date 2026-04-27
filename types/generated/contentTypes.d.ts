@@ -1394,7 +1394,7 @@ export interface ApiTeamTeam extends Struct.CollectionTypeSchema {
   attributes: {
     bio: Schema.Attribute.Text;
     catagory: Schema.Attribute.Enumeration<
-      ['Executive Leadership', 'Senior Leadership']
+      ['Key Leadership', 'Executive Leadership', 'Senior Leadership']
     > &
       Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;
