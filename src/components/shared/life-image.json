@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_life_images",
+  "info": {
+    "displayName": "Life Image",
+    "icon": "landscape",
+    "description": "A single image for the Life at Mazarini section"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    }
+  }
+}

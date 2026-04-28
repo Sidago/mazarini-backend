@@ -65,6 +65,36 @@
       "type": "component",
       "component": "shared.stat",
       "repeatable": true
+    },
+    "leadershipBlocks": {
+      "type": "component",
+      "component": "shared.leadership-block",
+      "repeatable": true
+    },
+    "cultureHeading": {
+      "type": "string"
+    },
+    "cultureDescription": {
+      "type": "text"
+    },
+    "cultureWatermark": {
+      "type": "string"
+    },
+    "cultureCards": {
+      "type": "component",
+      "component": "shared.culture-card",
+      "repeatable": true
+    },
+    "lifeHeading": {
+      "type": "string"
+    },
+    "lifeDescription": {
+      "type": "text"
+    },
+    "lifeImages": {
+      "type": "component",
+      "component": "shared.life-image",
+      "repeatable": true
     }
   }
 }

@@ -445,6 +445,10 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    cultureCards: Schema.Attribute.Component<'shared.culture-card', true>;
+    cultureDescription: Schema.Attribute.Text;
+    cultureHeading: Schema.Attribute.String;
+    cultureWatermark: Schema.Attribute.String;
     heroCtaText: Schema.Attribute.String;
     heroCtaUrl: Schema.Attribute.String;
     heroImage: Schema.Attribute.Media<'images'>;
@@ -454,6 +458,13 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
     introDiscription: Schema.Attribute.Text;
     introHeading: Schema.Attribute.Text;
     introHighlight: Schema.Attribute.String;
+    leadershipBlocks: Schema.Attribute.Component<
+      'shared.leadership-block',
+      true
+    >;
+    lifeDescription: Schema.Attribute.Text;
+    lifeHeading: Schema.Attribute.String;
+    lifeImages: Schema.Attribute.Component<'shared.life-image', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::about.about'> &
       Schema.Attribute.Private;
@@ -1464,6 +1475,7 @@ export interface ApiTimelineEntryTimelineEntry
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    cta: Schema.Attribute.Component<'shared.link', false>;
     decade: Schema.Attribute.String & Schema.Attribute.Required;
     description: Schema.Attribute.Text & Schema.Attribute.Required;
     image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;

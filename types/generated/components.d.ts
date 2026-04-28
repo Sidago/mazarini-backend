@@ -12,6 +12,21 @@ export interface SharedAccordionItem extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedCultureCard extends Struct.ComponentSchema {
+  collectionName: 'components_shared_culture_cards';
+  info: {
+    description: 'A card for the culture section with image, tag, and title';
+    displayName: 'Culture Card';
+    icon: 'picture';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
+    tag: Schema.Attribute.String;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    url: Schema.Attribute.String;
+  };
+}
+
 export interface SharedFooterColumn extends Struct.ComponentSchema {
   collectionName: 'components_shared_footer_columns';
   info: {
@@ -36,6 +51,34 @@ export interface SharedHeroFeatured extends Struct.ComponentSchema {
     location: Schema.Attribute.String;
     projectName: Schema.Attribute.String;
     year: Schema.Attribute.String;
+  };
+}
+
+export interface SharedLeadershipBlock extends Struct.ComponentSchema {
+  collectionName: 'components_shared_leadership_blocks';
+  info: {
+    description: 'A leadership feature block with image, description, and CTA';
+    displayName: 'Leadership Block';
+    icon: 'users';
+  };
+  attributes: {
+    ctaText: Schema.Attribute.String;
+    ctaUrl: Schema.Attribute.String;
+    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
+    watermark: Schema.Attribute.String;
+  };
+}
+
+export interface SharedLifeImage extends Struct.ComponentSchema {
+  collectionName: 'components_shared_life_images';
+  info: {
+    description: 'A single image for the Life at Mazarini section';
+    displayName: 'Life Image';
+    icon: 'landscape';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
   };
 }
 
@@ -193,8 +236,11 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'shared.accordion-item': SharedAccordionItem;
+      'shared.culture-card': SharedCultureCard;
       'shared.footer-column': SharedFooterColumn;
       'shared.hero-featured': SharedHeroFeatured;
+      'shared.leadership-block': SharedLeadershipBlock;
+      'shared.life-image': SharedLifeImage;
       'shared.link': SharedLink;
       'shared.media': SharedMedia;
       'shared.onboarding-item': SharedOnboardingItem;

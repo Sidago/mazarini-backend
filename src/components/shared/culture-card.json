@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_shared_culture_cards",
+  "info": {
+    "displayName": "Culture Card",
+    "icon": "picture",
+    "description": "A card for the culture section with image, tag, and title"
+  },
+  "options": {},
+  "attributes": {
+    "tag": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}
