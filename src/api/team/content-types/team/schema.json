@@ -23,6 +23,7 @@
       "type": "enumeration",
       "required": true,
       "enum": [
+        "Key Leadership",
         "Executive Leadership",
         "Senior Leadership"
       ]
@@ -43,6 +44,12 @@
     },
     "bio": {
       "type": "text"
+    },
+    "services": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::service.service",
+      "inversedBy": "teams"
     }
   }
 }
