@@ -226,6 +226,8 @@ export interface SubNavSubNav extends Struct.ComponentSchema {
     displayName: 'Sub Nav';
   };
   attributes: {
+    category: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
     image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     linkTo: Schema.Attribute.String;
     name: Schema.Attribute.String & Schema.Attribute.Required;
