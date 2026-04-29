@@ -44,6 +44,12 @@
     },
     "bio": {
       "type": "text"
+    },
+    "services": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::service.service",
+      "inversedBy": "teams"
     }
   }
 }

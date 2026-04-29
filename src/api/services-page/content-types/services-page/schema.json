@@ -49,6 +49,11 @@
     },
     "featuredCTA": {
       "type": "string"
+    },
+    "stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.stat"
     }
   }
 }

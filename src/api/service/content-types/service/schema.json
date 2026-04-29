@@ -55,6 +55,18 @@
       "type": "component",
       "repeatable": true,
       "component": "shared.accordion-item"
+    },
+    "testimonials": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::testimonial.testimonial",
+      "mappedBy": "services"
+    },
+    "teams": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::team.team",
+      "mappedBy": "services"
     }
   }
 }

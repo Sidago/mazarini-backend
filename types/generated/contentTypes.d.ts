@@ -1221,6 +1221,11 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
     slug: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.Unique;
+    teams: Schema.Attribute.Relation<'manyToMany', 'api::team.team'>;
+    testimonials: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::testimonial.testimonial'
+    >;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -1261,6 +1266,7 @@ export interface ApiServicesPageServicesPage extends Struct.SingleTypeSchema {
     pageDescription: Schema.Attribute.Text;
     pageTitle: Schema.Attribute.String & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
+    stats: Schema.Attribute.Component<'shared.stat', true>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1421,6 +1427,7 @@ export interface ApiTeamTeam extends Struct.CollectionTypeSchema {
     name: Schema.Attribute.String & Schema.Attribute.Required;
     position: Schema.Attribute.String & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
+    services: Schema.Attribute.Relation<'manyToMany', 'api::service.service'>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1453,6 +1460,7 @@ export interface ApiTestimonialTestimonial extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     quote: Schema.Attribute.Text & Schema.Attribute.Required;
+    services: Schema.Attribute.Relation<'manyToMany', 'api::service.service'>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
