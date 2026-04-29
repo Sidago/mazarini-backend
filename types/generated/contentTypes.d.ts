@@ -445,10 +445,6 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    cultureCards: Schema.Attribute.Component<'shared.culture-card', true>;
-    cultureDescription: Schema.Attribute.Text;
-    cultureHeading: Schema.Attribute.String;
-    cultureWatermark: Schema.Attribute.String;
     heroCtaText: Schema.Attribute.String;
     heroCtaUrl: Schema.Attribute.String;
     heroImage: Schema.Attribute.Media<'images'>;
@@ -458,18 +454,10 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
     introDiscription: Schema.Attribute.Text;
     introHeading: Schema.Attribute.Text;
     introHighlight: Schema.Attribute.String;
-    leadershipBlocks: Schema.Attribute.Component<
-      'shared.leadership-block',
-      true
-    >;
-    lifeDescription: Schema.Attribute.Text;
-    lifeHeading: Schema.Attribute.String;
-    lifeImages: Schema.Attribute.Component<'shared.life-image', true>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::about.about'> &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
-    stats: Schema.Attribute.Component<'shared.stat', true>;
     timelineDescription: Schema.Attribute.Text;
     timelineHeading: Schema.Attribute.Text;
     title: Schema.Attribute.String & Schema.Attribute.Required;
@@ -1221,11 +1209,6 @@ export interface ApiServiceService extends Struct.CollectionTypeSchema {
     slug: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.Unique;
-    teams: Schema.Attribute.Relation<'manyToMany', 'api::team.team'>;
-    testimonials: Schema.Attribute.Relation<
-      'manyToMany',
-      'api::testimonial.testimonial'
-    >;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -1266,7 +1249,6 @@ export interface ApiServicesPageServicesPage extends Struct.SingleTypeSchema {
     pageDescription: Schema.Attribute.Text;
     pageTitle: Schema.Attribute.String & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
-    stats: Schema.Attribute.Component<'shared.stat', true>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1412,7 +1394,7 @@ export interface ApiTeamTeam extends Struct.CollectionTypeSchema {
   attributes: {
     bio: Schema.Attribute.Text;
     catagory: Schema.Attribute.Enumeration<
-      ['Key Leadership', 'Executive Leadership', 'Senior Leadership']
+      ['Executive Leadership', 'Senior Leadership']
     > &
       Schema.Attribute.Required;
     createdAt: Schema.Attribute.DateTime;
@@ -1427,7 +1409,6 @@ export interface ApiTeamTeam extends Struct.CollectionTypeSchema {
     name: Schema.Attribute.String & Schema.Attribute.Required;
     position: Schema.Attribute.String & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
-    services: Schema.Attribute.Relation<'manyToMany', 'api::service.service'>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1460,7 +1441,6 @@ export interface ApiTestimonialTestimonial extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     quote: Schema.Attribute.Text & Schema.Attribute.Required;
-    services: Schema.Attribute.Relation<'manyToMany', 'api::service.service'>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1483,7 +1463,6 @@ export interface ApiTimelineEntryTimelineEntry
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    cta: Schema.Attribute.Component<'shared.link', false>;
     decade: Schema.Attribute.String & Schema.Attribute.Required;
     description: Schema.Attribute.Text & Schema.Attribute.Required;
     image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
