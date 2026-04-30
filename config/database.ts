@@ -51,6 +51,15 @@ const config = ({ env }: Core.Config.Shared.ConfigParams): Core.Config.Database 
     },
   };
 
+  if (client === 'postgres') {
+    console.log('[DB] Connecting to PostgreSQL ...');
+    console.log(`  host     : ${env('DATABASE_HOST', 'localhost')}:${env.int('DATABASE_PORT', 5432)}`);
+    console.log(`  database : ${env('DATABASE_NAME', 'strapi')}`);
+    console.log(`  user     : ${env('DATABASE_USERNAME', 'strapi')}`);
+    console.log(`  schema   : ${env('DATABASE_SCHEMA', 'public')}`);
+    console.log(`  ssl      : ${env.bool('DATABASE_SSL', false)}`);
+  }
+
   return {
     connection: {
       client,
