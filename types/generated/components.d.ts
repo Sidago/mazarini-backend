@@ -20,6 +20,7 @@ export interface SharedCultureCard extends Struct.ComponentSchema {
     icon: 'picture';
   };
   attributes: {
+    description: Schema.Attribute.Text;
     image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
     tag: Schema.Attribute.String;
     title: Schema.Attribute.String & Schema.Attribute.Required;

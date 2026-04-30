@@ -1201,6 +1201,8 @@ export interface ApiSafetySafety extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    accordianDetails: Schema.Attribute.Text;
+    accordianTitle: Schema.Attribute.String & Schema.Attribute.Required;
     accordionImage: Schema.Attribute.Media<
       'images' | 'files' | 'videos' | 'audios'
     >;

@@ -90,6 +90,13 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::team.team"
+    },
+    "accordianTitle": {
+      "type": "string",
+      "required": true
+    },
+    "accordianDetails": {
+      "type": "text"
     }
   }
 }

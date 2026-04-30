@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2026-04-30T07:14:27.433Z"
+    "x-generation-date": "2026-04-30T08:24:43.781Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -14994,6 +14994,9 @@
             }
           },
           "url": {
+            "type": "string"
+          },
+          "description": {
             "type": "string"
           }
         }
@@ -45982,7 +45985,8 @@
               "heroText",
               "carouselTitle",
               "carouselText",
-              "leadershipTitle"
+              "leadershipTitle",
+              "accordianTitle"
             ],
             "type": "object",
             "properties": {
@@ -46075,6 +46079,12 @@
                   "example": "string or id"
                 }
               },
+              "accordianTitle": {
+                "type": "string"
+              },
+              "accordianDetails": {
+                "type": "string"
+              },
               "locale": {
                 "type": "string"
               },
@@ -46139,7 +46149,8 @@
           "heroText",
           "carouselTitle",
           "carouselText",
-          "leadershipTitle"
+          "leadershipTitle",
+          "accordianTitle"
         ],
         "properties": {
           "id": {
@@ -48411,6 +48422,12 @@
               }
             }
           },
+          "accordianTitle": {
+            "type": "string"
+          },
+          "accordianDetails": {
+            "type": "string"
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -49058,6 +49075,12 @@
                       }
                     }
                   }
+                },
+                "accordianTitle": {
+                  "type": "string"
+                },
+                "accordianDetails": {
+                  "type": "string"
                 },
                 "createdAt": {
                   "type": "string",
