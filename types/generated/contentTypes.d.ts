@@ -1190,6 +1190,50 @@ export interface ApiRdWhyCardRdWhyCard extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiSafetySafety extends Struct.SingleTypeSchema {
+  collectionName: 'safeties';
+  info: {
+    displayName: 'safety';
+    pluralName: 'safeties';
+    singularName: 'safety';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    accordionImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    accordionItems: Schema.Attribute.Component<'shared.accordion-item', true>;
+    carouselCard: Schema.Attribute.Component<'shared.culture-card', true>;
+    carouselText: Schema.Attribute.Text & Schema.Attribute.Required;
+    carouselTitle: Schema.Attribute.String & Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    heroImage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    heroText: Schema.Attribute.Text & Schema.Attribute.Required;
+    heroTitle: Schema.Attribute.String & Schema.Attribute.Required;
+    heroVedio: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    leadership_cards: Schema.Attribute.Relation<'oneToMany', 'api::team.team'>;
+    leadershipDetails: Schema.Attribute.Text;
+    leadershipParallaxText: Schema.Attribute.String;
+    leadershipTitle: Schema.Attribute.String & Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::safety.safety'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    stats: Schema.Attribute.Component<'shared.stat', true>;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiServiceService extends Struct.CollectionTypeSchema {
   collectionName: 'services';
   info: {
@@ -2031,6 +2075,7 @@ declare module '@strapi/strapi' {
       'api::rd-page.rd-page': ApiRdPageRdPage;
       'api::rd-pillar.rd-pillar': ApiRdPillarRdPillar;
       'api::rd-why-card.rd-why-card': ApiRdWhyCardRdWhyCard;
+      'api::safety.safety': ApiSafetySafety;
       'api::service.service': ApiServiceService;
       'api::services-page.services-page': ApiServicesPageServicesPage;
       'api::sub-nav-item.sub-nav-item': ApiSubNavItemSubNavItem;
