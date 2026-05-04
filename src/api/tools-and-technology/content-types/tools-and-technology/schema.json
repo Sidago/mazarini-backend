@@ -1,0 +1,87 @@
+{
+  "kind": "singleType",
+  "collectionName": "tools_and_technologies",
+  "info": {
+    "singularName": "tools-and-technology",
+    "pluralName": "tools-and-technologies",
+    "displayName": "Tools and Technology"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "heroTitle": {
+      "type": "string",
+      "required": true
+    },
+    "heroText": {
+      "type": "text",
+      "required": true
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "heroVedio": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "accordianTitle": {
+      "type": "string",
+      "required": true
+    },
+    "accordianDetails": {
+      "type": "text"
+    },
+    "accordionImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "accordionItems": {
+      "type": "component",
+      "component": "shared.accordion-item",
+      "repeatable": true
+    },
+    "stats": {
+      "type": "component",
+      "component": "shared.stat",
+      "repeatable": true
+    },
+    "carouselTitle": {
+      "type": "string",
+      "required": true
+    },
+    "carouselText": {
+      "type": "text",
+      "required": true
+    },
+    "carouselCard": {
+      "type": "component",
+      "component": "shared.culture-card",
+      "repeatable": true
+    },
+    "leadershipTitle": {
+      "type": "string",
+      "required": true
+    },
+    "leadershipDetails": {
+      "type": "text"
+    },
+    "leadershipParallaxText": {
+      "type": "string"
+    },
+    "leadership_cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::team.team"
+    }
+  }
+}

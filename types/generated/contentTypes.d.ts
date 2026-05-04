@@ -1548,6 +1548,53 @@ export interface ApiTimelineEntryTimelineEntry
   };
 }
 
+export interface ApiToolsAndTechnologyToolsAndTechnology
+  extends Struct.SingleTypeSchema {
+  collectionName: 'tools_and_technologies';
+  info: {
+    displayName: 'Tools and Technology';
+    pluralName: 'tools-and-technologies';
+    singularName: 'tools-and-technology';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    accordianDetails: Schema.Attribute.Text;
+    accordianTitle: Schema.Attribute.String & Schema.Attribute.Required;
+    accordionImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
+    accordionItems: Schema.Attribute.Component<'shared.accordion-item', true>;
+    carouselCard: Schema.Attribute.Component<'shared.culture-card', true>;
+    carouselText: Schema.Attribute.Text & Schema.Attribute.Required;
+    carouselTitle: Schema.Attribute.String & Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    heroImage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    heroText: Schema.Attribute.Text & Schema.Attribute.Required;
+    heroTitle: Schema.Attribute.String & Schema.Attribute.Required;
+    heroVedio: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    leadership_cards: Schema.Attribute.Relation<'oneToMany', 'api::team.team'>;
+    leadershipDetails: Schema.Attribute.Text;
+    leadershipParallaxText: Schema.Attribute.String;
+    leadershipTitle: Schema.Attribute.String & Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::tools-and-technology.tools-and-technology'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    stats: Schema.Attribute.Component<'shared.stat', true>;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface PluginContentReleasesRelease
   extends Struct.CollectionTypeSchema {
   collectionName: 'strapi_releases';
@@ -2086,6 +2133,7 @@ declare module '@strapi/strapi' {
       'api::team.team': ApiTeamTeam;
       'api::testimonial.testimonial': ApiTestimonialTestimonial;
       'api::timeline-entry.timeline-entry': ApiTimelineEntryTimelineEntry;
+      'api::tools-and-technology.tools-and-technology': ApiToolsAndTechnologyToolsAndTechnology;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;
