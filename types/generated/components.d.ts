@@ -71,6 +71,25 @@ export interface SharedLeadershipBlock extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedLeadershipMember extends Struct.ComponentSchema {
+  collectionName: 'components_shared_leadership_members';
+  info: {
+    description: 'A leadership team member with full detail fields';
+    displayName: 'Leadership Member';
+    icon: 'user';
+  };
+  attributes: {
+    bio: Schema.Attribute.Text;
+    ctaText: Schema.Attribute.String;
+    ctaUrl: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
+    linkedinUrl: Schema.Attribute.String;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
+    position: Schema.Attribute.String & Schema.Attribute.Required;
+    quote: Schema.Attribute.Text;
+  };
+}
+
 export interface SharedLifeImage extends Struct.ComponentSchema {
   collectionName: 'components_shared_life_images';
   info: {
@@ -243,6 +262,7 @@ declare module '@strapi/strapi' {
       'shared.footer-column': SharedFooterColumn;
       'shared.hero-featured': SharedHeroFeatured;
       'shared.leadership-block': SharedLeadershipBlock;
+      'shared.leadership-member': SharedLeadershipMember;
       'shared.life-image': SharedLifeImage;
       'shared.link': SharedLink;
       'shared.media': SharedMedia;

@@ -815,6 +815,38 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiLeadershipPageLeadershipPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'leadership_pages';
+  info: {
+    displayName: 'Leadership Page';
+    pluralName: 'leadership-pages';
+    singularName: 'leadership-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    groupPhoto: Schema.Attribute.Media<'images'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::leadership-page.leadership-page'
+    > &
+      Schema.Attribute.Private;
+    members: Schema.Attribute.Component<'shared.leadership-member', true>;
+    pageDescription: Schema.Attribute.Text;
+    pageTitle: Schema.Attribute.String & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiLocationListLocationList
   extends Struct.CollectionTypeSchema {
   collectionName: 'location_lists';
@@ -2114,6 +2146,7 @@ declare module '@strapi/strapi' {
       'api::expertise.expertise': ApiExpertiseExpertise;
       'api::global.global': ApiGlobalGlobal;
       'api::homepage.homepage': ApiHomepageHomepage;
+      'api::leadership-page.leadership-page': ApiLeadershipPageLeadershipPage;
       'api::location-list.location-list': ApiLocationListLocationList;
       'api::location.location': ApiLocationLocation;
       'api::news-page.news-page': ApiNewsPageNewsPage;

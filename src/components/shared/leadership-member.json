@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_shared_leadership_members",
+  "info": {
+    "displayName": "Leadership Member",
+    "icon": "user",
+    "description": "A leadership team member with full detail fields"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "position": {
+      "type": "string",
+      "required": true
+    },
+    "quote": {
+      "type": "text"
+    },
+    "bio": {
+      "type": "text"
+    },
+    "linkedinUrl": {
+      "type": "string"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaUrl": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["images"]
+    }
+  }
+}
