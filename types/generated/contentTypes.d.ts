@@ -815,6 +815,73 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiInsightInsight extends Struct.CollectionTypeSchema {
+  collectionName: 'insights';
+  info: {
+    displayName: 'Insight';
+    pluralName: 'insights';
+    singularName: 'insight';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    category: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    date: Schema.Attribute.Date;
+    description: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::insight.insight'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiInsightsPageInsightsPage extends Struct.SingleTypeSchema {
+  collectionName: 'insights_pages';
+  info: {
+    displayName: 'Insights Page';
+    pluralName: 'insights-pages';
+    singularName: 'insights-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    featuredCTA: Schema.Attribute.String;
+    featuredInsights: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::insight.insight'
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::insights-page.insights-page'
+    > &
+      Schema.Attribute.Private;
+    pageDescription: Schema.Attribute.Text;
+    pageTitle: Schema.Attribute.String & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiLeadershipPageLeadershipPage
   extends Struct.SingleTypeSchema {
   collectionName: 'leadership_pages';
@@ -2146,6 +2213,8 @@ declare module '@strapi/strapi' {
       'api::expertise.expertise': ApiExpertiseExpertise;
       'api::global.global': ApiGlobalGlobal;
       'api::homepage.homepage': ApiHomepageHomepage;
+      'api::insight.insight': ApiInsightInsight;
+      'api::insights-page.insights-page': ApiInsightsPageInsightsPage;
       'api::leadership-page.leadership-page': ApiLeadershipPageLeadershipPage;
       'api::location-list.location-list': ApiLocationListLocationList;
       'api::location.location': ApiLocationLocation;

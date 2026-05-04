@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "insights_pages",
+  "info": {
+    "singularName": "insights-page",
+    "pluralName": "insights-pages",
+    "displayName": "Insights Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pageTitle": {
+      "type": "string",
+      "required": true
+    },
+    "pageDescription": {
+      "type": "text"
+    },
+    "featuredCTA": {
+      "type": "string"
+    },
+    "featuredInsights": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::insight.insight"
+    }
+  }
+}
