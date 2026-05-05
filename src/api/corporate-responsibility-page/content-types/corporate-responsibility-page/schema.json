@@ -1,0 +1,131 @@
+{
+  "kind": "singleType",
+  "collectionName": "corporate_responsibility_pages",
+  "info": {
+    "singularName": "corporate-responsibility-page",
+    "pluralName": "corporate-responsibility-pages",
+    "displayName": "Corporate Responsibility Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTitle": {
+      "type": "text",
+      "required": true
+    },
+    "heroText": {
+      "type": "text"
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images", "videos", "files"]
+    },
+    "heroVideo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images", "videos", "files"]
+    },
+    "heroCtaText": {
+      "type": "string"
+    },
+    "heroCtaUrl": {
+      "type": "string"
+    },
+    "quoteText": {
+      "type": "text"
+    },
+    "quoteAuthorName": {
+      "type": "string"
+    },
+    "quoteAuthorPosition": {
+      "type": "string"
+    },
+    "quoteAuthorImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "pillarsTitle": {
+      "type": "string"
+    },
+    "pillarsDescription": {
+      "type": "text"
+    },
+    "pillarsWatermark": {
+      "type": "string"
+    },
+    "pillars": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cr-pillar.cr-pillar"
+    },
+    "foundationTitle": {
+      "type": "string"
+    },
+    "foundationDescription": {
+      "type": "text"
+    },
+    "foundationImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "foundationCtaText": {
+      "type": "string"
+    },
+    "foundationCtaUrl": {
+      "type": "string"
+    },
+    "impactTitle": {
+      "type": "string"
+    },
+    "impactWatermark": {
+      "type": "string"
+    },
+    "impactCtaText": {
+      "type": "string"
+    },
+    "impactCtaUrl": {
+      "type": "string"
+    },
+    "metrics": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::cr-metric.cr-metric"
+    },
+    "newsTitle": {
+      "type": "string"
+    },
+    "newsWatermark": {
+      "type": "string"
+    },
+    "newsCtaText": {
+      "type": "string"
+    },
+    "newsCtaUrl": {
+      "type": "string"
+    },
+    "featuredNews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::news.news"
+    },
+    "executivesTitle": {
+      "type": "string"
+    },
+    "executivesDescription": {
+      "type": "text"
+    },
+    "executivesWatermark": {
+      "type": "string"
+    },
+    "executives": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::team.team"
+    }
+  }
+}

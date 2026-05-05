@@ -582,6 +582,128 @@ export interface ApiContactContact extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiCorporateResponsibilityPageCorporateResponsibilityPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'corporate_responsibility_pages';
+  info: {
+    displayName: 'Corporate Responsibility Page';
+    pluralName: 'corporate-responsibility-pages';
+    singularName: 'corporate-responsibility-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    executives: Schema.Attribute.Relation<'oneToMany', 'api::team.team'>;
+    executivesDescription: Schema.Attribute.Text;
+    executivesTitle: Schema.Attribute.String;
+    executivesWatermark: Schema.Attribute.String;
+    featuredNews: Schema.Attribute.Relation<'oneToMany', 'api::news.news'>;
+    foundationCtaText: Schema.Attribute.String;
+    foundationCtaUrl: Schema.Attribute.String;
+    foundationDescription: Schema.Attribute.Text;
+    foundationImage: Schema.Attribute.Media<'images'>;
+    foundationTitle: Schema.Attribute.String;
+    heroCtaText: Schema.Attribute.String;
+    heroCtaUrl: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Media<'images' | 'videos' | 'files'>;
+    heroText: Schema.Attribute.Text;
+    heroTitle: Schema.Attribute.Text & Schema.Attribute.Required;
+    heroVideo: Schema.Attribute.Media<'images' | 'videos' | 'files'>;
+    impactCtaText: Schema.Attribute.String;
+    impactCtaUrl: Schema.Attribute.String;
+    impactTitle: Schema.Attribute.String;
+    impactWatermark: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::corporate-responsibility-page.corporate-responsibility-page'
+    > &
+      Schema.Attribute.Private;
+    metrics: Schema.Attribute.Relation<'oneToMany', 'api::cr-metric.cr-metric'>;
+    newsCtaText: Schema.Attribute.String;
+    newsCtaUrl: Schema.Attribute.String;
+    newsTitle: Schema.Attribute.String;
+    newsWatermark: Schema.Attribute.String;
+    pillars: Schema.Attribute.Relation<'oneToMany', 'api::cr-pillar.cr-pillar'>;
+    pillarsDescription: Schema.Attribute.Text;
+    pillarsTitle: Schema.Attribute.String;
+    pillarsWatermark: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    quoteAuthorImage: Schema.Attribute.Media<'images'>;
+    quoteAuthorName: Schema.Attribute.String;
+    quoteAuthorPosition: Schema.Attribute.String;
+    quoteText: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiCrMetricCrMetric extends Struct.CollectionTypeSchema {
+  collectionName: 'cr_metrics';
+  info: {
+    displayName: 'CR Metric';
+    pluralName: 'cr-metrics';
+    singularName: 'cr-metric';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::cr-metric.cr-metric'
+    > &
+      Schema.Attribute.Private;
+    order: Schema.Attribute.Integer;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    value: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface ApiCrPillarCrPillar extends Struct.CollectionTypeSchema {
+  collectionName: 'cr_pillars';
+  info: {
+    displayName: 'CR Pillar';
+    pluralName: 'cr-pillars';
+    singularName: 'cr-pillar';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    image: Schema.Attribute.Media<'images'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::cr-pillar.cr-pillar'
+    > &
+      Schema.Attribute.Private;
+    order: Schema.Attribute.Integer;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiExperiencePageExperiencePage
   extends Struct.SingleTypeSchema {
   collectionName: 'experience_pages';
@@ -2208,6 +2330,9 @@ declare module '@strapi/strapi' {
       'api::about.about': ApiAboutAbout;
       'api::contact-submission.contact-submission': ApiContactSubmissionContactSubmission;
       'api::contact.contact': ApiContactContact;
+      'api::corporate-responsibility-page.corporate-responsibility-page': ApiCorporateResponsibilityPageCorporateResponsibilityPage;
+      'api::cr-metric.cr-metric': ApiCrMetricCrMetric;
+      'api::cr-pillar.cr-pillar': ApiCrPillarCrPillar;
       'api::experience-page.experience-page': ApiExperiencePageExperiencePage;
       'api::experience-step.experience-step': ApiExperienceStepExperienceStep;
       'api::expertise.expertise': ApiExpertiseExpertise;
