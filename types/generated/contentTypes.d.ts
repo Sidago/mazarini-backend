@@ -503,6 +503,12 @@ export interface ApiColabPageColabPage extends Struct.SingleTypeSchema {
     elementsTitle: Schema.Attribute.String;
     elementsWatermark: Schema.Attribute.String;
     featuredNews: Schema.Attribute.Relation<'manyToMany', 'api::news.news'>;
+    heroCtaText: Schema.Attribute.String;
+    heroCtaUrl: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Media<'images'>;
+    heroText: Schema.Attribute.Text;
+    heroTitle: Schema.Attribute.String;
+    heroVideo: Schema.Attribute.Media<'videos'>;
     innovations: Schema.Attribute.Component<'colab.innovation-item', true>;
     innovationTitle: Schema.Attribute.String;
     innovationWatermark: Schema.Attribute.String;
