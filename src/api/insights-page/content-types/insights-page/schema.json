@@ -25,6 +25,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::insight.insight"
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
     }
   }
 }

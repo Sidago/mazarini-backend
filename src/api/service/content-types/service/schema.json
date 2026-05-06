@@ -67,6 +67,11 @@
       "relation": "manyToMany",
       "target": "api::team.team",
       "mappedBy": "services"
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
     }
   }
 }

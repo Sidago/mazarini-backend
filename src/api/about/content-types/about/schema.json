@@ -95,6 +95,11 @@
       "type": "component",
       "component": "shared.life-image",
       "repeatable": true
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
     }
   }
 }

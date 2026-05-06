@@ -21,12 +21,20 @@
     "heroImage": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images", "videos", "files"]
+      "allowedTypes": [
+        "images",
+        "videos",
+        "files"
+      ]
     },
     "heroVideo": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images", "videos", "files"]
+      "allowedTypes": [
+        "images",
+        "videos",
+        "files"
+      ]
     },
     "heroCtaText": {
       "type": "string"
@@ -46,7 +54,9 @@
     "quoteAuthorImage": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "pillarsTitle": {
       "type": "string"
@@ -71,7 +81,9 @@
     "foundationImage": {
       "type": "media",
       "multiple": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "foundationCtaText": {
       "type": "string"
@@ -126,6 +138,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::team.team"
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
     }
   }
 }

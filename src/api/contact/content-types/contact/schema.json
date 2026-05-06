@@ -47,6 +47,11 @@
     },
     "formDescription": {
       "type": "text"
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
     }
   }
 }

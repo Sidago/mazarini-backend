@@ -172,6 +172,11 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::news.news"
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
     }
   }
 }

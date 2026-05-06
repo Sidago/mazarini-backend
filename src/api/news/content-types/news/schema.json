@@ -39,6 +39,11 @@
     },
     "publishedDate": {
       "type": "date"
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
     }
   }
 }

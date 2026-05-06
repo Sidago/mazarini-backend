@@ -54,6 +54,11 @@
       "type": "component",
       "repeatable": true,
       "component": "shared.stat"
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
     }
   }
 }

@@ -41,6 +41,11 @@
     },
     "detail_discriptions": {
       "type": "blocks"
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
     }
   }
 }
