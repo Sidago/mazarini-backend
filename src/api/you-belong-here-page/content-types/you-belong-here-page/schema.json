@@ -1,0 +1,180 @@
+{
+  "kind": "singleType",
+  "collectionName": "you_belong_here_pages",
+  "info": {
+    "singularName": "you-belong-here-page",
+    "pluralName": "you-belong-here-pages",
+    "displayName": "You Belong Here Page",
+    "description": "You Belong Here page content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTitle": {
+      "type": "string"
+    },
+    "heroText": {
+      "type": "text"
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "heroVideo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["videos"]
+    },
+    "heroCtaText": {
+      "type": "string"
+    },
+    "heroCtaUrl": {
+      "type": "string"
+    },
+    "quoteText": {
+      "type": "text"
+    },
+    "quoteAuthorName": {
+      "type": "string"
+    },
+    "quoteAuthorPosition": {
+      "type": "string"
+    },
+    "quoteAuthorImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "belongingTitle": {
+      "type": "string"
+    },
+    "belongingDescription": {
+      "type": "text"
+    },
+    "belongingWatermark": {
+      "type": "string"
+    },
+    "belongingItems": {
+      "type": "component",
+      "component": "shared.accordion-item",
+      "repeatable": true
+    },
+    "missionTitle": {
+      "type": "string"
+    },
+    "missionDescription": {
+      "type": "text"
+    },
+    "missionWatermark": {
+      "type": "string"
+    },
+    "missionItems": {
+      "type": "component",
+      "component": "shared.accordion-item",
+      "repeatable": true
+    },
+    "subcontractorsText": {
+      "type": "text"
+    },
+    "subcontractorsCtaText": {
+      "type": "string"
+    },
+    "subcontractorsCtaUrl": {
+      "type": "string"
+    },
+    "subcontractorsImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "accomplishmentsTitle": {
+      "type": "string"
+    },
+    "accomplishmentsSubtitle": {
+      "type": "string"
+    },
+    "accomplishmentsWatermark": {
+      "type": "string"
+    },
+    "accomplishments": {
+      "type": "component",
+      "component": "shared.accordion-item",
+      "repeatable": true
+    },
+    "goalsTitle": {
+      "type": "string"
+    },
+    "goalsWatermark": {
+      "type": "string"
+    },
+    "goalsDescription": {
+      "type": "text"
+    },
+    "goals": {
+      "type": "component",
+      "component": "shared.accordion-item",
+      "repeatable": true
+    },
+    "careersText": {
+      "type": "text"
+    },
+    "careersCtaText": {
+      "type": "string"
+    },
+    "careersCtaUrl": {
+      "type": "string"
+    },
+    "careersImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "careersWatermark": {
+      "type": "string"
+    },
+    "newsTitle": {
+      "type": "string"
+    },
+    "newsWatermark": {
+      "type": "string"
+    },
+    "newsCtaText": {
+      "type": "string"
+    },
+    "newsCtaUrl": {
+      "type": "string"
+    },
+    "featuredNews": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::news.news"
+    },
+    "leadershipTitle": {
+      "type": "string"
+    },
+    "leadershipDescription": {
+      "type": "text"
+    },
+    "leadershipWatermark": {
+      "type": "string"
+    },
+    "featuredLeadership": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::team.team"
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

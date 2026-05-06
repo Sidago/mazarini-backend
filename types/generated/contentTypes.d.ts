@@ -1836,6 +1836,83 @@ export interface ApiToolsAndTechnologyToolsAndTechnology
   };
 }
 
+export interface ApiYouBelongHerePageYouBelongHerePage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'you_belong_here_pages';
+  info: {
+    description: 'You Belong Here page content';
+    displayName: 'You Belong Here Page';
+    pluralName: 'you-belong-here-pages';
+    singularName: 'you-belong-here-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    accomplishments: Schema.Attribute.Component<'shared.accordion-item', true>;
+    accomplishmentsSubtitle: Schema.Attribute.String;
+    accomplishmentsTitle: Schema.Attribute.String;
+    accomplishmentsWatermark: Schema.Attribute.String;
+    belongingDescription: Schema.Attribute.Text;
+    belongingItems: Schema.Attribute.Component<'shared.accordion-item', true>;
+    belongingTitle: Schema.Attribute.String;
+    belongingWatermark: Schema.Attribute.String;
+    careersCtaText: Schema.Attribute.String;
+    careersCtaUrl: Schema.Attribute.String;
+    careersImage: Schema.Attribute.Media<'images'>;
+    careersText: Schema.Attribute.Text;
+    careersWatermark: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    featuredLeadership: Schema.Attribute.Relation<
+      'manyToMany',
+      'api::team.team'
+    >;
+    featuredNews: Schema.Attribute.Relation<'manyToMany', 'api::news.news'>;
+    goals: Schema.Attribute.Component<'shared.accordion-item', true>;
+    goalsDescription: Schema.Attribute.Text;
+    goalsTitle: Schema.Attribute.String;
+    goalsWatermark: Schema.Attribute.String;
+    heroCtaText: Schema.Attribute.String;
+    heroCtaUrl: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Media<'images'>;
+    heroText: Schema.Attribute.Text;
+    heroTitle: Schema.Attribute.String;
+    heroVideo: Schema.Attribute.Media<'videos'>;
+    leadershipDescription: Schema.Attribute.Text;
+    leadershipTitle: Schema.Attribute.String;
+    leadershipWatermark: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::you-belong-here-page.you-belong-here-page'
+    > &
+      Schema.Attribute.Private;
+    missionDescription: Schema.Attribute.Text;
+    missionItems: Schema.Attribute.Component<'shared.accordion-item', true>;
+    missionTitle: Schema.Attribute.String;
+    missionWatermark: Schema.Attribute.String;
+    newsCtaText: Schema.Attribute.String;
+    newsCtaUrl: Schema.Attribute.String;
+    newsTitle: Schema.Attribute.String;
+    newsWatermark: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    quoteAuthorImage: Schema.Attribute.Media<'images'>;
+    quoteAuthorName: Schema.Attribute.String;
+    quoteAuthorPosition: Schema.Attribute.String;
+    quoteText: Schema.Attribute.Text;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    subcontractorsCtaText: Schema.Attribute.String;
+    subcontractorsCtaUrl: Schema.Attribute.String;
+    subcontractorsImage: Schema.Attribute.Media<'images'>;
+    subcontractorsText: Schema.Attribute.Text;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface PluginContentReleasesRelease
   extends Struct.CollectionTypeSchema {
   collectionName: 'strapi_releases';
@@ -2381,6 +2458,7 @@ declare module '@strapi/strapi' {
       'api::testimonial.testimonial': ApiTestimonialTestimonial;
       'api::timeline-entry.timeline-entry': ApiTimelineEntryTimelineEntry;
       'api::tools-and-technology.tools-and-technology': ApiToolsAndTechnologyToolsAndTechnology;
+      'api::you-belong-here-page.you-belong-here-page': ApiYouBelongHerePageYouBelongHerePage;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;
