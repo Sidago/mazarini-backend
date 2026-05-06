@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_colab_challenge_cards",
+  "info": {
+    "displayName": "ChallengeCard",
+    "description": "CoLab challenge card with image and hover description"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

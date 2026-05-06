@@ -1,0 +1,114 @@
+{
+  "kind": "singleType",
+  "collectionName": "colab_pages",
+  "info": {
+    "singularName": "colab-page",
+    "pluralName": "colab-pages",
+    "displayName": "CoLab Page",
+    "description": "CoLab project page content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "introTitle": { "type": "string" },
+    "introText": { "type": "text" },
+    "introImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "introVideo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["videos"]
+    },
+    "introCtaText": { "type": "string" },
+    "introCtaUrl": { "type": "string" },
+    "introLocation": { "type": "string" },
+    "introClient": { "type": "string" },
+    "introProjectTypes": { "type": "text" },
+    "introKeyPartners": { "type": "text" },
+    "introCertifications": { "type": "text" },
+    "introAwards": { "type": "text" },
+
+    "numbersTitle": { "type": "string" },
+    "numbersWatermark": { "type": "string" },
+    "stats": {
+      "type": "component",
+      "component": "shared.stat",
+      "repeatable": true
+    },
+
+    "visionTitle": { "type": "string" },
+    "visionSubtitle": { "type": "string" },
+    "visionWatermark": { "type": "string" },
+    "visionItems": {
+      "type": "component",
+      "component": "shared.accordion-item",
+      "repeatable": true
+    },
+
+    "elementsTitle": { "type": "string" },
+    "elementsWatermark": { "type": "string" },
+    "elementCards": {
+      "type": "component",
+      "component": "colab.element-card",
+      "repeatable": true
+    },
+
+    "challengesTitle": { "type": "string" },
+    "challengesDescription": { "type": "text" },
+    "challengesWatermark": { "type": "string" },
+    "challengeCards": {
+      "type": "component",
+      "component": "colab.challenge-card",
+      "repeatable": true
+    },
+
+    "innovationTitle": { "type": "string" },
+    "innovationWatermark": { "type": "string" },
+    "innovations": {
+      "type": "component",
+      "component": "colab.innovation-item",
+      "repeatable": true
+    },
+
+    "resultsTitle": { "type": "string" },
+    "resultsWatermark": { "type": "string" },
+    "resultsImages": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+
+    "teamTitle": { "type": "string" },
+    "teamDescription": { "type": "text" },
+    "teamWatermark": { "type": "string" },
+    "teamMembers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::team.team"
+    },
+
+    "newsTitle": { "type": "string" },
+    "newsWatermark": { "type": "string" },
+    "newsCtaText": { "type": "string" },
+    "newsCtaUrl": { "type": "string" },
+    "featuredNews": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::news.news"
+    },
+
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

@@ -480,6 +480,76 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiColabPageColabPage extends Struct.SingleTypeSchema {
+  collectionName: 'colab_pages';
+  info: {
+    description: 'CoLab project page content';
+    displayName: 'CoLab Page';
+    pluralName: 'colab-pages';
+    singularName: 'colab-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    challengeCards: Schema.Attribute.Component<'colab.challenge-card', true>;
+    challengesDescription: Schema.Attribute.Text;
+    challengesTitle: Schema.Attribute.String;
+    challengesWatermark: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    elementCards: Schema.Attribute.Component<'colab.element-card', true>;
+    elementsTitle: Schema.Attribute.String;
+    elementsWatermark: Schema.Attribute.String;
+    featuredNews: Schema.Attribute.Relation<'manyToMany', 'api::news.news'>;
+    innovations: Schema.Attribute.Component<'colab.innovation-item', true>;
+    innovationTitle: Schema.Attribute.String;
+    innovationWatermark: Schema.Attribute.String;
+    introAwards: Schema.Attribute.Text;
+    introCertifications: Schema.Attribute.Text;
+    introClient: Schema.Attribute.String;
+    introCtaText: Schema.Attribute.String;
+    introCtaUrl: Schema.Attribute.String;
+    introImage: Schema.Attribute.Media<'images'>;
+    introKeyPartners: Schema.Attribute.Text;
+    introLocation: Schema.Attribute.String;
+    introProjectTypes: Schema.Attribute.Text;
+    introText: Schema.Attribute.Text;
+    introTitle: Schema.Attribute.String;
+    introVideo: Schema.Attribute.Media<'videos'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::colab-page.colab-page'
+    > &
+      Schema.Attribute.Private;
+    newsCtaText: Schema.Attribute.String;
+    newsCtaUrl: Schema.Attribute.String;
+    newsTitle: Schema.Attribute.String;
+    newsWatermark: Schema.Attribute.String;
+    numbersTitle: Schema.Attribute.String;
+    numbersWatermark: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    resultsImages: Schema.Attribute.Media<'images', true>;
+    resultsTitle: Schema.Attribute.String;
+    resultsWatermark: Schema.Attribute.String;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    stats: Schema.Attribute.Component<'shared.stat', true>;
+    teamDescription: Schema.Attribute.Text;
+    teamMembers: Schema.Attribute.Relation<'manyToMany', 'api::team.team'>;
+    teamTitle: Schema.Attribute.String;
+    teamWatermark: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    visionItems: Schema.Attribute.Component<'shared.accordion-item', true>;
+    visionSubtitle: Schema.Attribute.String;
+    visionTitle: Schema.Attribute.String;
+    visionWatermark: Schema.Attribute.String;
+  };
+}
+
 export interface ApiContactSubmissionContactSubmission
   extends Struct.CollectionTypeSchema {
   collectionName: 'contact_submissions';
@@ -2472,6 +2542,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::about.about': ApiAboutAbout;
+      'api::colab-page.colab-page': ApiColabPageColabPage;
       'api::contact-submission.contact-submission': ApiContactSubmissionContactSubmission;
       'api::contact.contact': ApiContactContact;
       'api::corporate-responsibility-page.corporate-responsibility-page': ApiCorporateResponsibilityPageCorporateResponsibilityPage;

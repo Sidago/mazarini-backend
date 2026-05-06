@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_colab_innovation_items",
+  "info": {
+    "displayName": "InnovationItem",
+    "description": "CoLab innovation item with title, description, and image"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

@@ -1,5 +1,48 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface ColabChallengeCard extends Struct.ComponentSchema {
+  collectionName: 'components_colab_challenge_cards';
+  info: {
+    description: 'CoLab challenge card with image and hover description';
+    displayName: 'ChallengeCard';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images'>;
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+    order: Schema.Attribute.Integer;
+  };
+}
+
+export interface ColabElementCard extends Struct.ComponentSchema {
+  collectionName: 'components_colab_element_cards';
+  info: {
+    description: 'CoLab element tab with image and content';
+    displayName: 'ElementCard';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    description2: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images'>;
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+    title: Schema.Attribute.String;
+    title2: Schema.Attribute.String;
+  };
+}
+
+export interface ColabInnovationItem extends Struct.ComponentSchema {
+  collectionName: 'components_colab_innovation_items';
+  info: {
+    description: 'CoLab innovation item with title, description, and image';
+    displayName: 'InnovationItem';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images'>;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface SharedAccordionItem extends Struct.ComponentSchema {
   collectionName: 'components_shared_accordion_items';
   info: {
@@ -272,6 +315,9 @@ export interface SubNavSubNav extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'colab.challenge-card': ColabChallengeCard;
+      'colab.element-card': ColabElementCard;
+      'colab.innovation-item': ColabInnovationItem;
       'shared.accordion-item': SharedAccordionItem;
       'shared.culture-card': SharedCultureCard;
       'shared.footer-column': SharedFooterColumn;
