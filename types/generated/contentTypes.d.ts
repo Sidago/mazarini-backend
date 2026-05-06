@@ -1648,6 +1648,53 @@ export interface ApiSubcontractorsPageSubcontractorsPage
   };
 }
 
+export interface ApiSustainabilitySustainability
+  extends Struct.SingleTypeSchema {
+  collectionName: 'sustainabilities';
+  info: {
+    description: 'Sustainability page content';
+    displayName: 'Sustainability Page';
+    pluralName: 'sustainabilities';
+    singularName: 'sustainability';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    accordionDetails: Schema.Attribute.Text;
+    accordionImage: Schema.Attribute.Media<'images'>;
+    accordionItems: Schema.Attribute.Component<'shared.accordion-item', true>;
+    accordionTitle: Schema.Attribute.String;
+    carouselCards: Schema.Attribute.Component<'shared.culture-card', true>;
+    carouselText: Schema.Attribute.Text;
+    carouselTitle: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    heroImage: Schema.Attribute.Media<'images' | 'videos'>;
+    heroText: Schema.Attribute.Text;
+    heroTitle: Schema.Attribute.String;
+    heroVideo: Schema.Attribute.Media<'videos'>;
+    leadershipCards: Schema.Attribute.Relation<'oneToMany', 'api::team.team'>;
+    leadershipDetails: Schema.Attribute.Text;
+    leadershipParallaxText: Schema.Attribute.String;
+    leadershipTitle: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::sustainability.sustainability'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    stats: Schema.Attribute.Component<'shared.stat', true>;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiTeamPageTeamPage extends Struct.SingleTypeSchema {
   collectionName: 'team_pages';
   info: {
@@ -2453,6 +2500,7 @@ declare module '@strapi/strapi' {
       'api::services-page.services-page': ApiServicesPageServicesPage;
       'api::sub-nav-item.sub-nav-item': ApiSubNavItemSubNavItem;
       'api::subcontractors-page.subcontractors-page': ApiSubcontractorsPageSubcontractorsPage;
+      'api::sustainability.sustainability': ApiSustainabilitySustainability;
       'api::team-page.team-page': ApiTeamPageTeamPage;
       'api::team.team': ApiTeamTeam;
       'api::testimonial.testimonial': ApiTestimonialTestimonial;

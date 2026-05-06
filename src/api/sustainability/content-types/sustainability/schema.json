@@ -1,0 +1,89 @@
+{
+  "kind": "singleType",
+  "collectionName": "sustainabilities",
+  "info": {
+    "singularName": "sustainability",
+    "pluralName": "sustainabilities",
+    "displayName": "Sustainability Page",
+    "description": "Sustainability page content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "heroTitle": {
+      "type": "string"
+    },
+    "heroText": {
+      "type": "text"
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "videos"]
+    },
+    "heroVideo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["videos"]
+    },
+    "accordionTitle": {
+      "type": "string"
+    },
+    "accordionDetails": {
+      "type": "text"
+    },
+    "accordionImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "accordionItems": {
+      "type": "component",
+      "component": "shared.accordion-item",
+      "repeatable": true
+    },
+    "stats": {
+      "type": "component",
+      "component": "shared.stat",
+      "repeatable": true
+    },
+    "carouselTitle": {
+      "type": "string"
+    },
+    "carouselText": {
+      "type": "text"
+    },
+    "carouselCards": {
+      "type": "component",
+      "component": "shared.culture-card",
+      "repeatable": true
+    },
+    "leadershipTitle": {
+      "type": "string"
+    },
+    "leadershipDetails": {
+      "type": "text"
+    },
+    "leadershipParallaxText": {
+      "type": "string"
+    },
+    "leadershipCards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::team.team"
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_shared_related_items",
+  "info": {
+    "displayName": "RelatedItem",
+    "description": "Card for You Might Be Interested In section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "url": {
+      "type": "string",
+      "required": true
+    },
+    "tag": {
+      "type": "string"
+    }
+  }
+}

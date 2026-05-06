@@ -155,6 +155,21 @@ export interface SharedQuote extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedRelatedItem extends Struct.ComponentSchema {
+  collectionName: 'components_shared_related_items';
+  info: {
+    description: 'Card for You Might Be Interested In section';
+    displayName: 'RelatedItem';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images'>;
+    tag: Schema.Attribute.String;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    url: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface SharedRichText extends Struct.ComponentSchema {
   collectionName: 'components_shared_rich_texts';
   info: {
@@ -268,6 +283,7 @@ declare module '@strapi/strapi' {
       'shared.media': SharedMedia;
       'shared.onboarding-item': SharedOnboardingItem;
       'shared.quote': SharedQuote;
+      'shared.related-item': SharedRelatedItem;
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.social-link': SharedSocialLink;
