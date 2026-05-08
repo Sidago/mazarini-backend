@@ -31,6 +31,32 @@
     "type": {
       "type": "string"
     },
+    "client": {
+      "type": "string"
+    },
+    "contractValue": {
+      "type": "string"
+    },
+    "squareFeet": {
+      "type": "string"
+    },
+    "yearCompleted": {
+      "type": "string"
+    },
+    "schedule": {
+      "type": "string"
+    },
+    "keyPartners": {
+      "type": "string"
+    },
+    "projectTypes": {
+      "type": "json"
+    },
+    "teams": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::team.team"
+    },
     "image": {
       "type": "media",
       "multiple": true,

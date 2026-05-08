@@ -1303,12 +1303,15 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
   };
   attributes: {
     category: Schema.Attribute.String & Schema.Attribute.Required;
+    client: Schema.Attribute.String;
+    contractValue: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     description: Schema.Attribute.Text & Schema.Attribute.Required;
     detail_discriptions: Schema.Attribute.Blocks;
     image: Schema.Attribute.Media<'images', true> & Schema.Attribute.Required;
+    keyPartners: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -1316,8 +1319,12 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     location: Schema.Attribute.String;
+    projectTypes: Schema.Attribute.JSON;
     publishedAt: Schema.Attribute.DateTime;
+    schedule: Schema.Attribute.String;
     seo: Schema.Attribute.Component<'shared.seo', false>;
+    squareFeet: Schema.Attribute.String;
+    teams: Schema.Attribute.Relation<'manyToMany', 'api::team.team'>;
     title: Schema.Attribute.String &
       Schema.Attribute.Required &
       Schema.Attribute.Unique;
@@ -1325,6 +1332,7 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    yearCompleted: Schema.Attribute.String;
   };
 }
 
