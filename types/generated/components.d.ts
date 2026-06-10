@@ -120,7 +120,7 @@ export interface SharedLeadershipBlock extends Struct.ComponentSchema {
   attributes: {
     ctaText: Schema.Attribute.String;
     ctaUrl: Schema.Attribute.String;
-    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    description: Schema.Attribute.Text;
     image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
     watermark: Schema.Attribute.String;
   };

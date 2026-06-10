@@ -17,8 +17,7 @@
       "allowedTypes": ["images"]
     },
     "description": {
-      "type": "text",
-      "required": true
+      "type": "text"
     },
     "ctaText": {
       "type": "string"
