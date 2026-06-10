@@ -39,6 +39,11 @@
       "type": "component",
       "component": "shared.link",
       "repeatable": false
+    },
+    "milestones": {
+      "type": "component",
+      "component": "timeline.milestone",
+      "repeatable": true
     }
   }
 }

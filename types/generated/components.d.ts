@@ -55,6 +55,18 @@ export interface SharedAccordionItem extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedCoreValue extends Struct.ComponentSchema {
+  collectionName: 'components_shared_core_values';
+  info: {
+    description: 'A single core value with title and description';
+    displayName: 'Core Value';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface SharedCultureCard extends Struct.ComponentSchema {
   collectionName: 'components_shared_culture_cards';
   info: {
@@ -312,6 +324,18 @@ export interface SubNavSubNav extends Struct.ComponentSchema {
   };
 }
 
+export interface TimelineMilestone extends Struct.ComponentSchema {
+  collectionName: 'components_timeline_milestones';
+  info: {
+    description: 'A significant event within a timeline decade';
+    displayName: 'Milestone';
+  };
+  attributes: {
+    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    year: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -319,6 +343,7 @@ declare module '@strapi/strapi' {
       'colab.element-card': ColabElementCard;
       'colab.innovation-item': ColabInnovationItem;
       'shared.accordion-item': SharedAccordionItem;
+      'shared.core-value': SharedCoreValue;
       'shared.culture-card': SharedCultureCard;
       'shared.footer-column': SharedFooterColumn;
       'shared.hero-featured': SharedHeroFeatured;
@@ -337,6 +362,7 @@ declare module '@strapi/strapi' {
       'shared.subcontractor-quote': SharedSubcontractorQuote;
       'shared.trade-partner-tab': SharedTradePartnerTab;
       'sub-nav.sub-nav': SubNavSubNav;
+      'timeline.milestone': TimelineMilestone;
     }
   }
 }

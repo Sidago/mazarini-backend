@@ -96,6 +96,19 @@
       "component": "shared.life-image",
       "repeatable": true
     },
+    "coreValuesImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "coreValues": {
+      "type": "component",
+      "component": "shared.core-value",
+      "repeatable": true
+    },
     "seo": {
       "type": "component",
       "component": "shared.seo",

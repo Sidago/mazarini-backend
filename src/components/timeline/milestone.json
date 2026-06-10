@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_timeline_milestones",
+  "info": {
+    "displayName": "Milestone",
+    "description": "A significant event within a timeline decade"
+  },
+  "options": {},
+  "attributes": {
+    "year": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

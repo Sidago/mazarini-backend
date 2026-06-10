@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_core_values",
+  "info": {
+    "displayName": "Core Value",
+    "description": "A single core value with title and description"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
