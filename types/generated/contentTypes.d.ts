@@ -1374,6 +1374,37 @@ export interface ApiProjectsPageProjectsPage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiRdInnovationItemRdInnovationItem
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'rd_innovation_items';
+  info: {
+    displayName: 'R&D Innovation Item';
+    pluralName: 'rd-innovation-items';
+    singularName: 'rd-innovation-item';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::rd-innovation-item.rd-innovation-item'
+    > &
+      Schema.Attribute.Private;
+    order: Schema.Attribute.Integer;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiRdPageRdPage extends Struct.SingleTypeSchema {
   collectionName: 'rd_pages';
   info: {
@@ -1407,6 +1438,13 @@ export interface ApiRdPageRdPage extends Struct.SingleTypeSchema {
     heroText: Schema.Attribute.Text;
     heroTitle: Schema.Attribute.Text & Schema.Attribute.Required;
     heroVideo: Schema.Attribute.Media<'images' | 'videos' | 'files'>;
+    innovationDescription: Schema.Attribute.Text;
+    innovationItems: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::rd-innovation-item.rd-innovation-item'
+    >;
+    innovationTitle: Schema.Attribute.String;
+    innovationWatermark: Schema.Attribute.String;
     leadershipDescription: Schema.Attribute.Text;
     leadershipTitle: Schema.Attribute.String;
     leadershipWatermark: Schema.Attribute.String;
@@ -2580,6 +2618,7 @@ declare module '@strapi/strapi' {
       'api::our-client.our-client': ApiOurClientOurClient;
       'api::project.project': ApiProjectProject;
       'api::projects-page.projects-page': ApiProjectsPageProjectsPage;
+      'api::rd-innovation-item.rd-innovation-item': ApiRdInnovationItemRdInnovationItem;
       'api::rd-page.rd-page': ApiRdPageRdPage;
       'api::rd-pillar.rd-pillar': ApiRdPillarRdPillar;
       'api::rd-why-card.rd-why-card': ApiRdWhyCardRdWhyCard;

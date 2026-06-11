@@ -84,6 +84,20 @@
       "relation": "oneToMany",
       "target": "api::project.project"
     },
+    "innovationTitle": {
+      "type": "string"
+    },
+    "innovationDescription": {
+      "type": "text"
+    },
+    "innovationWatermark": {
+      "type": "string"
+    },
+    "innovationItems": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::rd-innovation-item.rd-innovation-item"
+    },
     "newsTitle": {
       "type": "string"
     },

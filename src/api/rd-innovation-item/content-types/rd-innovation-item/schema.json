@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "rd_innovation_items",
+  "info": {
+    "singularName": "rd-innovation-item",
+    "pluralName": "rd-innovation-items",
+    "displayName": "R&D Innovation Item"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}
