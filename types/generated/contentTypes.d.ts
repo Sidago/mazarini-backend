@@ -504,6 +504,10 @@ export interface ApiColabPageColabPage extends Struct.SingleTypeSchema {
     elementCards: Schema.Attribute.Component<'colab.element-card', true>;
     elementsTitle: Schema.Attribute.String;
     elementsWatermark: Schema.Attribute.String;
+    experienceCtaText: Schema.Attribute.String;
+    experienceCtaUrl: Schema.Attribute.String;
+    experienceImage: Schema.Attribute.Media<'images'>;
+    experienceText: Schema.Attribute.Text;
     featuredNews: Schema.Attribute.Relation<'manyToMany', 'api::news.news'>;
     heroCtaText: Schema.Attribute.String;
     heroCtaUrl: Schema.Attribute.String;
@@ -548,6 +552,10 @@ export interface ApiColabPageColabPage extends Struct.SingleTypeSchema {
     teamMembers: Schema.Attribute.Relation<'manyToMany', 'api::team.team'>;
     teamTitle: Schema.Attribute.String;
     teamWatermark: Schema.Attribute.String;
+    testimonialAuthorName: Schema.Attribute.String;
+    testimonialAuthorPosition: Schema.Attribute.String;
+    testimonialImage: Schema.Attribute.Media<'images'>;
+    testimonialQuote: Schema.Attribute.Text;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1473,6 +1481,10 @@ export interface ApiRdPageRdPage extends Struct.SingleTypeSchema {
     projectsTitle: Schema.Attribute.String;
     projectsWatermark: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    quoteAuthorImage: Schema.Attribute.Media<'images'>;
+    quoteAuthorName: Schema.Attribute.String;
+    quoteAuthorPosition: Schema.Attribute.String;
+    quoteText: Schema.Attribute.Text;
     seo: Schema.Attribute.Component<'shared.seo', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

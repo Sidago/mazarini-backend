@@ -69,6 +69,26 @@
       "repeatable": true
     },
 
+    "experienceText": { "type": "text" },
+    "experienceCtaText": { "type": "string" },
+    "experienceCtaUrl": { "type": "string" },
+    "experienceImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+
+    "testimonialQuote": { "type": "text" },
+    "testimonialAuthorName": { "type": "string" },
+    "testimonialAuthorPosition": { "type": "string" },
+    "testimonialImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+
     "elementsTitle": { "type": "string" },
     "elementsWatermark": { "type": "string" },
     "elementCards": {

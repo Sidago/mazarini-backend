@@ -42,6 +42,20 @@
     "heroCtaUrl": {
       "type": "string"
     },
+    "quoteText": {
+      "type": "text"
+    },
+    "quoteAuthorName": {
+      "type": "string"
+    },
+    "quoteAuthorPosition": {
+      "type": "string"
+    },
+    "quoteAuthorImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
     "whyTitle": {
       "type": "string"
     },
