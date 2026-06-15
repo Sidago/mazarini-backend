@@ -8,6 +8,7 @@ export interface ColabChallengeCard extends Struct.ComponentSchema {
   };
   attributes: {
     description: Schema.Attribute.Text;
+    hoverDescription: Schema.Attribute.Text;
     image: Schema.Attribute.Media<'images'>;
     label: Schema.Attribute.String & Schema.Attribute.Required;
     order: Schema.Attribute.Integer;
