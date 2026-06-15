@@ -54,6 +54,12 @@
 
     "numbersTitle": { "type": "string" },
     "numbersWatermark": { "type": "string" },
+    "numbersImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
     "stats": {
       "type": "component",
       "component": "shared.stat",

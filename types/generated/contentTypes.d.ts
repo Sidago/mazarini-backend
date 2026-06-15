@@ -540,6 +540,7 @@ export interface ApiColabPageColabPage extends Struct.SingleTypeSchema {
     newsCtaUrl: Schema.Attribute.String;
     newsTitle: Schema.Attribute.String;
     newsWatermark: Schema.Attribute.String;
+    numbersImage: Schema.Attribute.Media<'images'>;
     numbersTitle: Schema.Attribute.String;
     numbersWatermark: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
