@@ -482,6 +482,70 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiCareerPageCareerPage extends Struct.SingleTypeSchema {
+  collectionName: 'career_pages';
+  info: {
+    description: '';
+    displayName: 'Career Page';
+    pluralName: 'career-pages';
+    singularName: 'career-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    belongDescription: Schema.Attribute.Text;
+    belongImage: Schema.Attribute.Media<'images'>;
+    belongTitle: Schema.Attribute.String;
+    benefitItems: Schema.Attribute.Component<'shared.accordion-item', true>;
+    benefitsImage: Schema.Attribute.Media<'images'>;
+    benefitsText: Schema.Attribute.Text;
+    benefitsTitle: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    cultureCards: Schema.Attribute.Component<'career.culture-card', true>;
+    cultureSubtitle: Schema.Attribute.String;
+    cultureTitle: Schema.Attribute.String;
+    featureItems: Schema.Attribute.Component<'career.feature-item', true>;
+    featuresTitle: Schema.Attribute.String;
+    heroCtaText: Schema.Attribute.String;
+    heroCtaUrl: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Media<'images'>;
+    heroText: Schema.Attribute.Text;
+    heroTitle: Schema.Attribute.String;
+    heroVideo: Schema.Attribute.Media<'videos'>;
+    jobsSectionTitle: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::career-page.career-page'
+    > &
+      Schema.Attribute.Private;
+    missionText: Schema.Attribute.Text;
+    missionTitle: Schema.Attribute.Text;
+    peopleImages: Schema.Attribute.Media<'images', true>;
+    peopleSubtitle: Schema.Attribute.String;
+    peopleTitle: Schema.Attribute.String;
+    personCtaText: Schema.Attribute.String;
+    personCtaUrl: Schema.Attribute.String;
+    personImage: Schema.Attribute.Media<'images'>;
+    personName: Schema.Attribute.String;
+    personPosition: Schema.Attribute.String;
+    personQuote: Schema.Attribute.Text;
+    publishedAt: Schema.Attribute.DateTime;
+    quotes: Schema.Attribute.Component<'career.quote-item', true>;
+    quotesTitle: Schema.Attribute.String;
+    resourceItems: Schema.Attribute.Component<'career.resource-item', true>;
+    resourcesTitle: Schema.Attribute.String;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    stats: Schema.Attribute.Component<'shared.stat', true>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiColabPageColabPage extends Struct.SingleTypeSchema {
   collectionName: 'colab_pages';
   info: {
@@ -1092,6 +1156,39 @@ export interface ApiInsightsPageInsightsPage extends Struct.SingleTypeSchema {
     pageTitle: Schema.Attribute.String & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'shared.seo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiJobJob extends Struct.CollectionTypeSchema {
+  collectionName: 'jobs';
+  info: {
+    description: '';
+    displayName: 'Job';
+    pluralName: 'jobs';
+    singularName: 'job';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    applyUrl: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    department: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    isActive: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    jobType: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::job.job'> &
+      Schema.Attribute.Private;
+    location: Schema.Attribute.String;
+    order: Schema.Attribute.Integer;
+    publishedAt: Schema.Attribute.DateTime;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -2610,6 +2707,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::about.about': ApiAboutAbout;
+      'api::career-page.career-page': ApiCareerPageCareerPage;
       'api::colab-page.colab-page': ApiColabPageColabPage;
       'api::contact-submission.contact-submission': ApiContactSubmissionContactSubmission;
       'api::contact.contact': ApiContactContact;
@@ -2623,6 +2721,7 @@ declare module '@strapi/strapi' {
       'api::homepage.homepage': ApiHomepageHomepage;
       'api::insight.insight': ApiInsightInsight;
       'api::insights-page.insights-page': ApiInsightsPageInsightsPage;
+      'api::job.job': ApiJobJob;
       'api::leadership-page.leadership-page': ApiLeadershipPageLeadershipPage;
       'api::location-list.location-list': ApiLocationListLocationList;
       'api::location.location': ApiLocationLocation;

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_career_quote_items",
+  "info": {
+    "displayName": "Quote Item",
+    "description": "Testimonial quote with author"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "authorName": {
+      "type": "string"
+    },
+    "authorPosition": {
+      "type": "string"
+    },
+    "authorImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

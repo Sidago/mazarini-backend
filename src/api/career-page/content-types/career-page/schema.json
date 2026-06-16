@@ -1,0 +1,92 @@
+{
+  "kind": "singleType",
+  "collectionName": "career_pages",
+  "info": {
+    "singularName": "career-page",
+    "pluralName": "career-pages",
+    "displayName": "Career Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTitle": { "type": "string" },
+    "heroText": { "type": "text" },
+    "heroCtaText": { "type": "string" },
+    "heroCtaUrl": { "type": "string" },
+    "heroImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "heroVideo": { "type": "media", "multiple": false, "allowedTypes": ["videos"] },
+
+    "missionTitle": { "type": "text" },
+    "missionText": { "type": "text" },
+
+    "stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.stat"
+    },
+
+    "quotesTitle": { "type": "string" },
+    "quotes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "career.quote-item"
+    },
+
+    "jobsSectionTitle": { "type": "string" },
+
+    "peopleTitle": { "type": "string" },
+    "peopleSubtitle": { "type": "string" },
+    "peopleImages": { "type": "media", "multiple": true, "allowedTypes": ["images"] },
+
+    "benefitsTitle": { "type": "string" },
+    "benefitsText": { "type": "text" },
+    "benefitsImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "benefitItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.accordion-item"
+    },
+
+    "cultureTitle": { "type": "string" },
+    "cultureSubtitle": { "type": "string" },
+    "cultureCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "career.culture-card"
+    },
+
+    "featuresTitle": { "type": "string" },
+    "featureItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "career.feature-item"
+    },
+
+    "belongTitle": { "type": "string" },
+    "belongDescription": { "type": "text" },
+    "belongImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+
+    "personName": { "type": "string" },
+    "personPosition": { "type": "string" },
+    "personQuote": { "type": "text" },
+    "personCtaText": { "type": "string" },
+    "personCtaUrl": { "type": "string" },
+    "personImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+
+    "resourcesTitle": { "type": "string" },
+    "resourceItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "career.resource-item"
+    },
+
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

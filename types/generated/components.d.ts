@@ -1,5 +1,57 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface CareerCultureCard extends Struct.ComponentSchema {
+  collectionName: 'components_career_culture_cards';
+  info: {
+    description: 'Culture card with image, tag, title and link';
+    displayName: 'Culture Card';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images'>;
+    tag: Schema.Attribute.String;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    url: Schema.Attribute.String;
+  };
+}
+
+export interface CareerFeatureItem extends Struct.ComponentSchema {
+  collectionName: 'components_career_feature_items';
+  info: {
+    description: 'Feature with image, title and description';
+    displayName: 'Feature Item';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images'>;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface CareerQuoteItem extends Struct.ComponentSchema {
+  collectionName: 'components_career_quote_items';
+  info: {
+    description: 'Testimonial quote with author';
+    displayName: 'Quote Item';
+  };
+  attributes: {
+    authorImage: Schema.Attribute.Media<'images'>;
+    authorName: Schema.Attribute.String;
+    authorPosition: Schema.Attribute.String;
+    text: Schema.Attribute.Text & Schema.Attribute.Required;
+  };
+}
+
+export interface CareerResourceItem extends Struct.ComponentSchema {
+  collectionName: 'components_career_resource_items';
+  info: {
+    displayName: 'Resource Item';
+  };
+  attributes: {
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    url: Schema.Attribute.String;
+  };
+}
+
 export interface ColabChallengeCard extends Struct.ComponentSchema {
   collectionName: 'components_colab_challenge_cards';
   info: {
@@ -341,6 +393,10 @@ export interface TimelineMilestone extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'career.culture-card': CareerCultureCard;
+      'career.feature-item': CareerFeatureItem;
+      'career.quote-item': CareerQuoteItem;
+      'career.resource-item': CareerResourceItem;
       'colab.challenge-card': ColabChallengeCard;
       'colab.element-card': ColabElementCard;
       'colab.innovation-item': ColabInnovationItem;

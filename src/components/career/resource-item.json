@@ -1,0 +1,1 @@
+{"collectionName":"components_career_resource_items","info":{"displayName":"Resource Item"},"options":{},"attributes":{"title":{"type":"string","required":true},"url":{"type":"string"}}}

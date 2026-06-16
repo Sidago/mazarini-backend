@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_career_feature_items",
+  "info": {
+    "displayName": "Feature Item",
+    "description": "Feature with image, title and description"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

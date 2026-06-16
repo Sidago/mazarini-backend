@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_career_culture_cards",
+  "info": {
+    "displayName": "Culture Card",
+    "description": "Culture card with image, tag, title and link"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "tag": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}
