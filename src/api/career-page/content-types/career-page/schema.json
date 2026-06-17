@@ -20,8 +20,10 @@
     "heroVideo": { "type": "media", "multiple": false, "allowedTypes": ["videos"] },
 
     "missionTitle": { "type": "text" },
+    "missionHighlight": { "type": "string" },
     "missionText": { "type": "text" },
 
+    "statsTitle": { "type": "string" },
     "stats": {
       "type": "component",
       "repeatable": true,

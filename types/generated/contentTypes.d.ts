@@ -522,6 +522,7 @@ export interface ApiCareerPageCareerPage extends Struct.SingleTypeSchema {
       'api::career-page.career-page'
     > &
       Schema.Attribute.Private;
+    missionHighlight: Schema.Attribute.String;
     missionText: Schema.Attribute.Text;
     missionTitle: Schema.Attribute.Text;
     peopleImages: Schema.Attribute.Media<'images', true>;
@@ -540,6 +541,7 @@ export interface ApiCareerPageCareerPage extends Struct.SingleTypeSchema {
     resourcesTitle: Schema.Attribute.String;
     seo: Schema.Attribute.Component<'shared.seo', false>;
     stats: Schema.Attribute.Component<'shared.stat', true>;
+    statsTitle: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
