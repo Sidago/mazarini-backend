@@ -498,9 +498,10 @@ export interface ApiCareerPageCareerPage extends Struct.SingleTypeSchema {
     belongImage: Schema.Attribute.Media<'images'>;
     belongTitle: Schema.Attribute.String;
     benefitItems: Schema.Attribute.Component<'shared.accordion-item', true>;
+    benefitsHighlight: Schema.Attribute.String;
     benefitsImage: Schema.Attribute.Media<'images'>;
     benefitsText: Schema.Attribute.Text;
-    benefitsTitle: Schema.Attribute.String;
+    benefitsTitle: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

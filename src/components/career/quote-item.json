@@ -16,6 +16,9 @@
     "authorPosition": {
       "type": "string"
     },
+    "contactUrl": {
+      "type": "string"
+    },
     "authorImage": {
       "type": "media",
       "multiple": false,

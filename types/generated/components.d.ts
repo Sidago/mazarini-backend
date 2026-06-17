@@ -37,6 +37,7 @@ export interface CareerQuoteItem extends Struct.ComponentSchema {
     authorImage: Schema.Attribute.Media<'images'>;
     authorName: Schema.Attribute.String;
     authorPosition: Schema.Attribute.String;
+    contactUrl: Schema.Attribute.String;
     text: Schema.Attribute.Text & Schema.Attribute.Required;
   };
 }

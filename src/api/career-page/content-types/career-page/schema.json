@@ -43,7 +43,8 @@
     "peopleSubtitle": { "type": "string" },
     "peopleImages": { "type": "media", "multiple": true, "allowedTypes": ["images"] },
 
-    "benefitsTitle": { "type": "string" },
+    "benefitsTitle": { "type": "text" },
+    "benefitsHighlight": { "type": "string" },
     "benefitsText": { "type": "text" },
     "benefitsImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
     "benefitItems": {
