@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2026-06-17T12:54:30.451Z"
+    "x-generation-date": "2026-06-18T10:20:36.562Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -31324,6 +31324,21 @@
               "formDescription": {
                 "type": "string"
               },
+              "cultureHeading": {
+                "type": "string"
+              },
+              "cultureDescription": {
+                "type": "string"
+              },
+              "cultureWatermark": {
+                "type": "string"
+              },
+              "cultureCards": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/SharedCultureCardComponent"
+                }
+              },
               "seo": {
                 "$ref": "#/components/schemas/SharedSeoComponent"
               },
@@ -32403,6 +32418,21 @@
           "formDescription": {
             "type": "string"
           },
+          "cultureHeading": {
+            "type": "string"
+          },
+          "cultureDescription": {
+            "type": "string"
+          },
+          "cultureWatermark": {
+            "type": "string"
+          },
+          "cultureCards": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SharedCultureCardComponent"
+            }
+          },
           "seo": {
             "$ref": "#/components/schemas/SharedSeoComponent"
           },
@@ -32836,6 +32866,21 @@
                 },
                 "formDescription": {
                   "type": "string"
+                },
+                "cultureHeading": {
+                  "type": "string"
+                },
+                "cultureDescription": {
+                  "type": "string"
+                },
+                "cultureWatermark": {
+                  "type": "string"
+                },
+                "cultureCards": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SharedCultureCardComponent"
+                  }
                 },
                 "seo": {
                   "$ref": "#/components/schemas/SharedSeoComponent"

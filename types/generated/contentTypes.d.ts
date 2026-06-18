@@ -716,6 +716,10 @@ export interface ApiContactContact extends Struct.SingleTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    cultureCards: Schema.Attribute.Component<'shared.culture-card', true>;
+    cultureDescription: Schema.Attribute.Text;
+    cultureHeading: Schema.Attribute.String;
+    cultureWatermark: Schema.Attribute.String;
     formDescription: Schema.Attribute.Text;
     formTitle: Schema.Attribute.String;
     heroCtaText: Schema.Attribute.String;

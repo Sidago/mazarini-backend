@@ -48,6 +48,20 @@
     "formDescription": {
       "type": "text"
     },
+    "cultureHeading": {
+      "type": "string"
+    },
+    "cultureDescription": {
+      "type": "text"
+    },
+    "cultureWatermark": {
+      "type": "string"
+    },
+    "cultureCards": {
+      "type": "component",
+      "component": "shared.culture-card",
+      "repeatable": true
+    },
     "seo": {
       "type": "component",
       "component": "shared.seo",
