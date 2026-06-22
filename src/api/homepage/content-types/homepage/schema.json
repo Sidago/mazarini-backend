@@ -49,10 +49,10 @@
       "component": "shared.link",
       "repeatable": true
     },
-    "stats": {
-      "type": "component",
-      "component": "shared.stat",
-      "repeatable": true
+    "statItems": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::stat.stat"
     },
     "introHeading": {
       "type": "text"

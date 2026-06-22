@@ -61,10 +61,10 @@
     "timelineDescription": {
       "type": "text"
     },
-    "stats": {
-      "type": "component",
-      "component": "shared.stat",
-      "repeatable": true
+    "statItems": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::stat.stat"
     },
     "leadershipBlocks": {
       "type": "component",

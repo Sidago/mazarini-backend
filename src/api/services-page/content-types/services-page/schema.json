@@ -50,10 +50,10 @@
     "featuredCTA": {
       "type": "string"
     },
-    "stats": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.stat"
+    "statItems": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::stat.stat"
     },
     "seo": {
       "type": "component",

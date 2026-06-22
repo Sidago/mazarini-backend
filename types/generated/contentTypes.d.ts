@@ -472,7 +472,7 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'shared.seo', false>;
-    stats: Schema.Attribute.Component<'shared.stat', true>;
+    statItems: Schema.Attribute.Relation<'manyToMany', 'api::stat.stat'>;
     timelineDescription: Schema.Attribute.Text;
     timelineHeading: Schema.Attribute.Text;
     title: Schema.Attribute.String & Schema.Attribute.Required;
@@ -541,7 +541,7 @@ export interface ApiCareerPageCareerPage extends Struct.SingleTypeSchema {
     resourceItems: Schema.Attribute.Component<'career.resource-item', true>;
     resourcesTitle: Schema.Attribute.String;
     seo: Schema.Attribute.Component<'shared.seo', false>;
-    stats: Schema.Attribute.Component<'shared.stat', true>;
+    statItems: Schema.Attribute.Relation<'manyToMany', 'api::stat.stat'>;
     statsTitle: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -615,7 +615,7 @@ export interface ApiColabPageColabPage extends Struct.SingleTypeSchema {
     resultsTitle: Schema.Attribute.String;
     resultsWatermark: Schema.Attribute.String;
     seo: Schema.Attribute.Component<'shared.seo', false>;
-    stats: Schema.Attribute.Component<'shared.stat', true>;
+    statItems: Schema.Attribute.Relation<'manyToMany', 'api::stat.stat'>;
     teamDescription: Schema.Attribute.Text;
     teamMembers: Schema.Attribute.Relation<'manyToMany', 'api::team.team'>;
     teamTitle: Schema.Attribute.String;
@@ -1089,7 +1089,7 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
     sparkDescription: Schema.Attribute.Text;
     sparkHeading: Schema.Attribute.String;
     sparkImage: Schema.Attribute.Media<'images'>;
-    stats: Schema.Attribute.Component<'shared.stat', true>;
+    statItems: Schema.Attribute.Relation<'manyToMany', 'api::stat.stat'>;
     testimonials: Schema.Attribute.Relation<
       'oneToMany',
       'api::testimonial.testimonial'
@@ -1705,7 +1705,7 @@ export interface ApiSafetySafety extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'shared.seo', false>;
-    stats: Schema.Attribute.Component<'shared.stat', true>;
+    statItems: Schema.Attribute.Relation<'manyToMany', 'api::stat.stat'>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -1791,10 +1791,39 @@ export interface ApiServicesPageServicesPage extends Struct.SingleTypeSchema {
     pageTitle: Schema.Attribute.String & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'shared.seo', false>;
-    stats: Schema.Attribute.Component<'shared.stat', true>;
+    statItems: Schema.Attribute.Relation<'manyToMany', 'api::stat.stat'>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+  };
+}
+
+export interface ApiStatStat extends Struct.CollectionTypeSchema {
+  collectionName: 'stats';
+  info: {
+    description: 'Reusable statistic (value, suffix, label) shared across pages';
+    displayName: 'Stat';
+    pluralName: 'stats';
+    singularName: 'stat';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    description: Schema.Attribute.Text;
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::stat.stat'> &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    suffix: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    value: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
 
@@ -1928,7 +1957,7 @@ export interface ApiSustainabilitySustainability
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'shared.seo', false>;
-    stats: Schema.Attribute.Component<'shared.stat', true>;
+    statItems: Schema.Attribute.Relation<'manyToMany', 'api::stat.stat'>;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -2117,7 +2146,7 @@ export interface ApiToolsAndTechnologyToolsAndTechnology
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
     seo: Schema.Attribute.Component<'shared.seo', false>;
-    stats: Schema.Attribute.Component<'shared.stat', true>;
+    statItems: Schema.Attribute.Relation<'manyToMany', 'api::stat.stat'>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -2744,6 +2773,7 @@ declare module '@strapi/strapi' {
       'api::safety.safety': ApiSafetySafety;
       'api::service.service': ApiServiceService;
       'api::services-page.services-page': ApiServicesPageServicesPage;
+      'api::stat.stat': ApiStatStat;
       'api::sub-nav-item.sub-nav-item': ApiSubNavItemSubNavItem;
       'api::subcontractors-page.subcontractors-page': ApiSubcontractorsPageSubcontractorsPage;
       'api::sustainability.sustainability': ApiSustainabilitySustainability;

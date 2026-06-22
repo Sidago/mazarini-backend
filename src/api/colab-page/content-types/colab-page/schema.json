@@ -60,10 +60,10 @@
       "required": false,
       "allowedTypes": ["images"]
     },
-    "stats": {
-      "type": "component",
-      "component": "shared.stat",
-      "repeatable": true
+    "statItems": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::stat.stat"
     },
 
     "visionTitle": { "type": "string" },
