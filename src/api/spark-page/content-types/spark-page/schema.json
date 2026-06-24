@@ -1,0 +1,50 @@
+{
+  "kind": "singleType",
+  "collectionName": "spark_pages",
+  "info": {
+    "singularName": "spark-page",
+    "pluralName": "spark-pages",
+    "displayName": "Spark Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTitle": { "type": "string" },
+    "heroText": { "type": "text" },
+    "heroCtaText": { "type": "string" },
+    "heroCtaUrl": { "type": "string" },
+    "heroImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "heroVideo": { "type": "media", "multiple": false, "allowedTypes": ["videos"] },
+
+    "introHeading": { "type": "text" },
+    "introHighlight": { "type": "string" },
+    "introText": { "type": "text" },
+
+    "statementHeading": { "type": "text" },
+    "statementHighlight": { "type": "string" },
+    "statementImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+
+    "blocks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "spark.feature-block"
+    },
+
+    "wideImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "wideCaption": { "type": "text" },
+
+    "newsTitle": { "type": "string" },
+
+    "contactTitle": { "type": "string" },
+    "contactDescription": { "type": "text" },
+
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

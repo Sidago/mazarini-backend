@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_spark_feature_blocks",
+  "info": {
+    "displayName": "Feature Block",
+    "description": "Spark page image + text block with optional CTA"
+  },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "text": { "type": "text" },
+    "image": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "ctaText": { "type": "string" },
+    "ctaUrl": { "type": "string" }
+  }
+}

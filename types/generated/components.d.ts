@@ -365,6 +365,21 @@ export interface SharedTradePartnerTab extends Struct.ComponentSchema {
   };
 }
 
+export interface SparkFeatureBlock extends Struct.ComponentSchema {
+  collectionName: 'components_spark_feature_blocks';
+  info: {
+    description: 'Spark page image + text block with optional CTA';
+    displayName: 'Feature Block';
+  };
+  attributes: {
+    ctaText: Schema.Attribute.String;
+    ctaUrl: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images'>;
+    text: Schema.Attribute.Text;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface SubNavSubNav extends Struct.ComponentSchema {
   collectionName: 'components_sub_nav_sub_navs';
   info: {
@@ -420,6 +435,7 @@ declare module '@strapi/strapi' {
       'shared.stat': SharedStat;
       'shared.subcontractor-quote': SharedSubcontractorQuote;
       'shared.trade-partner-tab': SharedTradePartnerTab;
+      'spark.feature-block': SparkFeatureBlock;
       'sub-nav.sub-nav': SubNavSubNav;
       'timeline.milestone': TimelineMilestone;
     }

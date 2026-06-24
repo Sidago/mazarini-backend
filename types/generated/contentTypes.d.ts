@@ -1798,6 +1798,53 @@ export interface ApiServicesPageServicesPage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiSparkPageSparkPage extends Struct.SingleTypeSchema {
+  collectionName: 'spark_pages';
+  info: {
+    description: '';
+    displayName: 'Spark Page';
+    pluralName: 'spark-pages';
+    singularName: 'spark-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    blocks: Schema.Attribute.Component<'spark.feature-block', true>;
+    contactDescription: Schema.Attribute.Text;
+    contactTitle: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    heroCtaText: Schema.Attribute.String;
+    heroCtaUrl: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Media<'images'>;
+    heroText: Schema.Attribute.Text;
+    heroTitle: Schema.Attribute.String;
+    heroVideo: Schema.Attribute.Media<'videos'>;
+    introHeading: Schema.Attribute.Text;
+    introHighlight: Schema.Attribute.String;
+    introText: Schema.Attribute.Text;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::spark-page.spark-page'
+    > &
+      Schema.Attribute.Private;
+    newsTitle: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    statementHeading: Schema.Attribute.Text;
+    statementHighlight: Schema.Attribute.String;
+    statementImage: Schema.Attribute.Media<'images'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    wideCaption: Schema.Attribute.Text;
+    wideImage: Schema.Attribute.Media<'images'>;
+  };
+}
+
 export interface ApiStatStat extends Struct.CollectionTypeSchema {
   collectionName: 'stats';
   info: {
@@ -2773,6 +2820,7 @@ declare module '@strapi/strapi' {
       'api::safety.safety': ApiSafetySafety;
       'api::service.service': ApiServiceService;
       'api::services-page.services-page': ApiServicesPageServicesPage;
+      'api::spark-page.spark-page': ApiSparkPageSparkPage;
       'api::stat.stat': ApiStatStat;
       'api::sub-nav-item.sub-nav-item': ApiSubNavItemSubNavItem;
       'api::subcontractors-page.subcontractors-page': ApiSubcontractorsPageSubcontractorsPage;
