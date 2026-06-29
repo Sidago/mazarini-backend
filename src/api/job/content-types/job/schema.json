@@ -13,10 +13,11 @@
   "pluginOptions": {},
   "attributes": {
     "title": { "type": "string", "required": true },
+    "jobCode": { "type": "string" },
     "department": { "type": "string" },
     "location": { "type": "string" },
     "jobType": { "type": "string" },
-    "description": { "type": "text" },
+    "description": { "type": "blocks" },
     "applyUrl": { "type": "string" },
     "order": { "type": "integer" },
     "isActive": { "type": "boolean", "default": true }

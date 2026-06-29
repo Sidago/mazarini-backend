@@ -1186,8 +1186,9 @@ export interface ApiJobJob extends Struct.CollectionTypeSchema {
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
     department: Schema.Attribute.String;
-    description: Schema.Attribute.Text;
+    description: Schema.Attribute.Blocks;
     isActive: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    jobCode: Schema.Attribute.String;
     jobType: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::job.job'> &
@@ -1196,6 +1197,43 @@ export interface ApiJobJob extends Struct.CollectionTypeSchema {
     order: Schema.Attribute.Integer;
     publishedAt: Schema.Attribute.DateTime;
     title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiJobsPageJobsPage extends Struct.SingleTypeSchema {
+  collectionName: 'jobs_pages';
+  info: {
+    description: '';
+    displayName: 'Jobs Page';
+    pluralName: 'jobs-pages';
+    singularName: 'jobs-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    aboutText: Schema.Attribute.Text;
+    aboutTitle: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    fraudText: Schema.Attribute.Text;
+    fraudTitle: Schema.Attribute.String;
+    fraudUrl: Schema.Attribute.String;
+    heroImage: Schema.Attribute.Media<'images'>;
+    heroSubtitle: Schema.Attribute.String;
+    heroTitle: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::jobs-page.jobs-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -2805,6 +2843,7 @@ declare module '@strapi/strapi' {
       'api::insight.insight': ApiInsightInsight;
       'api::insights-page.insights-page': ApiInsightsPageInsightsPage;
       'api::job.job': ApiJobJob;
+      'api::jobs-page.jobs-page': ApiJobsPageJobsPage;
       'api::leadership-page.leadership-page': ApiLeadershipPageLeadershipPage;
       'api::location-list.location-list': ApiLocationListLocationList;
       'api::location.location': ApiLocationLocation;

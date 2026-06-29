@@ -1,0 +1,32 @@
+{
+  "kind": "singleType",
+  "collectionName": "jobs_pages",
+  "info": {
+    "singularName": "jobs-page",
+    "pluralName": "jobs-pages",
+    "displayName": "Jobs Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTitle": { "type": "string" },
+    "heroSubtitle": { "type": "string" },
+    "heroImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+
+    "aboutTitle": { "type": "string" },
+    "aboutText": { "type": "text" },
+
+    "fraudTitle": { "type": "string" },
+    "fraudText": { "type": "text" },
+    "fraudUrl": { "type": "string" },
+
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}
