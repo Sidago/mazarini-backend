@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_award_text_columns",
+  "info": {
+    "displayName": "Text Column",
+    "description": "Award page text column with title and text"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}

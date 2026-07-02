@@ -1,5 +1,30 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface AwardChallengeCard extends Struct.ComponentSchema {
+  collectionName: 'components_award_challenge_cards';
+  info: {
+    description: 'Award page challenge card with image and description';
+    displayName: 'Challenge Card';
+  };
+  attributes: {
+    description: Schema.Attribute.Text & Schema.Attribute.Required;
+    image: Schema.Attribute.Media<'images'>;
+    solution: Schema.Attribute.Text;
+  };
+}
+
+export interface AwardTextColumn extends Struct.ComponentSchema {
+  collectionName: 'components_award_text_columns';
+  info: {
+    description: 'Award page text column with title and text';
+    displayName: 'Text Column';
+  };
+  attributes: {
+    text: Schema.Attribute.Text;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface CareerCultureCard extends Struct.ComponentSchema {
   collectionName: 'components_career_culture_cards';
   info: {
@@ -409,6 +434,8 @@ export interface TimelineMilestone extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'award.challenge-card': AwardChallengeCard;
+      'award.text-column': AwardTextColumn;
       'career.culture-card': CareerCultureCard;
       'career.feature-item': CareerFeatureItem;
       'career.quote-item': CareerQuoteItem;

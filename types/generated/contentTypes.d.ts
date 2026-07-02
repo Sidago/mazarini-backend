@@ -482,6 +482,56 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiAwardPageAwardPage extends Struct.SingleTypeSchema {
+  collectionName: 'award_pages';
+  info: {
+    description: '';
+    displayName: 'Award Page';
+    pluralName: 'award-pages';
+    singularName: 'award-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    challengeCards: Schema.Attribute.Component<'award.challenge-card', true>;
+    challengesDescription: Schema.Attribute.Text;
+    challengesTitle: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    fieldMembers: Schema.Attribute.Relation<'manyToMany', 'api::team.team'>;
+    heroImage: Schema.Attribute.Media<'images'>;
+    heroText: Schema.Attribute.Text;
+    heroTitle: Schema.Attribute.String;
+    heroWatermark: Schema.Attribute.String;
+    journeyCtaText: Schema.Attribute.String;
+    journeyCtaUrl: Schema.Attribute.String;
+    journeyImage: Schema.Attribute.Media<'images'>;
+    journeyText: Schema.Attribute.Text;
+    journeyTitle: Schema.Attribute.String;
+    knowledgeDescription: Schema.Attribute.Text;
+    knowledgeTitle: Schema.Attribute.String;
+    knowledgeWatermark: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::award-page.award-page'
+    > &
+      Schema.Attribute.Private;
+    peopleCtaText: Schema.Attribute.String;
+    peopleCtaUrl: Schema.Attribute.String;
+    peopleText: Schema.Attribute.Text;
+    peopleTitle: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    textColumns: Schema.Attribute.Component<'award.text-column', true>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiCareerPageCareerPage extends Struct.SingleTypeSchema {
   collectionName: 'career_pages';
   info: {
@@ -2828,6 +2878,7 @@ declare module '@strapi/strapi' {
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
       'api::about.about': ApiAboutAbout;
+      'api::award-page.award-page': ApiAwardPageAwardPage;
       'api::career-page.career-page': ApiCareerPageCareerPage;
       'api::colab-page.colab-page': ApiColabPageColabPage;
       'api::contact-submission.contact-submission': ApiContactSubmissionContactSubmission;

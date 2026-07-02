@@ -47,5 +47,6 @@ export default {
     await setPublicPermissions(strapi, "stat", ["find", "findOne"]);
     await setPublicPermissions(strapi, "spark-page", ["find"]);
     await setPublicPermissions(strapi, "jobs-page", ["find"]);
+    await setPublicPermissions(strapi, "award-page", ["find"]);
   },
 };

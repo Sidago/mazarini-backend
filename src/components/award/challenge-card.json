@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_award_challenge_cards",
+  "info": {
+    "displayName": "Challenge Card",
+    "description": "Award page challenge card with image and description"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "solution": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}
