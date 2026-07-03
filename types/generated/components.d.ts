@@ -122,6 +122,35 @@ export interface ColabInnovationItem extends Struct.ComponentSchema {
   };
 }
 
+export interface ConstructionInnovationItem extends Struct.ComponentSchema {
+  collectionName: 'components_construction_innovation_items';
+  info: {
+    description: 'Construction innovation tab item (tab label + feature block)';
+    displayName: 'Innovation Item';
+  };
+  attributes: {
+    ctaText: Schema.Attribute.String;
+    ctaUrl: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    image: Schema.Attribute.Media<'images'>;
+    tab: Schema.Attribute.String & Schema.Attribute.Required;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface ConstructionSustainabilityCard extends Struct.ComponentSchema {
+  collectionName: 'components_construction_sustainability_cards';
+  info: {
+    description: 'Construction page sustainability card with image, label and link';
+    displayName: 'Sustainability Card';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images'>;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    url: Schema.Attribute.String;
+  };
+}
+
 export interface SharedAccordionItem extends Struct.ComponentSchema {
   collectionName: 'components_shared_accordion_items';
   info: {
@@ -443,6 +472,8 @@ declare module '@strapi/strapi' {
       'colab.challenge-card': ColabChallengeCard;
       'colab.element-card': ColabElementCard;
       'colab.innovation-item': ColabInnovationItem;
+      'construction.innovation-item': ConstructionInnovationItem;
+      'construction.sustainability-card': ConstructionSustainabilityCard;
       'shared.accordion-item': SharedAccordionItem;
       'shared.core-value': SharedCoreValue;
       'shared.culture-card': SharedCultureCard;

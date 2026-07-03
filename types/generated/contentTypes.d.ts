@@ -684,6 +684,69 @@ export interface ApiColabPageColabPage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiConstructionPageConstructionPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'construction_pages';
+  info: {
+    description: '';
+    displayName: 'Construction Page';
+    pluralName: 'construction-pages';
+    singularName: 'construction-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    accordionDetails: Schema.Attribute.Text;
+    accordionImage: Schema.Attribute.Media<'images'>;
+    accordionItems: Schema.Attribute.Component<'shared.accordion-item', true>;
+    accordionTitle: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    experienceHighlight: Schema.Attribute.String;
+    experienceText: Schema.Attribute.Text;
+    experienceTitle: Schema.Attribute.String;
+    heroBody: Schema.Attribute.Text;
+    heroImage: Schema.Attribute.Media<'images'>;
+    heroText: Schema.Attribute.Text;
+    heroTitle: Schema.Attribute.String;
+    heroWatermark: Schema.Attribute.String;
+    innovationDescription: Schema.Attribute.Text;
+    innovationItems: Schema.Attribute.Component<
+      'construction.innovation-item',
+      true
+    >;
+    innovationTitle: Schema.Attribute.String;
+    journeyCtaText: Schema.Attribute.String;
+    journeyCtaUrl: Schema.Attribute.String;
+    journeyImage: Schema.Attribute.Media<'images'>;
+    journeyText: Schema.Attribute.Text;
+    journeyTitle: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::construction-page.construction-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    quotes: Schema.Attribute.Component<'career.quote-item', true>;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    statItems: Schema.Attribute.Relation<'manyToMany', 'api::stat.stat'>;
+    statsTitle: Schema.Attribute.String;
+    sustainabilityCards: Schema.Attribute.Component<
+      'construction.sustainability-card',
+      true
+    >;
+    sustainabilityText: Schema.Attribute.Text;
+    sustainabilityTitle: Schema.Attribute.String;
+    textColumns: Schema.Attribute.Component<'award.text-column', true>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiContactSubmissionContactSubmission
   extends Struct.CollectionTypeSchema {
   collectionName: 'contact_submissions';
@@ -1487,6 +1550,50 @@ export interface ApiOurClientOurClient extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     name: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiPreconstructionPagePreconstructionPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'preconstruction_pages';
+  info: {
+    description: '';
+    displayName: 'Preconstruction Page';
+    pluralName: 'preconstruction-pages';
+    singularName: 'preconstruction-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    accordionDetails: Schema.Attribute.Text;
+    accordionImage: Schema.Attribute.Media<'images'>;
+    accordionItems: Schema.Attribute.Component<'shared.accordion-item', true>;
+    accordionTitle: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    heroBody: Schema.Attribute.Text;
+    heroImage: Schema.Attribute.Media<'images'>;
+    heroText: Schema.Attribute.Text;
+    heroTitle: Schema.Attribute.String;
+    heroWatermark: Schema.Attribute.String;
+    journeyCtaText: Schema.Attribute.String;
+    journeyCtaUrl: Schema.Attribute.String;
+    journeyImage: Schema.Attribute.Media<'images'>;
+    journeyText: Schema.Attribute.Text;
+    journeyTitle: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::preconstruction-page.preconstruction-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -2881,6 +2988,7 @@ declare module '@strapi/strapi' {
       'api::award-page.award-page': ApiAwardPageAwardPage;
       'api::career-page.career-page': ApiCareerPageCareerPage;
       'api::colab-page.colab-page': ApiColabPageColabPage;
+      'api::construction-page.construction-page': ApiConstructionPageConstructionPage;
       'api::contact-submission.contact-submission': ApiContactSubmissionContactSubmission;
       'api::contact.contact': ApiContactContact;
       'api::corporate-responsibility-page.corporate-responsibility-page': ApiCorporateResponsibilityPageCorporateResponsibilityPage;
@@ -2901,6 +3009,7 @@ declare module '@strapi/strapi' {
       'api::news-page.news-page': ApiNewsPageNewsPage;
       'api::news.news': ApiNewsNews;
       'api::our-client.our-client': ApiOurClientOurClient;
+      'api::preconstruction-page.preconstruction-page': ApiPreconstructionPagePreconstructionPage;
       'api::project.project': ApiProjectProject;
       'api::projects-page.projects-page': ApiProjectsPageProjectsPage;
       'api::rd-innovation-item.rd-innovation-item': ApiRdInnovationItemRdInnovationItem;

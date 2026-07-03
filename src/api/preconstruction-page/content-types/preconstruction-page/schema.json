@@ -1,0 +1,42 @@
+{
+  "kind": "singleType",
+  "collectionName": "preconstruction_pages",
+  "info": {
+    "singularName": "preconstruction-page",
+    "pluralName": "preconstruction-pages",
+    "displayName": "Preconstruction Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTitle": { "type": "string" },
+    "heroText": { "type": "text" },
+    "heroBody": { "type": "text" },
+    "heroWatermark": { "type": "string" },
+    "heroImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+
+    "accordionTitle": { "type": "string" },
+    "accordionDetails": { "type": "text" },
+    "accordionImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "accordionItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.accordion-item"
+    },
+
+    "journeyTitle": { "type": "string" },
+    "journeyText": { "type": "text" },
+    "journeyImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "journeyCtaText": { "type": "string" },
+    "journeyCtaUrl": { "type": "string" },
+
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

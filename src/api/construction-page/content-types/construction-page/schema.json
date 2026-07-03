@@ -1,0 +1,81 @@
+{
+  "kind": "singleType",
+  "collectionName": "construction_pages",
+  "info": {
+    "singularName": "construction-page",
+    "pluralName": "construction-pages",
+    "displayName": "Construction Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTitle": { "type": "string" },
+    "heroText": { "type": "text" },
+    "heroBody": { "type": "text" },
+    "heroWatermark": { "type": "string" },
+    "heroImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+
+    "experienceTitle": { "type": "string" },
+    "experienceHighlight": { "type": "string" },
+    "experienceText": { "type": "text" },
+
+    "quotes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "career.quote-item"
+    },
+
+    "accordionTitle": { "type": "string" },
+    "accordionDetails": { "type": "text" },
+    "accordionImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "accordionItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.accordion-item"
+    },
+
+    "statsTitle": { "type": "string" },
+    "statItems": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::stat.stat"
+    },
+
+    "textColumns": {
+      "type": "component",
+      "repeatable": true,
+      "component": "award.text-column"
+    },
+
+    "sustainabilityTitle": { "type": "string" },
+    "sustainabilityText": { "type": "text" },
+    "sustainabilityCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "construction.sustainability-card"
+    },
+
+    "innovationTitle": { "type": "string" },
+    "innovationDescription": { "type": "text" },
+    "innovationItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "construction.innovation-item"
+    },
+
+    "journeyTitle": { "type": "string" },
+    "journeyText": { "type": "text" },
+    "journeyImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "journeyCtaText": { "type": "string" },
+    "journeyCtaUrl": { "type": "string" },
+
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

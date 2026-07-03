@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_construction_sustainability_cards",
+  "info": {
+    "displayName": "Sustainability Card",
+    "description": "Construction page sustainability card with image, label and link"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}
