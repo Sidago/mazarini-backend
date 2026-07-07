@@ -1,0 +1,96 @@
+{
+  "kind": "singleType",
+  "collectionName": "post_construction_pages",
+  "info": {
+    "singularName": "post-construction-page",
+    "pluralName": "post-construction-pages",
+    "displayName": "Post-Construction page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTitle": {
+      "type": "string",
+      "required": true
+    },
+    "heroText": {
+      "type": "text",
+      "required": true
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "heroWatermark": {
+      "type": "string"
+    },
+    "trustTitle": {
+      "type": "string"
+    },
+    "trustText": {
+      "type": "text"
+    },
+    "quotes": {
+      "type": "component",
+      "component": "quote.quote",
+      "repeatable": true
+    },
+    "accordionItems": {
+      "type": "component",
+      "component": "shared.accordion-item",
+      "repeatable": true
+    },
+    "stateText": {
+      "type": "text"
+    },
+    "stats": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::stat.stat"
+    },
+    "nextTitle": {
+      "type": "string"
+    },
+    "nextDetails": {
+      "type": "string"
+    },
+    "nextImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "conversationTitle": {
+      "type": "string"
+    },
+    "conversationText": {
+      "type": "text"
+    },
+    "conversationWatermark": {
+      "type": "string"
+    },
+    "conversationBlock": {
+      "type": "component",
+      "component": "spark.feature-block",
+      "repeatable": true
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

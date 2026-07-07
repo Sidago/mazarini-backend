@@ -1556,6 +1556,55 @@ export interface ApiOurClientOurClient extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiPostConstructionPagePostConstructionPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'post_construction_pages';
+  info: {
+    displayName: 'Post-Construction page';
+    pluralName: 'post-construction-pages';
+    singularName: 'post-construction-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    accordionItems: Schema.Attribute.Component<'shared.accordion-item', true>;
+    conversationBlock: Schema.Attribute.Component<'spark.feature-block', true>;
+    conversationText: Schema.Attribute.Text;
+    conversationTitle: Schema.Attribute.String;
+    conversationWatermark: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    heroImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    > &
+      Schema.Attribute.Required;
+    heroText: Schema.Attribute.Text & Schema.Attribute.Required;
+    heroTitle: Schema.Attribute.String & Schema.Attribute.Required;
+    heroWatermark: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::post-construction-page.post-construction-page'
+    > &
+      Schema.Attribute.Private;
+    nextDetails: Schema.Attribute.String;
+    nextImage: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    nextTitle: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    quotes: Schema.Attribute.Component<'quote.quote', true>;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    stateText: Schema.Attribute.Text;
+    stats: Schema.Attribute.Relation<'oneToMany', 'api::stat.stat'>;
+    trustText: Schema.Attribute.Text;
+    trustTitle: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiPreconstructionPagePreconstructionPage
   extends Struct.SingleTypeSchema {
   collectionName: 'preconstruction_pages';
@@ -3009,6 +3058,7 @@ declare module '@strapi/strapi' {
       'api::news-page.news-page': ApiNewsPageNewsPage;
       'api::news.news': ApiNewsNews;
       'api::our-client.our-client': ApiOurClientOurClient;
+      'api::post-construction-page.post-construction-page': ApiPostConstructionPagePostConstructionPage;
       'api::preconstruction-page.preconstruction-page': ApiPreconstructionPagePreconstructionPage;
       'api::project.project': ApiProjectProject;
       'api::projects-page.projects-page': ApiProjectsPageProjectsPage;

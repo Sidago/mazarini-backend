@@ -151,6 +151,19 @@ export interface ConstructionSustainabilityCard extends Struct.ComponentSchema {
   };
 }
 
+export interface QuoteQuote extends Struct.ComponentSchema {
+  collectionName: 'components_quote_quotes';
+  info: {
+    displayName: 'quote';
+  };
+  attributes: {
+    authorName: Schema.Attribute.String;
+    authorTitle: Schema.Attribute.String;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    text: Schema.Attribute.Text;
+  };
+}
+
 export interface SharedAccordionItem extends Struct.ComponentSchema {
   collectionName: 'components_shared_accordion_items';
   info: {
@@ -474,6 +487,7 @@ declare module '@strapi/strapi' {
       'colab.innovation-item': ColabInnovationItem;
       'construction.innovation-item': ConstructionInnovationItem;
       'construction.sustainability-card': ConstructionSustainabilityCard;
+      'quote.quote': QuoteQuote;
       'shared.accordion-item': SharedAccordionItem;
       'shared.core-value': SharedCoreValue;
       'shared.culture-card': SharedCultureCard;
