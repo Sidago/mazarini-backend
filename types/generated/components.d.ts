@@ -122,6 +122,30 @@ export interface ColabInnovationItem extends Struct.ComponentSchema {
   };
 }
 
+export interface ConsiderationPartner extends Struct.ComponentSchema {
+  collectionName: 'components_consideration_partners';
+  info: {
+    description: 'Partner logo for the In Good Company grid';
+    displayName: 'Partner';
+  };
+  attributes: {
+    logo: Schema.Attribute.Media<'images'>;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface ConsiderationQuizQuestion extends Struct.ComponentSchema {
+  collectionName: 'components_consideration_quiz_questions';
+  info: {
+    description: 'A question with selectable options for the consideration quiz';
+    displayName: 'Quiz Question';
+  };
+  attributes: {
+    options: Schema.Attribute.JSON;
+    question: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface ConstructionInnovationItem extends Struct.ComponentSchema {
   collectionName: 'components_construction_innovation_items';
   info: {
@@ -485,6 +509,8 @@ declare module '@strapi/strapi' {
       'colab.challenge-card': ColabChallengeCard;
       'colab.element-card': ColabElementCard;
       'colab.innovation-item': ColabInnovationItem;
+      'consideration.partner': ConsiderationPartner;
+      'consideration.quiz-question': ConsiderationQuizQuestion;
       'construction.innovation-item': ConstructionInnovationItem;
       'construction.sustainability-card': ConstructionSustainabilityCard;
       'quote.quote': QuoteQuote;

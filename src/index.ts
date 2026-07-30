@@ -50,5 +50,6 @@ export default {
     await setPublicPermissions(strapi, "award-page", ["find"]);
     await setPublicPermissions(strapi, "preconstruction-page", ["find"]);
     await setPublicPermissions(strapi, "construction-page", ["find"]);
+    await setPublicPermissions(strapi, "consideration-page", ["find"]);
   },
 };

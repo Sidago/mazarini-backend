@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_consideration_partners",
+  "info": {
+    "displayName": "Partner",
+    "description": "Partner logo for the In Good Company grid"
+  },
+  "options": {},
+  "attributes": {
+    "name": { "type": "string", "required": true },
+    "logo": { "type": "media", "multiple": false, "allowedTypes": ["images"] }
+  }
+}

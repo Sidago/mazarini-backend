@@ -1,0 +1,56 @@
+{
+  "kind": "singleType",
+  "collectionName": "consideration_pages",
+  "info": {
+    "singularName": "consideration-page",
+    "pluralName": "consideration-pages",
+    "displayName": "Consideration Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTitle": { "type": "string" },
+    "heroText": { "type": "text" },
+    "heroBody": { "type": "text" },
+    "heroWatermark": { "type": "string" },
+    "heroImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+
+    "advisorTitle": { "type": "string" },
+    "advisorDescription": { "type": "text" },
+    "advisorFeatureText": { "type": "text" },
+    "advisorImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "advisorCtaText": { "type": "string" },
+    "advisorCtaUrl": { "type": "string" },
+
+    "partnersTitle": { "type": "string" },
+    "partnersSubtitle": { "type": "text" },
+    "partners": {
+      "type": "component",
+      "repeatable": true,
+      "component": "consideration.partner"
+    },
+
+    "quizTitle": { "type": "string" },
+    "quizDescription": { "type": "text" },
+    "quizQuestions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "consideration.quiz-question"
+    },
+
+    "journeyTitle": { "type": "string" },
+    "journeyText": { "type": "text" },
+    "journeyImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "journeyCtaText": { "type": "string" },
+    "journeyCtaUrl": { "type": "string" },
+
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

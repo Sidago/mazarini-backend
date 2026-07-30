@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_consideration_quiz_questions",
+  "info": {
+    "displayName": "Quiz Question",
+    "description": "A question with selectable options for the consideration quiz"
+  },
+  "options": {},
+  "attributes": {
+    "question": { "type": "string", "required": true },
+    "options": { "type": "json" }
+  }
+}

@@ -684,6 +684,61 @@ export interface ApiColabPageColabPage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiConsiderationPageConsiderationPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'consideration_pages';
+  info: {
+    description: '';
+    displayName: 'Consideration Page';
+    pluralName: 'consideration-pages';
+    singularName: 'consideration-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    advisorCtaText: Schema.Attribute.String;
+    advisorCtaUrl: Schema.Attribute.String;
+    advisorDescription: Schema.Attribute.Text;
+    advisorFeatureText: Schema.Attribute.Text;
+    advisorImage: Schema.Attribute.Media<'images'>;
+    advisorTitle: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    heroBody: Schema.Attribute.Text;
+    heroImage: Schema.Attribute.Media<'images'>;
+    heroText: Schema.Attribute.Text;
+    heroTitle: Schema.Attribute.String;
+    heroWatermark: Schema.Attribute.String;
+    journeyCtaText: Schema.Attribute.String;
+    journeyCtaUrl: Schema.Attribute.String;
+    journeyImage: Schema.Attribute.Media<'images'>;
+    journeyText: Schema.Attribute.Text;
+    journeyTitle: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::consideration-page.consideration-page'
+    > &
+      Schema.Attribute.Private;
+    partners: Schema.Attribute.Component<'consideration.partner', true>;
+    partnersSubtitle: Schema.Attribute.Text;
+    partnersTitle: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    quizDescription: Schema.Attribute.Text;
+    quizQuestions: Schema.Attribute.Component<
+      'consideration.quiz-question',
+      true
+    >;
+    quizTitle: Schema.Attribute.String;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiConstructionPageConstructionPage
   extends Struct.SingleTypeSchema {
   collectionName: 'construction_pages';
@@ -3037,6 +3092,7 @@ declare module '@strapi/strapi' {
       'api::award-page.award-page': ApiAwardPageAwardPage;
       'api::career-page.career-page': ApiCareerPageCareerPage;
       'api::colab-page.colab-page': ApiColabPageColabPage;
+      'api::consideration-page.consideration-page': ApiConsiderationPageConsiderationPage;
       'api::construction-page.construction-page': ApiConstructionPageConstructionPage;
       'api::contact-submission.contact-submission': ApiContactSubmissionContactSubmission;
       'api::contact.contact': ApiContactContact;
