@@ -128,10 +128,7 @@ export interface ConsiderationPartner extends Struct.ComponentSchema {
     description: 'Partner logo for the In Good Company grid';
     displayName: 'Partner';
   };
-  attributes: {
-    logo: Schema.Attribute.Media<'images'>;
-    name: Schema.Attribute.String & Schema.Attribute.Required;
-  };
+  attributes: {};
 }
 
 export interface ConsiderationQuizQuestion extends Struct.ComponentSchema {

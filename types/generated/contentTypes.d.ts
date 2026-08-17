@@ -703,10 +703,15 @@ export interface ApiConsiderationPageConsiderationPage
     advisorFeatureText: Schema.Attribute.Text;
     advisorImage: Schema.Attribute.Media<'images'>;
     advisorTitle: Schema.Attribute.String;
+    alignedCtaText: Schema.Attribute.String;
+    alignedCtaUrl: Schema.Attribute.String;
+    alignedDescription: Schema.Attribute.Text;
+    alignedHighlightText: Schema.Attribute.String;
+    alignedImage: Schema.Attribute.Media<'images'>;
+    alignedTitle: Schema.Attribute.String;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    heroBody: Schema.Attribute.Text;
     heroImage: Schema.Attribute.Media<'images'>;
     heroText: Schema.Attribute.Text;
     heroTitle: Schema.Attribute.String;
@@ -722,7 +727,10 @@ export interface ApiConsiderationPageConsiderationPage
       'api::consideration-page.consideration-page'
     > &
       Schema.Attribute.Private;
-    partners: Schema.Attribute.Component<'consideration.partner', true>;
+    partner: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::our-client.our-client'
+    >;
     partnersSubtitle: Schema.Attribute.Text;
     partnersTitle: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;

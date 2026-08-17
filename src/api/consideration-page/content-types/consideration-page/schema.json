@@ -12,45 +12,111 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "heroTitle": { "type": "string" },
-    "heroText": { "type": "text" },
-    "heroBody": { "type": "text" },
-    "heroWatermark": { "type": "string" },
-    "heroImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
-
-    "advisorTitle": { "type": "string" },
-    "advisorDescription": { "type": "text" },
-    "advisorFeatureText": { "type": "text" },
-    "advisorImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
-    "advisorCtaText": { "type": "string" },
-    "advisorCtaUrl": { "type": "string" },
-
-    "partnersTitle": { "type": "string" },
-    "partnersSubtitle": { "type": "text" },
-    "partners": {
-      "type": "component",
-      "repeatable": true,
-      "component": "consideration.partner"
+    "heroTitle": {
+      "type": "string"
     },
-
-    "quizTitle": { "type": "string" },
-    "quizDescription": { "type": "text" },
+    "heroText": {
+      "type": "text"
+    },
+    "heroWatermark": {
+      "type": "string"
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "advisorTitle": {
+      "type": "string"
+    },
+    "advisorDescription": {
+      "type": "text"
+    },
+    "advisorFeatureText": {
+      "type": "text"
+    },
+    "advisorImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "advisorCtaText": {
+      "type": "string"
+    },
+    "advisorCtaUrl": {
+      "type": "string"
+    },
+    "alignedTitle": {
+      "type": "string"
+    },
+    "alignedDescription": {
+      "type": "text"
+    },
+    "alignedHighlightText": {
+      "type": "string"
+    },
+    "alignedImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "alignedCtaText": {
+      "type": "string"
+    },
+    "alignedCtaUrl": {
+      "type": "string"
+    },
+    "partnersTitle": {
+      "type": "string"
+    },
+    "partnersSubtitle": {
+      "type": "text"
+    },
+    "quizTitle": {
+      "type": "string"
+    },
+    "quizDescription": {
+      "type": "text"
+    },
     "quizQuestions": {
       "type": "component",
-      "repeatable": true,
-      "component": "consideration.quiz-question"
+      "component": "consideration.quiz-question",
+      "repeatable": true
     },
-
-    "journeyTitle": { "type": "string" },
-    "journeyText": { "type": "text" },
-    "journeyImage": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
-    "journeyCtaText": { "type": "string" },
-    "journeyCtaUrl": { "type": "string" },
-
+    "journeyTitle": {
+      "type": "string"
+    },
+    "journeyText": {
+      "type": "text"
+    },
+    "journeyImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "journeyCtaText": {
+      "type": "string"
+    },
+    "journeyCtaUrl": {
+      "type": "string"
+    },
     "seo": {
       "type": "component",
-      "repeatable": false,
-      "component": "shared.seo"
+      "component": "shared.seo",
+      "repeatable": false
+    },
+    "partner": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::our-client.our-client"
     }
   }
 }
