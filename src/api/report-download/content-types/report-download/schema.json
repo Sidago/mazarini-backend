@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "report_downloads",
+  "info": {
+    "singularName": "report-download",
+    "pluralName": "report-downloads",
+    "displayName": "Report Download",
+    "description": "Stores insight report download form submissions from the website"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstName": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "lastName": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phone": {
+      "type": "string",
+      "maxLength": 30
+    },
+    "company": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "insightSlug": {
+      "type": "string",
+      "required": true,
+      "maxLength": 200
+    },
+    "insightTitle": {
+      "type": "string",
+      "maxLength": 200
+    }
+  }
+}

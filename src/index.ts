@@ -44,6 +44,7 @@ export default {
     await setPublicPermissions(strapi, "project", ["find", "findOne"]);
     await setPublicPermissions(strapi, "contact", ["find"]);
     await setPublicPermissions(strapi, "contact-submission", ["create"]);
+    await setPublicPermissions(strapi, "report-download", ["create"]);
     await setPublicPermissions(strapi, "stat", ["find", "findOne"]);
     await setPublicPermissions(strapi, "spark-page", ["find"]);
     await setPublicPermissions(strapi, "jobs-page", ["find"]);

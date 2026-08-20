@@ -1306,6 +1306,7 @@ export interface ApiInsightInsight extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     date: Schema.Attribute.Date;
     description: Schema.Attribute.Text;
+    file: Schema.Attribute.Media<'files'>;
     image: Schema.Attribute.Media<'images'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
@@ -1979,6 +1980,63 @@ export interface ApiRdWhyCardRdWhyCard extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     order: Schema.Attribute.Integer;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiReportDownloadReportDownload
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'report_downloads';
+  info: {
+    description: 'Stores insight report download form submissions from the website';
+    displayName: 'Report Download';
+    pluralName: 'report-downloads';
+    singularName: 'report-download';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    company: Schema.Attribute.String &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 200;
+      }>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    email: Schema.Attribute.Email & Schema.Attribute.Required;
+    firstName: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 100;
+      }>;
+    insightSlug: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 200;
+      }>;
+    insightTitle: Schema.Attribute.String &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 200;
+      }>;
+    lastName: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 100;
+      }>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::report-download.report-download'
+    > &
+      Schema.Attribute.Private;
+    phone: Schema.Attribute.String &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 30;
+      }>;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -3143,6 +3201,7 @@ declare module '@strapi/strapi' {
       'api::rd-page.rd-page': ApiRdPageRdPage;
       'api::rd-pillar.rd-pillar': ApiRdPillarRdPillar;
       'api::rd-why-card.rd-why-card': ApiRdWhyCardRdWhyCard;
+      'api::report-download.report-download': ApiReportDownloadReportDownload;
       'api::safety.safety': ApiSafetySafety;
       'api::service.service': ApiServiceService;
       'api::services-page.services-page': ApiServicesPageServicesPage;

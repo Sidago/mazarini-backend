@@ -36,6 +36,13 @@
         "images"
       ]
     },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "files"
+      ]
+    },
     "seo": {
       "type": "component",
       "component": "shared.seo",
