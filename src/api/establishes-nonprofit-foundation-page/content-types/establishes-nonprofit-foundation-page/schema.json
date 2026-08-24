@@ -1,0 +1,106 @@
+{
+  "kind": "singleType",
+  "collectionName": "establishes_nonprofit_foundation_pages",
+  "info": {
+    "singularName": "establishes-nonprofit-foundation-page",
+    "pluralName": "establishes-nonprofit-foundation-pages",
+    "displayName": "Establishes Nonprofit Foundation Page",
+    "description": "Establishes Nonprofit Foundation page content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "category": {
+      "type": "string"
+    },
+    "publishedDate": {
+      "type": "date"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subheading": {
+      "type": "text"
+    },
+    "paragraph1": {
+      "type": "text"
+    },
+    "paragraph2": {
+      "type": "text"
+    },
+    "paragraph3": {
+      "type": "text"
+    },
+    "paragraph4": {
+      "type": "text"
+    },
+    "paragraph5": {
+      "type": "text"
+    },
+    "crLinkText": {
+      "type": "string"
+    },
+    "crLinkUrl": {
+      "type": "string"
+    },
+    "galleryImage1": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "galleryImage2": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "galleryImage3": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "galleryImage4": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "galleryCaption": {
+      "type": "text"
+    },
+    "promoProjectsTitle": {
+      "type": "string"
+    },
+    "promoProjectsUrl": {
+      "type": "string"
+    },
+    "promoProjectsImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "promoExperienceTitle": {
+      "type": "string"
+    },
+    "promoExperienceUrl": {
+      "type": "string"
+    },
+    "promoExperienceImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

@@ -1054,6 +1054,59 @@ export interface ApiCrPillarCrPillar extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiEstablishesNonprofitFoundationPageEstablishesNonprofitFoundationPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'establishes_nonprofit_foundation_pages';
+  info: {
+    description: 'Establishes Nonprofit Foundation page content';
+    displayName: 'Establishes Nonprofit Foundation Page';
+    pluralName: 'establishes-nonprofit-foundation-pages';
+    singularName: 'establishes-nonprofit-foundation-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    category: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    crLinkText: Schema.Attribute.String;
+    crLinkUrl: Schema.Attribute.String;
+    galleryCaption: Schema.Attribute.Text;
+    galleryImage1: Schema.Attribute.Media<'images'>;
+    galleryImage2: Schema.Attribute.Media<'images'>;
+    galleryImage3: Schema.Attribute.Media<'images'>;
+    galleryImage4: Schema.Attribute.Media<'images'>;
+    heroImage: Schema.Attribute.Media<'images'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::establishes-nonprofit-foundation-page.establishes-nonprofit-foundation-page'
+    > &
+      Schema.Attribute.Private;
+    paragraph1: Schema.Attribute.Text;
+    paragraph2: Schema.Attribute.Text;
+    paragraph3: Schema.Attribute.Text;
+    paragraph4: Schema.Attribute.Text;
+    paragraph5: Schema.Attribute.Text;
+    promoExperienceImage: Schema.Attribute.Media<'images'>;
+    promoExperienceTitle: Schema.Attribute.String;
+    promoExperienceUrl: Schema.Attribute.String;
+    promoProjectsImage: Schema.Attribute.Media<'images'>;
+    promoProjectsTitle: Schema.Attribute.String;
+    promoProjectsUrl: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    publishedDate: Schema.Attribute.Date;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    subheading: Schema.Attribute.Text;
+    title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiExperiencePageExperiencePage
   extends Struct.SingleTypeSchema {
   collectionName: 'experience_pages';
@@ -3178,6 +3231,7 @@ declare module '@strapi/strapi' {
       'api::corporate-responsibility-page.corporate-responsibility-page': ApiCorporateResponsibilityPageCorporateResponsibilityPage;
       'api::cr-metric.cr-metric': ApiCrMetricCrMetric;
       'api::cr-pillar.cr-pillar': ApiCrPillarCrPillar;
+      'api::establishes-nonprofit-foundation-page.establishes-nonprofit-foundation-page': ApiEstablishesNonprofitFoundationPageEstablishesNonprofitFoundationPage;
       'api::experience-page.experience-page': ApiExperiencePageExperiencePage;
       'api::experience-step.experience-step': ApiExperienceStepExperienceStep;
       'api::expertise.expertise': ApiExpertiseExpertise;

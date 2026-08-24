@@ -52,5 +52,24 @@ export default {
     await setPublicPermissions(strapi, "preconstruction-page", ["find"]);
     await setPublicPermissions(strapi, "construction-page", ["find"]);
     await setPublicPermissions(strapi, "consideration-page", ["find"]);
+    await setPublicPermissions(strapi, "corporate-responsibility-page", ["find"]);
+    await setPublicPermissions(strapi, "establishes-nonprofit-foundation-page", ["find"]);
+    await setPublicPermissions(strapi, "colab-page", ["find"]);
+    await setPublicPermissions(strapi, "experience-page", ["find"]);
+    await setPublicPermissions(strapi, "leadership-page", ["find"]);
+    await setPublicPermissions(strapi, "location", ["find", "findOne"]);
+    await setPublicPermissions(strapi, "location-list", ["find"]);
+    await setPublicPermissions(strapi, "news", ["find", "findOne"]);
+    await setPublicPermissions(strapi, "news-page", ["find"]);
+    await setPublicPermissions(strapi, "post-construction-page", ["find"]);
+    await setPublicPermissions(strapi, "rd-page", ["find"]);
+    await setPublicPermissions(strapi, "safety", ["find"]);
+    await setPublicPermissions(strapi, "service", ["find", "findOne"]);
+    await setPublicPermissions(strapi, "services-page", ["find"]);
+    await setPublicPermissions(strapi, "subcontractors-page", ["find"]);
+    await setPublicPermissions(strapi, "sustainability", ["find"]);
+    await setPublicPermissions(strapi, "team", ["find", "findOne"]);
+    await setPublicPermissions(strapi, "team-page", ["find"]);
+    await setPublicPermissions(strapi, "you-belong-here-page", ["find"]);
   },
 };
