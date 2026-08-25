@@ -1,0 +1,1623 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "admin.ts",
+      "file_type": "code",
+      "source_file": "config/admin.ts",
+      "source_location": "L1",
+      "id": "config_admin_ts",
+      "community": 4,
+      "norm_label": "admin.ts"
+    },
+    {
+      "label": "config()",
+      "file_type": "code",
+      "source_file": "config/admin.ts",
+      "source_location": "L3",
+      "id": "config_admin_config",
+      "community": 4,
+      "norm_label": "config()"
+    },
+    {
+      "label": "api.ts",
+      "file_type": "code",
+      "source_file": "config/api.ts",
+      "source_location": "L1",
+      "id": "config_api_ts",
+      "community": 6,
+      "norm_label": "api.ts"
+    },
+    {
+      "label": "database.ts",
+      "file_type": "code",
+      "source_file": "config/database.ts",
+      "source_location": "L1",
+      "id": "config_database_ts",
+      "community": 5,
+      "norm_label": "database.ts"
+    },
+    {
+      "label": "config()",
+      "file_type": "code",
+      "source_file": "config/database.ts",
+      "source_location": "L4",
+      "id": "config_database_config",
+      "community": 5,
+      "norm_label": "config()"
+    },
+    {
+      "label": "middlewares.ts",
+      "file_type": "code",
+      "source_file": "config/middlewares.ts",
+      "source_location": "L1",
+      "id": "config_middlewares_ts",
+      "community": 7,
+      "norm_label": "middlewares.ts"
+    },
+    {
+      "label": "plugins.ts",
+      "file_type": "code",
+      "source_file": "config/plugins.ts",
+      "source_location": "L1",
+      "id": "config_plugins_ts",
+      "community": 2,
+      "norm_label": "plugins.ts"
+    },
+    {
+      "label": "config()",
+      "file_type": "code",
+      "source_file": "config/plugins.ts",
+      "source_location": "L3",
+      "id": "config_plugins_config",
+      "community": 2,
+      "norm_label": "config()"
+    },
+    {
+      "label": "server.ts",
+      "file_type": "code",
+      "source_file": "config/server.ts",
+      "source_location": "L1",
+      "id": "config_server_ts",
+      "community": 1,
+      "norm_label": "server.ts"
+    },
+    {
+      "label": "config()",
+      "file_type": "code",
+      "source_file": "config/server.ts",
+      "source_location": "L3",
+      "id": "config_server_config",
+      "community": 1,
+      "norm_label": "config()"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "src/index.ts",
+      "source_location": "L1",
+      "id": "src_index_ts",
+      "community": 0,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "setPublicPermissions()",
+      "file_type": "code",
+      "source_file": "src/index.ts",
+      "source_location": "L3",
+      "id": "src_index_setpublicpermissions",
+      "community": 0,
+      "norm_label": "setpublicpermissions()"
+    },
+    {
+      "label": "register()",
+      "file_type": "code",
+      "source_file": "src/index.ts",
+      "source_location": "L36",
+      "id": "src_index_register",
+      "community": 0,
+      "norm_label": "register()"
+    },
+    {
+      "label": "bootstrap()",
+      "file_type": "code",
+      "source_file": "src/index.ts",
+      "source_location": "L38",
+      "id": "src_index_bootstrap",
+      "community": 0,
+      "norm_label": "bootstrap()"
+    },
+    {
+      "label": "app.example.tsx",
+      "file_type": "code",
+      "source_file": "src/admin/app.example.tsx",
+      "source_location": "L1",
+      "id": "src_admin_app_example_tsx",
+      "community": 3,
+      "norm_label": "app.example.tsx"
+    },
+    {
+      "label": "bootstrap()",
+      "file_type": "code",
+      "source_file": "src/admin/app.example.tsx",
+      "source_location": "L34",
+      "id": "admin_app_example_bootstrap",
+      "community": 3,
+      "norm_label": "bootstrap()"
+    },
+    {
+      "label": "vite.config.example.ts",
+      "file_type": "code",
+      "source_file": "src/admin/vite.config.example.ts",
+      "source_location": "L1",
+      "id": "src_admin_vite_config_example_ts",
+      "community": 8,
+      "norm_label": "vite.config.example.ts"
+    },
+    {
+      "label": "news-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/news-page/controllers/news-page.ts",
+      "source_location": "L1",
+      "id": "src_api_news_page_controllers_news_page_ts",
+      "community": 9,
+      "norm_label": "news-page.ts"
+    },
+    {
+      "label": "news-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/news-page/routes/news-page.ts",
+      "source_location": "L1",
+      "id": "src_api_news_page_routes_news_page_ts",
+      "community": 10,
+      "norm_label": "news-page.ts"
+    },
+    {
+      "label": "news-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/news-page/services/news-page.ts",
+      "source_location": "L1",
+      "id": "src_api_news_page_services_news_page_ts",
+      "community": 11,
+      "norm_label": "news-page.ts"
+    },
+    {
+      "label": "about.ts",
+      "file_type": "code",
+      "source_file": "src/api/about/controllers/about.ts",
+      "source_location": "L1",
+      "id": "src_api_about_controllers_about_ts",
+      "community": 12,
+      "norm_label": "about.ts"
+    },
+    {
+      "label": "about.ts",
+      "file_type": "code",
+      "source_file": "src/api/about/routes/about.ts",
+      "source_location": "L1",
+      "id": "src_api_about_routes_about_ts",
+      "community": 13,
+      "norm_label": "about.ts"
+    },
+    {
+      "label": "about.ts",
+      "file_type": "code",
+      "source_file": "src/api/about/services/about.ts",
+      "source_location": "L1",
+      "id": "src_api_about_services_about_ts",
+      "community": 14,
+      "norm_label": "about.ts"
+    },
+    {
+      "label": "award-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/award-page/controllers/award-page.ts",
+      "source_location": "L1",
+      "id": "src_api_award_page_controllers_award_page_ts",
+      "community": 15,
+      "norm_label": "award-page.ts"
+    },
+    {
+      "label": "award-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/award-page/routes/award-page.ts",
+      "source_location": "L1",
+      "id": "src_api_award_page_routes_award_page_ts",
+      "community": 16,
+      "norm_label": "award-page.ts"
+    },
+    {
+      "label": "award-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/award-page/services/award-page.ts",
+      "source_location": "L1",
+      "id": "src_api_award_page_services_award_page_ts",
+      "community": 17,
+      "norm_label": "award-page.ts"
+    },
+    {
+      "label": "career-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/career-page/controllers/career-page.ts",
+      "source_location": "L1",
+      "id": "src_api_career_page_controllers_career_page_ts",
+      "community": 18,
+      "norm_label": "career-page.ts"
+    },
+    {
+      "label": "career-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/career-page/routes/career-page.ts",
+      "source_location": "L1",
+      "id": "src_api_career_page_routes_career_page_ts",
+      "community": 19,
+      "norm_label": "career-page.ts"
+    },
+    {
+      "label": "career-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/career-page/services/career-page.ts",
+      "source_location": "L1",
+      "id": "src_api_career_page_services_career_page_ts",
+      "community": 20,
+      "norm_label": "career-page.ts"
+    },
+    {
+      "label": "colab-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/colab-page/controllers/colab-page.ts",
+      "source_location": "L1",
+      "id": "src_api_colab_page_controllers_colab_page_ts",
+      "community": 21,
+      "norm_label": "colab-page.ts"
+    },
+    {
+      "label": "colab-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/colab-page/routes/colab-page.ts",
+      "source_location": "L1",
+      "id": "src_api_colab_page_routes_colab_page_ts",
+      "community": 22,
+      "norm_label": "colab-page.ts"
+    },
+    {
+      "label": "colab-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/colab-page/services/colab-page.ts",
+      "source_location": "L1",
+      "id": "src_api_colab_page_services_colab_page_ts",
+      "community": 23,
+      "norm_label": "colab-page.ts"
+    },
+    {
+      "label": "consideration-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/consideration-page/controllers/consideration-page.ts",
+      "source_location": "L1",
+      "id": "src_api_consideration_page_controllers_consideration_page_ts",
+      "community": 24,
+      "norm_label": "consideration-page.ts"
+    },
+    {
+      "label": "consideration-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/consideration-page/routes/consideration-page.ts",
+      "source_location": "L1",
+      "id": "src_api_consideration_page_routes_consideration_page_ts",
+      "community": 25,
+      "norm_label": "consideration-page.ts"
+    },
+    {
+      "label": "consideration-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/consideration-page/services/consideration-page.ts",
+      "source_location": "L1",
+      "id": "src_api_consideration_page_services_consideration_page_ts",
+      "community": 26,
+      "norm_label": "consideration-page.ts"
+    },
+    {
+      "label": "construction-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/construction-page/controllers/construction-page.ts",
+      "source_location": "L1",
+      "id": "src_api_construction_page_controllers_construction_page_ts",
+      "community": 27,
+      "norm_label": "construction-page.ts"
+    },
+    {
+      "label": "construction-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/construction-page/routes/construction-page.ts",
+      "source_location": "L1",
+      "id": "src_api_construction_page_routes_construction_page_ts",
+      "community": 28,
+      "norm_label": "construction-page.ts"
+    },
+    {
+      "label": "construction-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/construction-page/services/construction-page.ts",
+      "source_location": "L1",
+      "id": "src_api_construction_page_services_construction_page_ts",
+      "community": 29,
+      "norm_label": "construction-page.ts"
+    },
+    {
+      "label": "contact.ts",
+      "file_type": "code",
+      "source_file": "src/api/contact/controllers/contact.ts",
+      "source_location": "L1",
+      "id": "src_api_contact_controllers_contact_ts",
+      "community": 30,
+      "norm_label": "contact.ts"
+    },
+    {
+      "label": "contact.ts",
+      "file_type": "code",
+      "source_file": "src/api/contact/routes/contact.ts",
+      "source_location": "L1",
+      "id": "src_api_contact_routes_contact_ts",
+      "community": 31,
+      "norm_label": "contact.ts"
+    },
+    {
+      "label": "contact.ts",
+      "file_type": "code",
+      "source_file": "src/api/contact/services/contact.ts",
+      "source_location": "L1",
+      "id": "src_api_contact_services_contact_ts",
+      "community": 32,
+      "norm_label": "contact.ts"
+    },
+    {
+      "label": "contact-submission.ts",
+      "file_type": "code",
+      "source_file": "src/api/contact-submission/controllers/contact-submission.ts",
+      "source_location": "L1",
+      "id": "src_api_contact_submission_controllers_contact_submission_ts",
+      "community": 33,
+      "norm_label": "contact-submission.ts"
+    },
+    {
+      "label": "contact-submission.ts",
+      "file_type": "code",
+      "source_file": "src/api/contact-submission/routes/contact-submission.ts",
+      "source_location": "L1",
+      "id": "src_api_contact_submission_routes_contact_submission_ts",
+      "community": 34,
+      "norm_label": "contact-submission.ts"
+    },
+    {
+      "label": "contact-submission.ts",
+      "file_type": "code",
+      "source_file": "src/api/contact-submission/services/contact-submission.ts",
+      "source_location": "L1",
+      "id": "src_api_contact_submission_services_contact_submission_ts",
+      "community": 35,
+      "norm_label": "contact-submission.ts"
+    },
+    {
+      "label": "corporate-responsibility-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/corporate-responsibility-page/controllers/corporate-responsibility-page.ts",
+      "source_location": "L1",
+      "id": "src_api_corporate_responsibility_page_controllers_corporate_responsibility_page_ts",
+      "community": 36,
+      "norm_label": "corporate-responsibility-page.ts"
+    },
+    {
+      "label": "corporate-responsibility-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/corporate-responsibility-page/routes/corporate-responsibility-page.ts",
+      "source_location": "L1",
+      "id": "src_api_corporate_responsibility_page_routes_corporate_responsibility_page_ts",
+      "community": 37,
+      "norm_label": "corporate-responsibility-page.ts"
+    },
+    {
+      "label": "corporate-responsibility-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/corporate-responsibility-page/services/corporate-responsibility-page.ts",
+      "source_location": "L1",
+      "id": "src_api_corporate_responsibility_page_services_corporate_responsibility_page_ts",
+      "community": 38,
+      "norm_label": "corporate-responsibility-page.ts"
+    },
+    {
+      "label": "cr-metric.ts",
+      "file_type": "code",
+      "source_file": "src/api/cr-metric/controllers/cr-metric.ts",
+      "source_location": "L1",
+      "id": "src_api_cr_metric_controllers_cr_metric_ts",
+      "community": 39,
+      "norm_label": "cr-metric.ts"
+    },
+    {
+      "label": "cr-metric.ts",
+      "file_type": "code",
+      "source_file": "src/api/cr-metric/routes/cr-metric.ts",
+      "source_location": "L1",
+      "id": "src_api_cr_metric_routes_cr_metric_ts",
+      "community": 40,
+      "norm_label": "cr-metric.ts"
+    },
+    {
+      "label": "cr-metric.ts",
+      "file_type": "code",
+      "source_file": "src/api/cr-metric/services/cr-metric.ts",
+      "source_location": "L1",
+      "id": "src_api_cr_metric_services_cr_metric_ts",
+      "community": 41,
+      "norm_label": "cr-metric.ts"
+    },
+    {
+      "label": "cr-pillar.ts",
+      "file_type": "code",
+      "source_file": "src/api/cr-pillar/controllers/cr-pillar.ts",
+      "source_location": "L1",
+      "id": "src_api_cr_pillar_controllers_cr_pillar_ts",
+      "community": 42,
+      "norm_label": "cr-pillar.ts"
+    },
+    {
+      "label": "cr-pillar.ts",
+      "file_type": "code",
+      "source_file": "src/api/cr-pillar/routes/cr-pillar.ts",
+      "source_location": "L1",
+      "id": "src_api_cr_pillar_routes_cr_pillar_ts",
+      "community": 43,
+      "norm_label": "cr-pillar.ts"
+    },
+    {
+      "label": "cr-pillar.ts",
+      "file_type": "code",
+      "source_file": "src/api/cr-pillar/services/cr-pillar.ts",
+      "source_location": "L1",
+      "id": "src_api_cr_pillar_services_cr_pillar_ts",
+      "community": 44,
+      "norm_label": "cr-pillar.ts"
+    },
+    {
+      "label": "establishes-nonprofit-foundation-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/establishes-nonprofit-foundation-page/controllers/establishes-nonprofit-foundation-page.ts",
+      "source_location": "L1",
+      "id": "src_api_establishes_nonprofit_foundation_page_controllers_establishes_nonprofit_foundation_page_ts",
+      "community": 45,
+      "norm_label": "establishes-nonprofit-foundation-page.ts"
+    },
+    {
+      "label": "establishes-nonprofit-foundation-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/establishes-nonprofit-foundation-page/routes/establishes-nonprofit-foundation-page.ts",
+      "source_location": "L1",
+      "id": "src_api_establishes_nonprofit_foundation_page_routes_establishes_nonprofit_foundation_page_ts",
+      "community": 46,
+      "norm_label": "establishes-nonprofit-foundation-page.ts"
+    },
+    {
+      "label": "establishes-nonprofit-foundation-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/establishes-nonprofit-foundation-page/services/establishes-nonprofit-foundation-page.ts",
+      "source_location": "L1",
+      "id": "src_api_establishes_nonprofit_foundation_page_services_establishes_nonprofit_foundation_page_ts",
+      "community": 47,
+      "norm_label": "establishes-nonprofit-foundation-page.ts"
+    },
+    {
+      "label": "experience-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/experience-page/controllers/experience-page.ts",
+      "source_location": "L1",
+      "id": "src_api_experience_page_controllers_experience_page_ts",
+      "community": 48,
+      "norm_label": "experience-page.ts"
+    },
+    {
+      "label": "experience-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/experience-page/routes/experience-page.ts",
+      "source_location": "L1",
+      "id": "src_api_experience_page_routes_experience_page_ts",
+      "community": 49,
+      "norm_label": "experience-page.ts"
+    },
+    {
+      "label": "experience-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/experience-page/services/experience-page.ts",
+      "source_location": "L1",
+      "id": "src_api_experience_page_services_experience_page_ts",
+      "community": 50,
+      "norm_label": "experience-page.ts"
+    },
+    {
+      "label": "experience-step.ts",
+      "file_type": "code",
+      "source_file": "src/api/experience-step/controllers/experience-step.ts",
+      "source_location": "L1",
+      "id": "src_api_experience_step_controllers_experience_step_ts",
+      "community": 51,
+      "norm_label": "experience-step.ts"
+    },
+    {
+      "label": "experience-step.ts",
+      "file_type": "code",
+      "source_file": "src/api/experience-step/routes/experience-step.ts",
+      "source_location": "L1",
+      "id": "src_api_experience_step_routes_experience_step_ts",
+      "community": 52,
+      "norm_label": "experience-step.ts"
+    },
+    {
+      "label": "experience-step.ts",
+      "file_type": "code",
+      "source_file": "src/api/experience-step/services/experience-step.ts",
+      "source_location": "L1",
+      "id": "src_api_experience_step_services_experience_step_ts",
+      "community": 53,
+      "norm_label": "experience-step.ts"
+    },
+    {
+      "label": "expertise.ts",
+      "file_type": "code",
+      "source_file": "src/api/expertise/controllers/expertise.ts",
+      "source_location": "L1",
+      "id": "src_api_expertise_controllers_expertise_ts",
+      "community": 54,
+      "norm_label": "expertise.ts"
+    },
+    {
+      "label": "expertise.ts",
+      "file_type": "code",
+      "source_file": "src/api/expertise/routes/expertise.ts",
+      "source_location": "L1",
+      "id": "src_api_expertise_routes_expertise_ts",
+      "community": 55,
+      "norm_label": "expertise.ts"
+    },
+    {
+      "label": "expertise.ts",
+      "file_type": "code",
+      "source_file": "src/api/expertise/services/expertise.ts",
+      "source_location": "L1",
+      "id": "src_api_expertise_services_expertise_ts",
+      "community": 56,
+      "norm_label": "expertise.ts"
+    },
+    {
+      "label": "global.ts",
+      "file_type": "code",
+      "source_file": "src/api/global/controllers/global.ts",
+      "source_location": "L1",
+      "id": "src_api_global_controllers_global_ts",
+      "community": 57,
+      "norm_label": "global.ts"
+    },
+    {
+      "label": "global.ts",
+      "file_type": "code",
+      "source_file": "src/api/global/routes/global.ts",
+      "source_location": "L1",
+      "id": "src_api_global_routes_global_ts",
+      "community": 58,
+      "norm_label": "global.ts"
+    },
+    {
+      "label": "global.ts",
+      "file_type": "code",
+      "source_file": "src/api/global/services/global.ts",
+      "source_location": "L1",
+      "id": "src_api_global_services_global_ts",
+      "community": 59,
+      "norm_label": "global.ts"
+    },
+    {
+      "label": "homepage.ts",
+      "file_type": "code",
+      "source_file": "src/api/homepage/controllers/homepage.ts",
+      "source_location": "L1",
+      "id": "src_api_homepage_controllers_homepage_ts",
+      "community": 60,
+      "norm_label": "homepage.ts"
+    },
+    {
+      "label": "homepage.ts",
+      "file_type": "code",
+      "source_file": "src/api/homepage/routes/homepage.ts",
+      "source_location": "L1",
+      "id": "src_api_homepage_routes_homepage_ts",
+      "community": 61,
+      "norm_label": "homepage.ts"
+    },
+    {
+      "label": "homepage.ts",
+      "file_type": "code",
+      "source_file": "src/api/homepage/services/homepage.ts",
+      "source_location": "L1",
+      "id": "src_api_homepage_services_homepage_ts",
+      "community": 62,
+      "norm_label": "homepage.ts"
+    },
+    {
+      "label": "insight.ts",
+      "file_type": "code",
+      "source_file": "src/api/insight/controllers/insight.ts",
+      "source_location": "L1",
+      "id": "src_api_insight_controllers_insight_ts",
+      "community": 63,
+      "norm_label": "insight.ts"
+    },
+    {
+      "label": "insight.ts",
+      "file_type": "code",
+      "source_file": "src/api/insight/routes/insight.ts",
+      "source_location": "L1",
+      "id": "src_api_insight_routes_insight_ts",
+      "community": 64,
+      "norm_label": "insight.ts"
+    },
+    {
+      "label": "insight.ts",
+      "file_type": "code",
+      "source_file": "src/api/insight/services/insight.ts",
+      "source_location": "L1",
+      "id": "src_api_insight_services_insight_ts",
+      "community": 65,
+      "norm_label": "insight.ts"
+    },
+    {
+      "label": "insights-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/insights-page/controllers/insights-page.ts",
+      "source_location": "L1",
+      "id": "src_api_insights_page_controllers_insights_page_ts",
+      "community": 66,
+      "norm_label": "insights-page.ts"
+    },
+    {
+      "label": "insights-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/insights-page/routes/insights-page.ts",
+      "source_location": "L1",
+      "id": "src_api_insights_page_routes_insights_page_ts",
+      "community": 67,
+      "norm_label": "insights-page.ts"
+    },
+    {
+      "label": "insights-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/insights-page/services/insights-page.ts",
+      "source_location": "L1",
+      "id": "src_api_insights_page_services_insights_page_ts",
+      "community": 68,
+      "norm_label": "insights-page.ts"
+    },
+    {
+      "label": "job.ts",
+      "file_type": "code",
+      "source_file": "src/api/job/controllers/job.ts",
+      "source_location": "L1",
+      "id": "src_api_job_controllers_job_ts",
+      "community": 69,
+      "norm_label": "job.ts"
+    },
+    {
+      "label": "job.ts",
+      "file_type": "code",
+      "source_file": "src/api/job/routes/job.ts",
+      "source_location": "L1",
+      "id": "src_api_job_routes_job_ts",
+      "community": 70,
+      "norm_label": "job.ts"
+    },
+    {
+      "label": "job.ts",
+      "file_type": "code",
+      "source_file": "src/api/job/services/job.ts",
+      "source_location": "L1",
+      "id": "src_api_job_services_job_ts",
+      "community": 71,
+      "norm_label": "job.ts"
+    },
+    {
+      "label": "jobs-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/jobs-page/controllers/jobs-page.ts",
+      "source_location": "L1",
+      "id": "src_api_jobs_page_controllers_jobs_page_ts",
+      "community": 72,
+      "norm_label": "jobs-page.ts"
+    },
+    {
+      "label": "jobs-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/jobs-page/routes/jobs-page.ts",
+      "source_location": "L1",
+      "id": "src_api_jobs_page_routes_jobs_page_ts",
+      "community": 73,
+      "norm_label": "jobs-page.ts"
+    },
+    {
+      "label": "jobs-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/jobs-page/services/jobs-page.ts",
+      "source_location": "L1",
+      "id": "src_api_jobs_page_services_jobs_page_ts",
+      "community": 74,
+      "norm_label": "jobs-page.ts"
+    },
+    {
+      "label": "leadership-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/leadership-page/controllers/leadership-page.ts",
+      "source_location": "L1",
+      "id": "src_api_leadership_page_controllers_leadership_page_ts",
+      "community": 75,
+      "norm_label": "leadership-page.ts"
+    },
+    {
+      "label": "leadership-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/leadership-page/routes/leadership-page.ts",
+      "source_location": "L1",
+      "id": "src_api_leadership_page_routes_leadership_page_ts",
+      "community": 76,
+      "norm_label": "leadership-page.ts"
+    },
+    {
+      "label": "leadership-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/leadership-page/services/leadership-page.ts",
+      "source_location": "L1",
+      "id": "src_api_leadership_page_services_leadership_page_ts",
+      "community": 77,
+      "norm_label": "leadership-page.ts"
+    },
+    {
+      "label": "location.ts",
+      "file_type": "code",
+      "source_file": "src/api/location/controllers/location.ts",
+      "source_location": "L1",
+      "id": "src_api_location_controllers_location_ts",
+      "community": 78,
+      "norm_label": "location.ts"
+    },
+    {
+      "label": "location.ts",
+      "file_type": "code",
+      "source_file": "src/api/location/routes/location.ts",
+      "source_location": "L1",
+      "id": "src_api_location_routes_location_ts",
+      "community": 79,
+      "norm_label": "location.ts"
+    },
+    {
+      "label": "location.ts",
+      "file_type": "code",
+      "source_file": "src/api/location/services/location.ts",
+      "source_location": "L1",
+      "id": "src_api_location_services_location_ts",
+      "community": 80,
+      "norm_label": "location.ts"
+    },
+    {
+      "label": "location-list.ts",
+      "file_type": "code",
+      "source_file": "src/api/location-list/controllers/location-list.ts",
+      "source_location": "L1",
+      "id": "src_api_location_list_controllers_location_list_ts",
+      "community": 81,
+      "norm_label": "location-list.ts"
+    },
+    {
+      "label": "location-list.ts",
+      "file_type": "code",
+      "source_file": "src/api/location-list/routes/location-list.ts",
+      "source_location": "L1",
+      "id": "src_api_location_list_routes_location_list_ts",
+      "community": 82,
+      "norm_label": "location-list.ts"
+    },
+    {
+      "label": "location-list.ts",
+      "file_type": "code",
+      "source_file": "src/api/location-list/services/location-list.ts",
+      "source_location": "L1",
+      "id": "src_api_location_list_services_location_list_ts",
+      "community": 83,
+      "norm_label": "location-list.ts"
+    },
+    {
+      "label": "news.ts",
+      "file_type": "code",
+      "source_file": "src/api/news/controllers/news.ts",
+      "source_location": "L1",
+      "id": "src_api_news_controllers_news_ts",
+      "community": 84,
+      "norm_label": "news.ts"
+    },
+    {
+      "label": "news.ts",
+      "file_type": "code",
+      "source_file": "src/api/news/routes/news.ts",
+      "source_location": "L1",
+      "id": "src_api_news_routes_news_ts",
+      "community": 85,
+      "norm_label": "news.ts"
+    },
+    {
+      "label": "news.ts",
+      "file_type": "code",
+      "source_file": "src/api/news/services/news.ts",
+      "source_location": "L1",
+      "id": "src_api_news_services_news_ts",
+      "community": 86,
+      "norm_label": "news.ts"
+    },
+    {
+      "label": "our-client.ts",
+      "file_type": "code",
+      "source_file": "src/api/our-client/controllers/our-client.ts",
+      "source_location": "L1",
+      "id": "src_api_our_client_controllers_our_client_ts",
+      "community": 87,
+      "norm_label": "our-client.ts"
+    },
+    {
+      "label": "our-client.ts",
+      "file_type": "code",
+      "source_file": "src/api/our-client/routes/our-client.ts",
+      "source_location": "L1",
+      "id": "src_api_our_client_routes_our_client_ts",
+      "community": 88,
+      "norm_label": "our-client.ts"
+    },
+    {
+      "label": "our-client.ts",
+      "file_type": "code",
+      "source_file": "src/api/our-client/services/our-client.ts",
+      "source_location": "L1",
+      "id": "src_api_our_client_services_our_client_ts",
+      "community": 89,
+      "norm_label": "our-client.ts"
+    },
+    {
+      "label": "post-construction-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/post-construction-page/controllers/post-construction-page.ts",
+      "source_location": "L1",
+      "id": "src_api_post_construction_page_controllers_post_construction_page_ts",
+      "community": 90,
+      "norm_label": "post-construction-page.ts"
+    },
+    {
+      "label": "post-construction-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/post-construction-page/routes/post-construction-page.ts",
+      "source_location": "L1",
+      "id": "src_api_post_construction_page_routes_post_construction_page_ts",
+      "community": 91,
+      "norm_label": "post-construction-page.ts"
+    },
+    {
+      "label": "post-construction-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/post-construction-page/services/post-construction-page.ts",
+      "source_location": "L1",
+      "id": "src_api_post_construction_page_services_post_construction_page_ts",
+      "community": 92,
+      "norm_label": "post-construction-page.ts"
+    },
+    {
+      "label": "preconstruction-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/preconstruction-page/controllers/preconstruction-page.ts",
+      "source_location": "L1",
+      "id": "src_api_preconstruction_page_controllers_preconstruction_page_ts",
+      "community": 93,
+      "norm_label": "preconstruction-page.ts"
+    },
+    {
+      "label": "preconstruction-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/preconstruction-page/routes/preconstruction-page.ts",
+      "source_location": "L1",
+      "id": "src_api_preconstruction_page_routes_preconstruction_page_ts",
+      "community": 94,
+      "norm_label": "preconstruction-page.ts"
+    },
+    {
+      "label": "preconstruction-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/preconstruction-page/services/preconstruction-page.ts",
+      "source_location": "L1",
+      "id": "src_api_preconstruction_page_services_preconstruction_page_ts",
+      "community": 95,
+      "norm_label": "preconstruction-page.ts"
+    },
+    {
+      "label": "project.ts",
+      "file_type": "code",
+      "source_file": "src/api/project/controllers/project.ts",
+      "source_location": "L1",
+      "id": "src_api_project_controllers_project_ts",
+      "community": 96,
+      "norm_label": "project.ts"
+    },
+    {
+      "label": "project.ts",
+      "file_type": "code",
+      "source_file": "src/api/project/routes/project.ts",
+      "source_location": "L1",
+      "id": "src_api_project_routes_project_ts",
+      "community": 97,
+      "norm_label": "project.ts"
+    },
+    {
+      "label": "project.ts",
+      "file_type": "code",
+      "source_file": "src/api/project/services/project.ts",
+      "source_location": "L1",
+      "id": "src_api_project_services_project_ts",
+      "community": 98,
+      "norm_label": "project.ts"
+    },
+    {
+      "label": "projects-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/projects-page/controllers/projects-page.ts",
+      "source_location": "L1",
+      "id": "src_api_projects_page_controllers_projects_page_ts",
+      "community": 99,
+      "norm_label": "projects-page.ts"
+    },
+    {
+      "label": "projects-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/projects-page/routes/projects-page.ts",
+      "source_location": "L1",
+      "id": "src_api_projects_page_routes_projects_page_ts",
+      "community": 100,
+      "norm_label": "projects-page.ts"
+    },
+    {
+      "label": "projects-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/projects-page/services/projects-page.ts",
+      "source_location": "L1",
+      "id": "src_api_projects_page_services_projects_page_ts",
+      "community": 101,
+      "norm_label": "projects-page.ts"
+    },
+    {
+      "label": "rd-innovation-item.ts",
+      "file_type": "code",
+      "source_file": "src/api/rd-innovation-item/controllers/rd-innovation-item.ts",
+      "source_location": "L1",
+      "id": "src_api_rd_innovation_item_controllers_rd_innovation_item_ts",
+      "community": 102,
+      "norm_label": "rd-innovation-item.ts"
+    },
+    {
+      "label": "rd-innovation-item.ts",
+      "file_type": "code",
+      "source_file": "src/api/rd-innovation-item/routes/rd-innovation-item.ts",
+      "source_location": "L1",
+      "id": "src_api_rd_innovation_item_routes_rd_innovation_item_ts",
+      "community": 103,
+      "norm_label": "rd-innovation-item.ts"
+    },
+    {
+      "label": "rd-innovation-item.ts",
+      "file_type": "code",
+      "source_file": "src/api/rd-innovation-item/services/rd-innovation-item.ts",
+      "source_location": "L1",
+      "id": "src_api_rd_innovation_item_services_rd_innovation_item_ts",
+      "community": 104,
+      "norm_label": "rd-innovation-item.ts"
+    },
+    {
+      "label": "rd-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/rd-page/controllers/rd-page.ts",
+      "source_location": "L1",
+      "id": "src_api_rd_page_controllers_rd_page_ts",
+      "community": 105,
+      "norm_label": "rd-page.ts"
+    },
+    {
+      "label": "rd-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/rd-page/routes/rd-page.ts",
+      "source_location": "L1",
+      "id": "src_api_rd_page_routes_rd_page_ts",
+      "community": 106,
+      "norm_label": "rd-page.ts"
+    },
+    {
+      "label": "rd-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/rd-page/services/rd-page.ts",
+      "source_location": "L1",
+      "id": "src_api_rd_page_services_rd_page_ts",
+      "community": 107,
+      "norm_label": "rd-page.ts"
+    },
+    {
+      "label": "rd-pillar.ts",
+      "file_type": "code",
+      "source_file": "src/api/rd-pillar/controllers/rd-pillar.ts",
+      "source_location": "L1",
+      "id": "src_api_rd_pillar_controllers_rd_pillar_ts",
+      "community": 108,
+      "norm_label": "rd-pillar.ts"
+    },
+    {
+      "label": "rd-pillar.ts",
+      "file_type": "code",
+      "source_file": "src/api/rd-pillar/routes/rd-pillar.ts",
+      "source_location": "L1",
+      "id": "src_api_rd_pillar_routes_rd_pillar_ts",
+      "community": 109,
+      "norm_label": "rd-pillar.ts"
+    },
+    {
+      "label": "rd-pillar.ts",
+      "file_type": "code",
+      "source_file": "src/api/rd-pillar/services/rd-pillar.ts",
+      "source_location": "L1",
+      "id": "src_api_rd_pillar_services_rd_pillar_ts",
+      "community": 110,
+      "norm_label": "rd-pillar.ts"
+    },
+    {
+      "label": "rd-why-card.ts",
+      "file_type": "code",
+      "source_file": "src/api/rd-why-card/controllers/rd-why-card.ts",
+      "source_location": "L1",
+      "id": "src_api_rd_why_card_controllers_rd_why_card_ts",
+      "community": 111,
+      "norm_label": "rd-why-card.ts"
+    },
+    {
+      "label": "rd-why-card.ts",
+      "file_type": "code",
+      "source_file": "src/api/rd-why-card/routes/rd-why-card.ts",
+      "source_location": "L1",
+      "id": "src_api_rd_why_card_routes_rd_why_card_ts",
+      "community": 112,
+      "norm_label": "rd-why-card.ts"
+    },
+    {
+      "label": "rd-why-card.ts",
+      "file_type": "code",
+      "source_file": "src/api/rd-why-card/services/rd-why-card.ts",
+      "source_location": "L1",
+      "id": "src_api_rd_why_card_services_rd_why_card_ts",
+      "community": 113,
+      "norm_label": "rd-why-card.ts"
+    },
+    {
+      "label": "report-download.ts",
+      "file_type": "code",
+      "source_file": "src/api/report-download/controllers/report-download.ts",
+      "source_location": "L1",
+      "id": "src_api_report_download_controllers_report_download_ts",
+      "community": 114,
+      "norm_label": "report-download.ts"
+    },
+    {
+      "label": "report-download.ts",
+      "file_type": "code",
+      "source_file": "src/api/report-download/routes/report-download.ts",
+      "source_location": "L1",
+      "id": "src_api_report_download_routes_report_download_ts",
+      "community": 115,
+      "norm_label": "report-download.ts"
+    },
+    {
+      "label": "report-download.ts",
+      "file_type": "code",
+      "source_file": "src/api/report-download/services/report-download.ts",
+      "source_location": "L1",
+      "id": "src_api_report_download_services_report_download_ts",
+      "community": 116,
+      "norm_label": "report-download.ts"
+    },
+    {
+      "label": "safety.ts",
+      "file_type": "code",
+      "source_file": "src/api/safety/controllers/safety.ts",
+      "source_location": "L1",
+      "id": "src_api_safety_controllers_safety_ts",
+      "community": 117,
+      "norm_label": "safety.ts"
+    },
+    {
+      "label": "safety.ts",
+      "file_type": "code",
+      "source_file": "src/api/safety/routes/safety.ts",
+      "source_location": "L1",
+      "id": "src_api_safety_routes_safety_ts",
+      "community": 118,
+      "norm_label": "safety.ts"
+    },
+    {
+      "label": "safety.ts",
+      "file_type": "code",
+      "source_file": "src/api/safety/services/safety.ts",
+      "source_location": "L1",
+      "id": "src_api_safety_services_safety_ts",
+      "community": 119,
+      "norm_label": "safety.ts"
+    },
+    {
+      "label": "service.ts",
+      "file_type": "code",
+      "source_file": "src/api/service/controllers/service.ts",
+      "source_location": "L1",
+      "id": "src_api_service_controllers_service_ts",
+      "community": 120,
+      "norm_label": "service.ts"
+    },
+    {
+      "label": "service.ts",
+      "file_type": "code",
+      "source_file": "src/api/service/routes/service.ts",
+      "source_location": "L1",
+      "id": "src_api_service_routes_service_ts",
+      "community": 121,
+      "norm_label": "service.ts"
+    },
+    {
+      "label": "service.ts",
+      "file_type": "code",
+      "source_file": "src/api/service/services/service.ts",
+      "source_location": "L1",
+      "id": "src_api_service_services_service_ts",
+      "community": 122,
+      "norm_label": "service.ts"
+    },
+    {
+      "label": "services-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/services-page/controllers/services-page.ts",
+      "source_location": "L1",
+      "id": "src_api_services_page_controllers_services_page_ts",
+      "community": 123,
+      "norm_label": "services-page.ts"
+    },
+    {
+      "label": "services-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/services-page/routes/services-page.ts",
+      "source_location": "L1",
+      "id": "src_api_services_page_routes_services_page_ts",
+      "community": 124,
+      "norm_label": "services-page.ts"
+    },
+    {
+      "label": "services-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/services-page/services/services-page.ts",
+      "source_location": "L1",
+      "id": "src_api_services_page_services_services_page_ts",
+      "community": 125,
+      "norm_label": "services-page.ts"
+    },
+    {
+      "label": "spark-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/spark-page/controllers/spark-page.ts",
+      "source_location": "L1",
+      "id": "src_api_spark_page_controllers_spark_page_ts",
+      "community": 126,
+      "norm_label": "spark-page.ts"
+    },
+    {
+      "label": "spark-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/spark-page/routes/spark-page.ts",
+      "source_location": "L1",
+      "id": "src_api_spark_page_routes_spark_page_ts",
+      "community": 127,
+      "norm_label": "spark-page.ts"
+    },
+    {
+      "label": "spark-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/spark-page/services/spark-page.ts",
+      "source_location": "L1",
+      "id": "src_api_spark_page_services_spark_page_ts",
+      "community": 128,
+      "norm_label": "spark-page.ts"
+    },
+    {
+      "label": "stat.ts",
+      "file_type": "code",
+      "source_file": "src/api/stat/controllers/stat.ts",
+      "source_location": "L1",
+      "id": "src_api_stat_controllers_stat_ts",
+      "community": 129,
+      "norm_label": "stat.ts"
+    },
+    {
+      "label": "stat.ts",
+      "file_type": "code",
+      "source_file": "src/api/stat/routes/stat.ts",
+      "source_location": "L1",
+      "id": "src_api_stat_routes_stat_ts",
+      "community": 130,
+      "norm_label": "stat.ts"
+    },
+    {
+      "label": "stat.ts",
+      "file_type": "code",
+      "source_file": "src/api/stat/services/stat.ts",
+      "source_location": "L1",
+      "id": "src_api_stat_services_stat_ts",
+      "community": 131,
+      "norm_label": "stat.ts"
+    },
+    {
+      "label": "sub-nav-item.ts",
+      "file_type": "code",
+      "source_file": "src/api/sub-nav-item/controllers/sub-nav-item.ts",
+      "source_location": "L1",
+      "id": "src_api_sub_nav_item_controllers_sub_nav_item_ts",
+      "community": 132,
+      "norm_label": "sub-nav-item.ts"
+    },
+    {
+      "label": "sub-nav-item.ts",
+      "file_type": "code",
+      "source_file": "src/api/sub-nav-item/routes/sub-nav-item.ts",
+      "source_location": "L1",
+      "id": "src_api_sub_nav_item_routes_sub_nav_item_ts",
+      "community": 133,
+      "norm_label": "sub-nav-item.ts"
+    },
+    {
+      "label": "sub-nav-item.ts",
+      "file_type": "code",
+      "source_file": "src/api/sub-nav-item/services/sub-nav-item.ts",
+      "source_location": "L1",
+      "id": "src_api_sub_nav_item_services_sub_nav_item_ts",
+      "community": 134,
+      "norm_label": "sub-nav-item.ts"
+    },
+    {
+      "label": "subcontractors-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/subcontractors-page/controllers/subcontractors-page.ts",
+      "source_location": "L1",
+      "id": "src_api_subcontractors_page_controllers_subcontractors_page_ts",
+      "community": 135,
+      "norm_label": "subcontractors-page.ts"
+    },
+    {
+      "label": "subcontractors-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/subcontractors-page/routes/subcontractors-page.ts",
+      "source_location": "L1",
+      "id": "src_api_subcontractors_page_routes_subcontractors_page_ts",
+      "community": 136,
+      "norm_label": "subcontractors-page.ts"
+    },
+    {
+      "label": "subcontractors-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/subcontractors-page/services/subcontractors-page.ts",
+      "source_location": "L1",
+      "id": "src_api_subcontractors_page_services_subcontractors_page_ts",
+      "community": 137,
+      "norm_label": "subcontractors-page.ts"
+    },
+    {
+      "label": "sustainability.ts",
+      "file_type": "code",
+      "source_file": "src/api/sustainability/controllers/sustainability.ts",
+      "source_location": "L1",
+      "id": "src_api_sustainability_controllers_sustainability_ts",
+      "community": 138,
+      "norm_label": "sustainability.ts"
+    },
+    {
+      "label": "sustainability.ts",
+      "file_type": "code",
+      "source_file": "src/api/sustainability/routes/sustainability.ts",
+      "source_location": "L1",
+      "id": "src_api_sustainability_routes_sustainability_ts",
+      "community": 139,
+      "norm_label": "sustainability.ts"
+    },
+    {
+      "label": "sustainability.ts",
+      "file_type": "code",
+      "source_file": "src/api/sustainability/services/sustainability.ts",
+      "source_location": "L1",
+      "id": "src_api_sustainability_services_sustainability_ts",
+      "community": 140,
+      "norm_label": "sustainability.ts"
+    },
+    {
+      "label": "team.ts",
+      "file_type": "code",
+      "source_file": "src/api/team/controllers/team.ts",
+      "source_location": "L1",
+      "id": "src_api_team_controllers_team_ts",
+      "community": 141,
+      "norm_label": "team.ts"
+    },
+    {
+      "label": "team.ts",
+      "file_type": "code",
+      "source_file": "src/api/team/routes/team.ts",
+      "source_location": "L1",
+      "id": "src_api_team_routes_team_ts",
+      "community": 142,
+      "norm_label": "team.ts"
+    },
+    {
+      "label": "team.ts",
+      "file_type": "code",
+      "source_file": "src/api/team/services/team.ts",
+      "source_location": "L1",
+      "id": "src_api_team_services_team_ts",
+      "community": 143,
+      "norm_label": "team.ts"
+    },
+    {
+      "label": "team-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/team-page/controllers/team-page.ts",
+      "source_location": "L1",
+      "id": "src_api_team_page_controllers_team_page_ts",
+      "community": 144,
+      "norm_label": "team-page.ts"
+    },
+    {
+      "label": "team-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/team-page/routes/team-page.ts",
+      "source_location": "L1",
+      "id": "src_api_team_page_routes_team_page_ts",
+      "community": 145,
+      "norm_label": "team-page.ts"
+    },
+    {
+      "label": "team-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/team-page/services/team-page.ts",
+      "source_location": "L1",
+      "id": "src_api_team_page_services_team_page_ts",
+      "community": 146,
+      "norm_label": "team-page.ts"
+    },
+    {
+      "label": "testimonial.ts",
+      "file_type": "code",
+      "source_file": "src/api/testimonial/controllers/testimonial.ts",
+      "source_location": "L1",
+      "id": "src_api_testimonial_controllers_testimonial_ts",
+      "community": 147,
+      "norm_label": "testimonial.ts"
+    },
+    {
+      "label": "testimonial.ts",
+      "file_type": "code",
+      "source_file": "src/api/testimonial/routes/testimonial.ts",
+      "source_location": "L1",
+      "id": "src_api_testimonial_routes_testimonial_ts",
+      "community": 148,
+      "norm_label": "testimonial.ts"
+    },
+    {
+      "label": "testimonial.ts",
+      "file_type": "code",
+      "source_file": "src/api/testimonial/services/testimonial.ts",
+      "source_location": "L1",
+      "id": "src_api_testimonial_services_testimonial_ts",
+      "community": 149,
+      "norm_label": "testimonial.ts"
+    },
+    {
+      "label": "timeline-entry.ts",
+      "file_type": "code",
+      "source_file": "src/api/timeline-entry/controllers/timeline-entry.ts",
+      "source_location": "L1",
+      "id": "src_api_timeline_entry_controllers_timeline_entry_ts",
+      "community": 150,
+      "norm_label": "timeline-entry.ts"
+    },
+    {
+      "label": "timeline-entry.ts",
+      "file_type": "code",
+      "source_file": "src/api/timeline-entry/routes/timeline-entry.ts",
+      "source_location": "L1",
+      "id": "src_api_timeline_entry_routes_timeline_entry_ts",
+      "community": 151,
+      "norm_label": "timeline-entry.ts"
+    },
+    {
+      "label": "timeline-entry.ts",
+      "file_type": "code",
+      "source_file": "src/api/timeline-entry/services/timeline-entry.ts",
+      "source_location": "L1",
+      "id": "src_api_timeline_entry_services_timeline_entry_ts",
+      "community": 152,
+      "norm_label": "timeline-entry.ts"
+    },
+    {
+      "label": "tools-and-technology.ts",
+      "file_type": "code",
+      "source_file": "src/api/tools-and-technology/controllers/tools-and-technology.ts",
+      "source_location": "L1",
+      "id": "src_api_tools_and_technology_controllers_tools_and_technology_ts",
+      "community": 153,
+      "norm_label": "tools-and-technology.ts"
+    },
+    {
+      "label": "tools-and-technology.ts",
+      "file_type": "code",
+      "source_file": "src/api/tools-and-technology/routes/tools-and-technology.ts",
+      "source_location": "L1",
+      "id": "src_api_tools_and_technology_routes_tools_and_technology_ts",
+      "community": 154,
+      "norm_label": "tools-and-technology.ts"
+    },
+    {
+      "label": "tools-and-technology.ts",
+      "file_type": "code",
+      "source_file": "src/api/tools-and-technology/services/tools-and-technology.ts",
+      "source_location": "L1",
+      "id": "src_api_tools_and_technology_services_tools_and_technology_ts",
+      "community": 155,
+      "norm_label": "tools-and-technology.ts"
+    },
+    {
+      "label": "you-belong-here-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/you-belong-here-page/controllers/you-belong-here-page.ts",
+      "source_location": "L1",
+      "id": "src_api_you_belong_here_page_controllers_you_belong_here_page_ts",
+      "community": 156,
+      "norm_label": "you-belong-here-page.ts"
+    },
+    {
+      "label": "you-belong-here-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/you-belong-here-page/routes/you-belong-here-page.ts",
+      "source_location": "L1",
+      "id": "src_api_you_belong_here_page_routes_you_belong_here_page_ts",
+      "community": 157,
+      "norm_label": "you-belong-here-page.ts"
+    },
+    {
+      "label": "you-belong-here-page.ts",
+      "file_type": "code",
+      "source_file": "src/api/you-belong-here-page/services/you-belong-here-page.ts",
+      "source_location": "L1",
+      "id": "src_api_you_belong_here_page_services_you_belong_here_page_ts",
+      "community": 158,
+      "norm_label": "you-belong-here-page.ts"
+    },
+    {
+      "label": "components.d.ts",
+      "file_type": "code",
+      "source_file": "types/generated/components.d.ts",
+      "source_location": "L1",
+      "id": "types_generated_components_d_ts",
+      "community": 159,
+      "norm_label": "components.d.ts"
+    },
+    {
+      "label": "contentTypes.d.ts",
+      "file_type": "code",
+      "source_file": "types/generated/contentTypes.d.ts",
+      "source_location": "L1",
+      "id": "types_generated_contenttypes_d_ts",
+      "community": 160,
+      "norm_label": "contenttypes.d.ts"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "config/admin.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "config_admin_ts",
+      "target": "config_admin_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "config/database.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "config_database_ts",
+      "target": "config_database_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "config/plugins.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "config_plugins_ts",
+      "target": "config_plugins_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "config/server.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "config_server_ts",
+      "target": "config_server_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_index_ts",
+      "target": "src_index_setpublicpermissions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.ts",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "src_index_ts",
+      "target": "src_index_register",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.ts",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "src_index_ts",
+      "target": "src_index_bootstrap",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/index.ts",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "src_index_bootstrap",
+      "target": "src_index_setpublicpermissions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/admin/app.example.tsx",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "src_admin_app_example_tsx",
+      "target": "admin_app_example_bootstrap",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "67a2a49f89692fb0c0501f5ed334680b05b47deb"
+}
