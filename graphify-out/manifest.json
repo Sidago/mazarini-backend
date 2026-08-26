@@ -636,11 +636,11 @@
     "hash": "e118203ee16fd3380cc2a3a3feb4614d"
   },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/types/generated/components.d.ts": {
-    "mtime": 1787769518.3072941,
+    "mtime": 1787770180.57761,
     "hash": "5d7bb19155346a4d48dcb82d7651c3aa"
   },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/types/generated/contentTypes.d.ts": {
-    "mtime": 1787769518.3064282,
+    "mtime": 1787770180.576904,
     "hash": "d2a04a198ca18bd6c1b76492049cef1b"
   },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/Dockerfile.txt": {
@@ -843,6 +843,14 @@
     "mtime": 1787760803.0473504,
     "hash": "ae18a12490cebbb5c1de08148fe24128"
   },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/large_cedar_ridge_hotel_conference_center_0_2p_W3_U_0r_T1_U_83db3bb456.jpg": {
+    "mtime": 1787772071.0952134,
+    "hash": "5150947be1646896f2d1b8ae6f067a8a"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/large_cedar_ridge_hotel_conference_center_1_mg_CIF_Xa_D50_2568239749.jpg": {
+    "mtime": 1787772072.004584,
+    "hash": "53a0e6934a9ebbb59b8d15bee17c48f0"
+  },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_material_ordering_shopping_1_Zhkhqx_A9_A_Yw_e7565bcdee.jpg": {
     "mtime": 1787760819.1501138,
     "hash": "b4f13340d99d84a27daa8525e9a03691"
@@ -858,6 +866,14 @@
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_material_ordering_shopping_4_6_Ew_T_Qw_Xneu_E_f83caefb27.jpg": {
     "mtime": 1787760821.7728446,
     "hash": "104f630b86291afaef3121d41b0bbb6a"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_meridian_logistics_warehouse_0_d_I_a_XC_7_D_Wp_Q_16a2fc2bd8.jpg": {
+    "mtime": 1787772064.4447637,
+    "hash": "5673b1edb3025b3585dac23586e0e77b"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_meridian_logistics_warehouse_1_n_T4k2_J_Dtw_TQ_883a8bedb0.jpg": {
+    "mtime": 1787772066.0265381,
+    "hash": "e32434c992ed23df089186e26c4b7d2d"
   },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_mounting_1_Z3v_Fp7sz_CAY_2045046b91.jpg": {
     "mtime": 1787760794.77769,
@@ -1151,6 +1167,14 @@
     "mtime": 1783374862.5029962,
     "hash": "c150928ff637882a7672443ed3414a9c"
   },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/the_bellweather_residences_0_0_Ztf_Ong_Kv_N4_10b6d63518.jpg": {
+    "mtime": 1787772067.2633297,
+    "hash": "9cbec661fdb7b6575e213a9248162431"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/the_bellweather_residences_1_YUD_5b_Tx_Am9k_ed1bbf5df0.jpg": {
+    "mtime": 1787772069.8825336,
+    "hash": "80bd9eef7b08d05a07f722b1b1d57799"
+  },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/the_growing_role_of_robotics_and_automation_on_job_sites_8gr6b_Ob_QLOI_52d3659746.jpg": {
     "mtime": 1787768906.7262561,
     "hash": "e610d8bee8468f46d97e33210d0ca0ca"
@@ -1399,6 +1423,14 @@
     "mtime": 1783374862.5924237,
     "hash": "48dc67ee0e8a5113aeb302af5b614023"
   },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_the_bellweather_residences_0_0_Ztf_Ong_Kv_N4_10b6d63518.jpg": {
+    "mtime": 1787772067.3357496,
+    "hash": "717423104576998a12864ffe1571ad0d"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_the_bellweather_residences_1_YUD_5b_Tx_Am9k_ed1bbf5df0.jpg": {
+    "mtime": 1787772069.8814769,
+    "hash": "671e35d9539b5837f74bc850d57db1bb"
+  },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_the_growing_role_of_robotics_and_automation_on_job_sites_8gr6b_Ob_QLOI_52d3659746.jpg": {
     "mtime": 1787768906.7794895,
     "hash": "8d02646efc81513b20db2b4137b960de"
@@ -1407,53 +1439,17 @@
     "mtime": 1787768777.6935184,
     "hash": "10f9ce057942cb897f4a7c5b4d736021"
   },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_the_rise_of_modular_and_prefabricated_construction_inline_n_Cd_Og_WX_3_U_2c1f2a2d99.jpg": {
-    "mtime": 1787769917.1497211,
-    "hash": "17bf8eb17ca2a5022eafe667b1f0ce25"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_the_rise_of_modular_and_prefabricated_construction_inline_n_Cd_Og_WX_3_U_2c568b106c.jpg": {
-    "mtime": 1787769738.0571404,
-    "hash": "17bf8eb17ca2a5022eafe667b1f0ce25"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_the_rise_of_modular_and_prefabricated_construction_inline_n_Cd_Og_WX_3_U_d947e3edd7.jpg": {
-    "mtime": 1787769882.6990454,
-    "hash": "17bf8eb17ca2a5022eafe667b1f0ce25"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_the_rise_of_modular_and_prefabricated_construction_inline_n_Cd_Og_WX_3_U_ddf36634d6.jpg": {
-    "mtime": 1787769713.9337595,
-    "hash": "17bf8eb17ca2a5022eafe667b1f0ce25"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_timeline1_0535e46d1d.webp": {
-    "mtime": 1782924574.2268078,
-    "hash": "f4e985ce1eca7d42740adb9ac3c188ed"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_timeline2_dab3140b81.webp": {
-    "mtime": 1782924693.4593925,
-    "hash": "ab4a5ec7708b881ec3284097a12f65c9"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_timeline_c4fab7feca.webp": {
-    "mtime": 1782924313.4267278,
-    "hash": "0db79a2eeb996176d1c4dc7c08ac27c8"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_tools_c08659a362.webp": {
-    "mtime": 1778491763.4925754,
-    "hash": "b994a1b5cd5791e00de9dbf65b0bd2b0"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_trust_and_build_bbe1e84a83.png": {
-    "mtime": 1776821994.1539295,
-    "hash": "ec5f31b053e8c45e370c7dc57592506d"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_unnamed_5643646d8e.jpg": {
-    "mtime": 1782932173.0719266,
-    "hash": "a41c4f0bd0e4414c615fa1a11ffcd6c1"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_vertual_5fffcb1e06.webp": {
-    "mtime": 1782847416.9930763,
-    "hash": "ee63b6c7f4317ef3db4c502b98802584"
-  },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_subcontractors_f2221abd01.webp": {
     "mtime": 1778044728.401214,
     "hash": "f78da26860c5c30c3ae1e53248103516"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_sunrise_medical_center_0_1c8sj2_IO_2_I4_177a091e42.jpg": {
+    "mtime": 1787772018.5873988,
+    "hash": "702d87dd36a4a4e82552670c16821522"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_sunrise_medical_center_1_b3_LF_7_JH_Qmms_dce12b01f7.jpg": {
+    "mtime": 1787772019.3018386,
+    "hash": "39ea21a7fa547fe07a8af43917c7a2e3"
   },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_supply_chain_resilience_in_commercial_construction_hg_Bb_Lf_O_Wow_Q_4ec23ca0ab.jpg": {
     "mtime": 1787768909.086472,
@@ -1527,6 +1523,14 @@
     "mtime": 1783374574.3994198,
     "hash": "e1844c5bb9612fe0ab2d67b76add4ca6"
   },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_the_bellweather_residences_0_0_Ztf_Ong_Kv_N4_10b6d63518.jpg": {
+    "mtime": 1787772067.3362453,
+    "hash": "1bd3686d097993c539cf7e6ee6b196d3"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_the_bellweather_residences_1_YUD_5b_Tx_Am9k_ed1bbf5df0.jpg": {
+    "mtime": 1787772069.8821595,
+    "hash": "67b22761bf02126f4eece392840e26c2"
+  },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_the_growing_role_of_robotics_and_automation_on_job_sites_8gr6b_Ob_QLOI_52d3659746.jpg": {
     "mtime": 1787768906.779864,
     "hash": "287d4a042b96c5c0ed3f4cffb28fd5eb"
@@ -1554,42 +1558,6 @@
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_trust_and_build_bbe1e84a83.png": {
     "mtime": 1776821994.1063037,
     "hash": "8540d64b5353b3a84ed6e35a3e56f328"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_unnamed_5643646d8e.jpg": {
-    "mtime": 1782932173.08194,
-    "hash": "b9731fde559ab1313f5d593afdfe467a"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_vertual_5fffcb1e06.webp": {
-    "mtime": 1782847416.9931443,
-    "hash": "ba220310541fe86dcbdc746a0422e151"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_windows_doors_1_K_Au0_J_Maeruk_4e6c2da2f5.jpg": {
-    "mtime": 1787760807.77527,
-    "hash": "00c97a91ed4750044a8c2fb3b9e9107e"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_windows_doors_2_z_D8n7o_Kw1u8_c3a2e04468.jpg": {
-    "mtime": 1787760808.687204,
-    "hash": "7c30451fdc000e4fb55ce1188568dbbf"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_windows_doors_3_M9j2_S5ai0_Ag_c47a2be6a4.jpg": {
-    "mtime": 1787760809.3414776,
-    "hash": "974f763d7cf815491f5064c1cd258915"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_workforce_development_building_the_next_generation_of_tradespeople_80z_Z1s24_Nag_09badde9f2.jpg": {
-    "mtime": 1787768910.545777,
-    "hash": "709fb523dbb6cd829d5e41e397dbdb59"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_yb_c3e5af0cb4.webp": {
-    "mtime": 1778043768.0519793,
-    "hash": "0c1ef5dca9c13cf92c960691b803f13f"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/mounting_1_Z3v_Fp7sz_CAY_2045046b91.jpg": {
-    "mtime": 1787760794.7154524,
-    "hash": "172a2460a3494a466f2f6c8526a4ae0a"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/mounting_2_9_JU_2_C_Kqtw0_M_580ab2aaad.jpg": {
-    "mtime": 1787760795.8272445,
-    "hash": "963f3214fd06f253cde9bacc70337951"
   },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_s9_2820d96a34.webp": {
     "mtime": 1778489608.3211794,
@@ -1638,50 +1606,6 @@
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_spark_db84caba7d.jpeg": {
     "mtime": 1776821994.151443,
     "hash": "4abb780819886a9d83c2308cc68956c0"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_subcontractors_0d312cb6a3.jpg": {
-    "mtime": 1776821994.1517777,
-    "hash": "0d0d612a4fd20c87c12898555eca004a"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_subcontractors_f2221abd01.webp": {
-    "mtime": 1778044728.7027428,
-    "hash": "3dfa74c9fee77c297e6d4b5d8afe68ae"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_supply_chain_resilience_in_commercial_construction_hg_Bb_Lf_O_Wow_Q_4ec23ca0ab.jpg": {
-    "mtime": 1787768909.1260679,
-    "hash": "5dab4c055474162e91eea6e7d8f4f00d"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_sus1_d270e26a49.webp": {
-    "mtime": 1778048750.8850584,
-    "hash": "e91bc4e6f6e7519775acb9d0c78d1d12"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_sus3_c261568fdb.png": {
-    "mtime": 1778049227.3134882,
-    "hash": "83cfd507ffa098109ad57e4050da5cab"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_sus4_501d32b209.webp": {
-    "mtime": 1778049340.982327,
-    "hash": "a5d6a6c1cd48da0dd545802a3d545973"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_sustainability_61c76372fb.webp": {
-    "mtime": 1778047086.0313597,
-    "hash": "8986ed11ffeafd9e4c7c41d3ba64bf8e"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_sustainable_building_materials_reshaping_the_industry_3_G9_IZ_0_Kgmvg_90127f78e1.jpg": {
-    "mtime": 1787768799.7079828,
-    "hash": "a1884f7264c72688e0069c018a79a87c"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_sustainable_building_materials_reshaping_the_industry_inline_3t8_W_Atps_KE_4_51ffb1c53c.jpg": {
-    "mtime": 1787769919.549208,
-    "hash": "c1712caa6f2071f4bbe5a44b6ee937b1"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_team112_3181f0c4c1.png": {
-    "mtime": 1782755809.2487998,
-    "hash": "32f5abca79966b1992f8c56b64ff6571"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_team112_59a9a29360.png": {
-    "mtime": 1777481743.7225838,
-    "hash": "85f26fe3210902a34168bdfa00d8e0b9"
   },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_s3_d12243d0db.webp": {
     "mtime": 1778489101.8185897,
@@ -2039,6 +1963,14 @@
     "mtime": 1776821994.0882494,
     "hash": "08c8395fd4390eadc05cecbd722fc45e"
   },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/large_sunrise_medical_center_0_1c8sj2_IO_2_I4_177a091e42.jpg": {
+    "mtime": 1787772018.633758,
+    "hash": "54f650bae823006dfa1bbd4bdce99219"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/large_sunrise_medical_center_1_b3_LF_7_JH_Qmms_dce12b01f7.jpg": {
+    "mtime": 1787772019.3476717,
+    "hash": "f97fa2a1da6c9bcb08c137b62497a0c3"
+  },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/large_supply_chain_resilience_in_commercial_construction_hg_Bb_Lf_O_Wow_Q_4ec23ca0ab.jpg": {
     "mtime": 1787768909.1263678,
     "hash": "f359f8a99a84d9619d760370dbc5e3f8"
@@ -2126,6 +2058,14 @@
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_subcontractors_f2221abd01.webp": {
     "mtime": 1778044728.70201,
     "hash": "9adec4af80c1ca770e256bd65e0fd84d"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_sunrise_medical_center_0_1c8sj2_IO_2_I4_177a091e42.jpg": {
+    "mtime": 1787772018.6333365,
+    "hash": "18ffa56ae7b7019f06b80f25e00619a5"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_sunrise_medical_center_1_b3_LF_7_JH_Qmms_dce12b01f7.jpg": {
+    "mtime": 1787772019.3464923,
+    "hash": "af6b54a4e364a4acaf75b20d232e2e7d"
   },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_supply_chain_resilience_in_commercial_construction_hg_Bb_Lf_O_Wow_Q_4ec23ca0ab.jpg": {
     "mtime": 1787768909.1263254,
@@ -2243,6 +2183,14 @@
     "mtime": 1783374862.5325007,
     "hash": "09d7c57dac6493da59b54601efb8b355"
   },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_the_bellweather_residences_0_0_Ztf_Ong_Kv_N4_10b6d63518.jpg": {
+    "mtime": 1787772067.2678943,
+    "hash": "0fbdb64891e084384b9a34c3a4b3e5e4"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_the_bellweather_residences_1_YUD_5b_Tx_Am9k_ed1bbf5df0.jpg": {
+    "mtime": 1787772069.8786738,
+    "hash": "d00a134d92b3deefbddf0a6d87a29596"
+  },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_the_growing_role_of_robotics_and_automation_on_job_sites_8gr6b_Ob_QLOI_52d3659746.jpg": {
     "mtime": 1787768906.733816,
     "hash": "d35f3fa277a6146e0fae5121d55d3f13"
@@ -2270,46 +2218,6 @@
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_timeline1_0535e46d1d.webp": {
     "mtime": 1782924574.1192687,
     "hash": "45db6a6d819d6d86839a671c3a82d743"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_timeline2_dab3140b81.webp": {
-    "mtime": 1782924693.3805728,
-    "hash": "99e0c709dc363e2bb11b260cdfbc0bc6"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_timeline_c4fab7feca.webp": {
-    "mtime": 1782924313.3435235,
-    "hash": "eda1624dacc8e476efbef347ded08dda"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_tools_c08659a362.webp": {
-    "mtime": 1778491763.3242536,
-    "hash": "7404693e21f42d287d764a74a527dca7"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_trust_and_build_bbe1e84a83.png": {
-    "mtime": 1776821994.166289,
-    "hash": "b398874537f2f5dc6e00d7058a321852"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_unnamed_5643646d8e.jpg": {
-    "mtime": 1782932172.9850106,
-    "hash": "b5a67e8a6f1bfa2479e05cb76bad8705"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_vertual_5fffcb1e06.webp": {
-    "mtime": 1782847416.79172,
-    "hash": "1ee2bb9528b0c4972888858ae8c418e6"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_windows_doors_1_K_Au0_J_Maeruk_4e6c2da2f5.jpg": {
-    "mtime": 1787760807.7281437,
-    "hash": "360df0fbd7b99bb88c0044ad19cfbe83"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_windows_doors_2_z_D8n7o_Kw1u8_c3a2e04468.jpg": {
-    "mtime": 1787760808.6383998,
-    "hash": "5c01badd5d629823ed5e8f389e658eb9"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_windows_doors_3_M9j2_S5ai0_Ag_c47a2be6a4.jpg": {
-    "mtime": 1787760809.294408,
-    "hash": "0130cf43555bb03338c52b859cb78e07"
-  },
-  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_workforce_development_building_the_next_generation_of_tradespeople_80z_Z1s24_Nag_09badde9f2.jpg": {
-    "mtime": 1787768910.4991233,
-    "hash": "702500069f6fc04ef885f14e81413424"
   },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_colab1_60b2cf107e.jpg": {
     "mtime": 1782302507.2860548,
@@ -2531,6 +2439,14 @@
     "mtime": 1787768905.6584752,
     "hash": "c0ed1ce2fef99bb58e8e0a603162ec60"
   },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_lakeside_elementary_school_0_Zdbq_QW_Lq_KM_0_bf9bc11b14.jpg": {
+    "mtime": 1787772062.047624,
+    "hash": "739a6891a19578b2b0c27af87c2a373c"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_lakeside_elementary_school_1_JE_3820_VQU_Jg_9d65bfbdb6.jpg": {
+    "mtime": 1787772063.4040978,
+    "hash": "dbdbd26a639c39bf4b753704980c19f8"
+  },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_landscaping_1_Kc_Qu_Xa_HCSPE_7774366702.jpg": {
     "mtime": 1787760783.5359366,
     "hash": "9d07914942715f372b3b1b9a2e72b56f"
@@ -2595,6 +2511,14 @@
     "mtime": 1787768905.623134,
     "hash": "f30a4bde15e01068c3e1cf2bc20c6689"
   },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_lakeside_elementary_school_0_Zdbq_QW_Lq_KM_0_bf9bc11b14.jpg": {
+    "mtime": 1787772062.0328956,
+    "hash": "3df8d1253c076f1bd8ffbaeb62d5b602"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_lakeside_elementary_school_1_JE_3820_VQU_Jg_9d65bfbdb6.jpg": {
+    "mtime": 1787772063.2342165,
+    "hash": "2504110ae918341f95a1de774b37ebb6"
+  },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_landscaping_1_Kc_Qu_Xa_HCSPE_7774366702.jpg": {
     "mtime": 1787760783.4799953,
     "hash": "bd4b06990de700a45dd6195b8e726da0"
@@ -2646,6 +2570,14 @@
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/habitat_new_62f095095e.jpg": {
     "mtime": 1787601780.639138,
     "hash": "1512f6810ed94ed0f57d15dc0252abc8"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/harborview_mixed_use_development_0_g4_I64_Izqur_I_a74dda405e.jpg": {
+    "mtime": 1787772073.6006615,
+    "hash": "c4f0e3435aaee691b0ce61761906cbe7"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/harborview_mixed_use_development_1_a2022_Pe_M8q_Y_d8d6b519e0.jpg": {
+    "mtime": 1787772074.2319946,
+    "hash": "d89aaee37901fea5addd75c6a7868f05"
   },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/hero_b9e15fb520.png": {
     "mtime": 1776821994.0795405,
@@ -2719,9 +2651,17 @@
     "mtime": 1778489530.635651,
     "hash": "1ae456185fd6cc529037d8d27c1097e3"
   },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_subcontractors_0d312cb6a3.jpg": {
+    "mtime": 1776821994.1517777,
+    "hash": "0d0d612a4fd20c87c12898555eca004a"
+  },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_team113_d15ca15282.png": {
     "mtime": 1777481743.7267115,
     "hash": "3bdec99f6e1abbb853850692e076be0d"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_the_rise_of_modular_and_prefabricated_construction_inline_n_Cd_Og_WX_3_U_2c1f2a2d99.jpg": {
+    "mtime": 1787769917.1497211,
+    "hash": "17bf8eb17ca2a5022eafe667b1f0ce25"
   },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_windows_doors_1_K_Au0_J_Maeruk_4e6c2da2f5.jpg": {
     "mtime": 1787760807.774839,
@@ -2758,6 +2698,14 @@
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/large_habitat_new_62f095095e.jpg": {
     "mtime": 1787601780.7818823,
     "hash": "eb51f0349692664f4487e6596ce92f67"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/large_harborview_mixed_use_development_0_g4_I64_Izqur_I_a74dda405e.jpg": {
+    "mtime": 1787772073.6554074,
+    "hash": "457bcaeb31db7c5ccff6c0cdb25bf17d"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/large_harborview_mixed_use_development_1_a2022_Pe_M8q_Y_d8d6b519e0.jpg": {
+    "mtime": 1787772074.2795262,
+    "hash": "00fee3b583a9296f662775a5015dfb5c"
   },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/large_hero_new_aa557e60ef.jpg": {
     "mtime": 1787601802.796102,
@@ -2843,6 +2791,14 @@
     "mtime": 1781703464.814534,
     "hash": "2b8a77cd98800a0227b4e2b0466c9fac"
   },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/cedar_ridge_hotel_conference_center_0_2p_W3_U_0r_T1_U_83db3bb456.jpg": {
+    "mtime": 1787772071.05023,
+    "hash": "0e5d721ef07343eecbe6dfe61ca76d98"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/cedar_ridge_hotel_conference_center_1_mg_CIF_Xa_D50_2568239749.jpg": {
+    "mtime": 1787772071.9599853,
+    "hash": "7ce09f185f0dea78e72cb8a32ab1ba5f"
+  },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/client_edfab2e850.png": {
     "mtime": 1783348566.508598,
     "hash": "d9fbbb50b603a09e2982fd1e2715f6a0"
@@ -2906,6 +2862,14 @@
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_jobsite_safety_trends_and_technology_9_OB_46ap_Mb_C4_2547d3b65a.jpg": {
     "mtime": 1787768905.6584098,
     "hash": "8dcd13243d5e9cb8cf517ca433869664"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_lakeside_elementary_school_0_Zdbq_QW_Lq_KM_0_bf9bc11b14.jpg": {
+    "mtime": 1787772062.0488236,
+    "hash": "ee602687752071e5edf8475e1efdd993"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_lakeside_elementary_school_1_JE_3820_VQU_Jg_9d65bfbdb6.jpg": {
+    "mtime": 1787772063.4055245,
+    "hash": "782de80795c5b88c77799f47c80bc4b9"
   },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_landscaping_1_Kc_Qu_Xa_HCSPE_7774366702.jpg": {
     "mtime": 1787760783.537619,
@@ -3343,6 +3307,14 @@
     "mtime": 1781703464.8242004,
     "hash": "93380a785a79a1a30b7dc8aa688090ac"
   },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_cedar_ridge_hotel_conference_center_0_2p_W3_U_0r_T1_U_83db3bb456.jpg": {
+    "mtime": 1787772071.0566487,
+    "hash": "ea7136838b3d62c90493a64657d2f4e2"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_cedar_ridge_hotel_conference_center_1_mg_CIF_Xa_D50_2568239749.jpg": {
+    "mtime": 1787772071.964473,
+    "hash": "255d5388e6ba38a1266d5676d591a4b5"
+  },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_client_edfab2e850.png": {
     "mtime": 1783348566.537072,
     "hash": "6533bc24975ac2f1259690588634be8d"
@@ -3551,6 +3523,14 @@
     "mtime": 1778044728.3415272,
     "hash": "a8f4f733d2189fdb9af09aa0c413dc31"
   },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/sunrise_medical_center_0_1c8sj2_IO_2_I4_177a091e42.jpg": {
+    "mtime": 1787772018.5809166,
+    "hash": "658b0450196ba0504903277072dc4a9b"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/sunrise_medical_center_1_b3_LF_7_JH_Qmms_dce12b01f7.jpg": {
+    "mtime": 1787772019.2950237,
+    "hash": "4bc8059fcc2f185d0c4c48c2861f567e"
+  },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/supply_chain_resilience_in_commercial_construction_hg_Bb_Lf_O_Wow_Q_4ec23ca0ab.jpg": {
     "mtime": 1787768909.0792348,
     "hash": "ce6a5e2a29c1c37f0550447f1fb3c05a"
@@ -3731,6 +3711,14 @@
     "mtime": 1781703464.8635645,
     "hash": "3ccdd879021a9a1247c8d70dbbab8a93"
   },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_cedar_ridge_hotel_conference_center_0_2p_W3_U_0r_T1_U_83db3bb456.jpg": {
+    "mtime": 1787772071.094965,
+    "hash": "2e867d1e01afae7f2de05275f2837118"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_cedar_ridge_hotel_conference_center_1_mg_CIF_Xa_D50_2568239749.jpg": {
+    "mtime": 1787772072.004233,
+    "hash": "04e81bc95a410a4bb4e11df1a2417a92"
+  },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_client_edfab2e850.png": {
     "mtime": 1783348566.687316,
     "hash": "d528f39797e1db523f526c5fff9cc86f"
@@ -3859,6 +3847,14 @@
     "mtime": 1787760803.0468853,
     "hash": "7f34fd99243f39c8899c43df491ead8d"
   },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_cedar_ridge_hotel_conference_center_0_2p_W3_U_0r_T1_U_83db3bb456.jpg": {
+    "mtime": 1787772071.0950043,
+    "hash": "f9a5d9bc437ed2141416523a2f0ed0be"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_cedar_ridge_hotel_conference_center_1_mg_CIF_Xa_D50_2568239749.jpg": {
+    "mtime": 1787772072.004253,
+    "hash": "ebff3e7f45bd1ee9ca3c5c666abf957c"
+  },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_flooring_carpet_3_Ru_C_Vvjuy_Ne_Q_4e1de81bab.jpg": {
     "mtime": 1787760791.3490329,
     "hash": "014d26454823aab04d90a8222efdaed0"
@@ -3890,6 +3886,10 @@
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_team123_2a98db4c76.png": {
     "mtime": 1777876384.5068116,
     "hash": "808674ffb00128a272ed9a0640d44c00"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_unnamed_5643646d8e.jpg": {
+    "mtime": 1782932173.08194,
+    "hash": "b9731fde559ab1313f5d593afdfe467a"
   },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/mounting_3_Z_Ef_Fga_X_Va_V4_19935d2e19.jpg": {
     "mtime": 1787760796.72535,
@@ -4091,6 +4091,14 @@
     "mtime": 1787768905.6172302,
     "hash": "b4c64b2a2ee02037273b4232a0cc4281"
   },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/lakeside_elementary_school_0_Zdbq_QW_Lq_KM_0_bf9bc11b14.jpg": {
+    "mtime": 1787772062.0362618,
+    "hash": "642d20dda256383f7ec936036a89664b"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/lakeside_elementary_school_1_JE_3820_VQU_Jg_9d65bfbdb6.jpg": {
+    "mtime": 1787772063.2271292,
+    "hash": "b7317ddddef05b37bedc8ab9cbdfeb44"
+  },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/landscaping_1_Kc_Qu_Xa_HCSPE_7774366702.jpg": {
     "mtime": 1787760783.473384,
     "hash": "7b001670d6f6b5da8ceff70cc02edc94"
@@ -4267,6 +4275,14 @@
     "mtime": 1787601780.6193604,
     "hash": "9a168f8da87794d3b09f6657f0022ebd"
   },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_harborview_mixed_use_development_0_g4_I64_Izqur_I_a74dda405e.jpg": {
+    "mtime": 1787772073.6052835,
+    "hash": "e74b79de6af1a7b99be97a0bdc73a725"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_harborview_mixed_use_development_1_a2022_Pe_M8q_Y_d8d6b519e0.jpg": {
+    "mtime": 1787772074.2404985,
+    "hash": "de15158697105587352180d7f8a3dd4b"
+  },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_hero_b9e15fb520.png": {
     "mtime": 1776821994.1599445,
     "hash": "aab4cba41bdc2d7361a57b62a5234120"
@@ -4343,6 +4359,14 @@
     "mtime": 1787601780.7545607,
     "hash": "34a5e8a23e9a251dd0086de88c3c3f18"
   },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_harborview_mixed_use_development_0_g4_I64_Izqur_I_a74dda405e.jpg": {
+    "mtime": 1787772073.654317,
+    "hash": "f92cfcbae823299e3250e883c72c493d"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_harborview_mixed_use_development_1_a2022_Pe_M8q_Y_d8d6b519e0.jpg": {
+    "mtime": 1787772074.2788749,
+    "hash": "7f3e5f6cf5c44b86fe3849f51a2994e9"
+  },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_hero_b9e15fb520.png": {
     "mtime": 1776821994.1273358,
     "hash": "12331d8de9c8ef520c5ad6868c1f35ff"
@@ -4386,6 +4410,14 @@
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_material_ordering_shopping_4_6_Ew_T_Qw_Xneu_E_f83caefb27.jpg": {
     "mtime": 1787760821.7149644,
     "hash": "a91bbbfa1e4b6a4f189155fd4b9c1cd0"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_meridian_logistics_warehouse_0_d_I_a_XC_7_D_Wp_Q_16a2fc2bd8.jpg": {
+    "mtime": 1787772064.402993,
+    "hash": "75020da11f763fb244f24d2d131c9cc5"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_meridian_logistics_warehouse_1_n_T4k2_J_Dtw_TQ_883a8bedb0.jpg": {
+    "mtime": 1787772066.0187094,
+    "hash": "38786d67fb82e125a28553b5306eaa2f"
   },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_mounting_1_Z3v_Fp7sz_CAY_2045046b91.jpg": {
     "mtime": 1787760794.7221494,
@@ -4439,6 +4471,14 @@
     "mtime": 1787760821.7739165,
     "hash": "aba1b085b084f767be03ef737db4dbae"
   },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/large_meridian_logistics_warehouse_0_d_I_a_XC_7_D_Wp_Q_16a2fc2bd8.jpg": {
+    "mtime": 1787772064.4455957,
+    "hash": "4b3e177a95ffb8bde17f42bf70abbf76"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/large_meridian_logistics_warehouse_1_n_T4k2_J_Dtw_TQ_883a8bedb0.jpg": {
+    "mtime": 1787772066.0290835,
+    "hash": "a26dcd45933744db524e0fff61991c1a"
+  },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/large_mounting_1_Z3v_Fp7sz_CAY_2045046b91.jpg": {
     "mtime": 1787760794.7786222,
     "hash": "9f170f11b6eda9b597998e3f0e850ae3"
@@ -4478,6 +4518,14 @@
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/large_painting_4_Oh_NSJ_Mm9y_JI_97c674391d.jpg": {
     "mtime": 1787760847.175439,
     "hash": "af86e8caea77c12f298e5ebdf9bf4bf5"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_meridian_logistics_warehouse_0_d_I_a_XC_7_D_Wp_Q_16a2fc2bd8.jpg": {
+    "mtime": 1787772064.4441533,
+    "hash": "04b807ac391d0fcebfb69629c0a0231f"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_meridian_logistics_warehouse_1_n_T4k2_J_Dtw_TQ_883a8bedb0.jpg": {
+    "mtime": 1787772066.0249815,
+    "hash": "e564403f483cfdcc277779a6759f4dbd"
   },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_mounting_1_Z3v_Fp7sz_CAY_2045046b91.jpg": {
     "mtime": 1787760794.7775867,
@@ -4647,6 +4695,14 @@
     "mtime": 1787768905.6585393,
     "hash": "468fc8ecf165e813af1699c4e47b5330"
   },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/large_lakeside_elementary_school_0_Zdbq_QW_Lq_KM_0_bf9bc11b14.jpg": {
+    "mtime": 1787772062.0501995,
+    "hash": "528dab9e2d1d3c97c08f41d0a48512d5"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/large_lakeside_elementary_school_1_JE_3820_VQU_Jg_9d65bfbdb6.jpg": {
+    "mtime": 1787772063.4074702,
+    "hash": "f820db2d0d33aadc07b02fa073c93229"
+  },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/large_landscaping_1_Kc_Qu_Xa_HCSPE_7774366702.jpg": {
     "mtime": 1787760783.5387435,
     "hash": "c9c849acfad84b00489cfc1f2ad1e088"
@@ -4674,6 +4730,14 @@
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_habitat_new_62f095095e.jpg": {
     "mtime": 1787601780.7712064,
     "hash": "65858cb26d6a93c9b6ef912685970056"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_harborview_mixed_use_development_0_g4_I64_Izqur_I_a74dda405e.jpg": {
+    "mtime": 1787772073.654813,
+    "hash": "990667abe5a2813b808421540a1ed676"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_harborview_mixed_use_development_1_a2022_Pe_M8q_Y_d8d6b519e0.jpg": {
+    "mtime": 1787772074.279219,
+    "hash": "43a8daddcfabb7a0a46a9d6e91ac4d3f"
   },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_hero_new_aa557e60ef.jpg": {
     "mtime": 1787601802.7956522,
@@ -4799,6 +4863,10 @@
     "mtime": 1782847638.8705728,
     "hash": "ebb5818334add9e671b86eb30d9947cc"
   },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_timeline2_dab3140b81.webp": {
+    "mtime": 1782924693.3805728,
+    "hash": "99e0c709dc363e2bb11b260cdfbc0bc6"
+  },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_yb_c3e5af0cb4.webp": {
     "mtime": 1778043767.8291128,
     "hash": "9b5ee2aeff97688dba1fb9eaba61e494"
@@ -4831,6 +4899,14 @@
     "mtime": 1777481743.2837563,
     "hash": "a50243c3f0f287f50ab5f3f8b2e35293"
   },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/large_the_bellweather_residences_0_0_Ztf_Ong_Kv_N4_10b6d63518.jpg": {
+    "mtime": 1787772067.3379364,
+    "hash": "0969b177ccdab1c3e1a7ff35bec96008"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/large_the_bellweather_residences_1_YUD_5b_Tx_Am9k_ed1bbf5df0.jpg": {
+    "mtime": 1787772069.8824682,
+    "hash": "fe9e0a23971eda5dd0b68412ae2b9339"
+  },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/large_the_growing_role_of_robotics_and_automation_on_job_sites_8gr6b_Ob_QLOI_52d3659746.jpg": {
     "mtime": 1787768906.7801166,
     "hash": "ebcc63aa9df91737de7c970e41f6bd2f"
@@ -4858,6 +4934,170 @@
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/large_trust_and_build_bbe1e84a83.png": {
     "mtime": 1776821994.095301,
     "hash": "ea6f71f6066c0fe6e34370f4a3f50ba2"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_subcontractors_f2221abd01.webp": {
+    "mtime": 1778044728.7027428,
+    "hash": "3dfa74c9fee77c297e6d4b5d8afe68ae"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_sunrise_medical_center_0_1c8sj2_IO_2_I4_177a091e42.jpg": {
+    "mtime": 1787772018.6331608,
+    "hash": "26d8317a4a1ab39b25cf3eace832163e"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_sunrise_medical_center_1_b3_LF_7_JH_Qmms_dce12b01f7.jpg": {
+    "mtime": 1787772019.3459196,
+    "hash": "3e18609f5035a2e1aea564a9603cb598"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_supply_chain_resilience_in_commercial_construction_hg_Bb_Lf_O_Wow_Q_4ec23ca0ab.jpg": {
+    "mtime": 1787768909.1260679,
+    "hash": "5dab4c055474162e91eea6e7d8f4f00d"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_sus1_d270e26a49.webp": {
+    "mtime": 1778048750.8850584,
+    "hash": "e91bc4e6f6e7519775acb9d0c78d1d12"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_sus3_c261568fdb.png": {
+    "mtime": 1778049227.3134882,
+    "hash": "83cfd507ffa098109ad57e4050da5cab"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_sus4_501d32b209.webp": {
+    "mtime": 1778049340.982327,
+    "hash": "a5d6a6c1cd48da0dd545802a3d545973"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_sustainability_61c76372fb.webp": {
+    "mtime": 1778047086.0313597,
+    "hash": "8986ed11ffeafd9e4c7c41d3ba64bf8e"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_sustainable_building_materials_reshaping_the_industry_3_G9_IZ_0_Kgmvg_90127f78e1.jpg": {
+    "mtime": 1787768799.7079828,
+    "hash": "a1884f7264c72688e0069c018a79a87c"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_sustainable_building_materials_reshaping_the_industry_inline_3t8_W_Atps_KE_4_51ffb1c53c.jpg": {
+    "mtime": 1787769919.549208,
+    "hash": "c1712caa6f2071f4bbe5a44b6ee937b1"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_team112_3181f0c4c1.png": {
+    "mtime": 1782755809.2487998,
+    "hash": "32f5abca79966b1992f8c56b64ff6571"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_team112_59a9a29360.png": {
+    "mtime": 1777481743.7225838,
+    "hash": "85f26fe3210902a34168bdfa00d8e0b9"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_vertual_5fffcb1e06.webp": {
+    "mtime": 1782847416.9931443,
+    "hash": "ba220310541fe86dcbdc746a0422e151"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_windows_doors_1_K_Au0_J_Maeruk_4e6c2da2f5.jpg": {
+    "mtime": 1787760807.77527,
+    "hash": "00c97a91ed4750044a8c2fb3b9e9107e"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_windows_doors_2_z_D8n7o_Kw1u8_c3a2e04468.jpg": {
+    "mtime": 1787760808.687204,
+    "hash": "7c30451fdc000e4fb55ce1188568dbbf"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_windows_doors_3_M9j2_S5ai0_Ag_c47a2be6a4.jpg": {
+    "mtime": 1787760809.3414776,
+    "hash": "974f763d7cf815491f5064c1cd258915"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_workforce_development_building_the_next_generation_of_tradespeople_80z_Z1s24_Nag_09badde9f2.jpg": {
+    "mtime": 1787768910.545777,
+    "hash": "709fb523dbb6cd829d5e41e397dbdb59"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/medium_yb_c3e5af0cb4.webp": {
+    "mtime": 1778043768.0519793,
+    "hash": "0c1ef5dca9c13cf92c960691b803f13f"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/meridian_logistics_warehouse_0_d_I_a_XC_7_D_Wp_Q_16a2fc2bd8.jpg": {
+    "mtime": 1787772064.396296,
+    "hash": "5f2b4f125cf0da4779d2be34011fa7df"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/meridian_logistics_warehouse_1_n_T4k2_J_Dtw_TQ_883a8bedb0.jpg": {
+    "mtime": 1787772066.0292041,
+    "hash": "3f9359b18fc5b1996a4e3db504aa4154"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/mounting_1_Z3v_Fp7sz_CAY_2045046b91.jpg": {
+    "mtime": 1787760794.7154524,
+    "hash": "172a2460a3494a466f2f6c8526a4ae0a"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/mounting_2_9_JU_2_C_Kqtw0_M_580ab2aaad.jpg": {
+    "mtime": 1787760795.8272445,
+    "hash": "963f3214fd06f253cde9bacc70337951"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_the_rise_of_modular_and_prefabricated_construction_inline_n_Cd_Og_WX_3_U_2c568b106c.jpg": {
+    "mtime": 1787769738.0571404,
+    "hash": "17bf8eb17ca2a5022eafe667b1f0ce25"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_the_rise_of_modular_and_prefabricated_construction_inline_n_Cd_Og_WX_3_U_d947e3edd7.jpg": {
+    "mtime": 1787769882.6990454,
+    "hash": "17bf8eb17ca2a5022eafe667b1f0ce25"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_the_rise_of_modular_and_prefabricated_construction_inline_n_Cd_Og_WX_3_U_ddf36634d6.jpg": {
+    "mtime": 1787769713.9337595,
+    "hash": "17bf8eb17ca2a5022eafe667b1f0ce25"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_timeline1_0535e46d1d.webp": {
+    "mtime": 1782924574.2268078,
+    "hash": "f4e985ce1eca7d42740adb9ac3c188ed"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_timeline2_dab3140b81.webp": {
+    "mtime": 1782924693.4593925,
+    "hash": "ab4a5ec7708b881ec3284097a12f65c9"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_timeline_c4fab7feca.webp": {
+    "mtime": 1782924313.4267278,
+    "hash": "0db79a2eeb996176d1c4dc7c08ac27c8"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_tools_c08659a362.webp": {
+    "mtime": 1778491763.4925754,
+    "hash": "b994a1b5cd5791e00de9dbf65b0bd2b0"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_trust_and_build_bbe1e84a83.png": {
+    "mtime": 1776821994.1539295,
+    "hash": "ec5f31b053e8c45e370c7dc57592506d"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_unnamed_5643646d8e.jpg": {
+    "mtime": 1782932173.0719266,
+    "hash": "a41c4f0bd0e4414c615fa1a11ffcd6c1"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/small_vertual_5fffcb1e06.webp": {
+    "mtime": 1782847416.9930763,
+    "hash": "ee63b6c7f4317ef3db4c502b98802584"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_timeline_c4fab7feca.webp": {
+    "mtime": 1782924313.3435235,
+    "hash": "eda1624dacc8e476efbef347ded08dda"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_tools_c08659a362.webp": {
+    "mtime": 1778491763.3242536,
+    "hash": "7404693e21f42d287d764a74a527dca7"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_trust_and_build_bbe1e84a83.png": {
+    "mtime": 1776821994.166289,
+    "hash": "b398874537f2f5dc6e00d7058a321852"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_unnamed_5643646d8e.jpg": {
+    "mtime": 1782932172.9850106,
+    "hash": "b5a67e8a6f1bfa2479e05cb76bad8705"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_vertual_5fffcb1e06.webp": {
+    "mtime": 1782847416.79172,
+    "hash": "1ee2bb9528b0c4972888858ae8c418e6"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_windows_doors_1_K_Au0_J_Maeruk_4e6c2da2f5.jpg": {
+    "mtime": 1787760807.7281437,
+    "hash": "360df0fbd7b99bb88c0044ad19cfbe83"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_windows_doors_2_z_D8n7o_Kw1u8_c3a2e04468.jpg": {
+    "mtime": 1787760808.6383998,
+    "hash": "5c01badd5d629823ed5e8f389e658eb9"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_windows_doors_3_M9j2_S5ai0_Ag_c47a2be6a4.jpg": {
+    "mtime": 1787760809.294408,
+    "hash": "0130cf43555bb03338c52b859cb78e07"
+  },
+  "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/thumbnail_workforce_development_building_the_next_generation_of_tradespeople_80z_Z1s24_Nag_09badde9f2.jpg": {
+    "mtime": 1787768910.4991233,
+    "hash": "702500069f6fc04ef885f14e81413424"
   },
   "/media/khaled/Education/Sidago/Mazarini/mazarini-backend/public/uploads/background_video_0dfc14c30e.mp4": {
     "mtime": 1776821994.0756662,
