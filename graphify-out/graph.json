@@ -9,7 +9,7 @@
       "source_file": "config/admin.ts",
       "source_location": "L1",
       "id": "config_admin_ts",
-      "community": 4,
+      "community": 3,
       "norm_label": "admin.ts"
     },
     {
@@ -18,7 +18,7 @@
       "source_file": "config/admin.ts",
       "source_location": "L3",
       "id": "config_admin_config",
-      "community": 4,
+      "community": 3,
       "norm_label": "config()"
     },
     {
@@ -36,7 +36,7 @@
       "source_file": "config/database.ts",
       "source_location": "L1",
       "id": "config_database_ts",
-      "community": 5,
+      "community": 4,
       "norm_label": "database.ts"
     },
     {
@@ -45,7 +45,7 @@
       "source_file": "config/database.ts",
       "source_location": "L4",
       "id": "config_database_config",
-      "community": 5,
+      "community": 4,
       "norm_label": "config()"
     },
     {
@@ -63,7 +63,7 @@
       "source_file": "config/plugins.ts",
       "source_location": "L1",
       "id": "config_plugins_ts",
-      "community": 2,
+      "community": 5,
       "norm_label": "plugins.ts"
     },
     {
@@ -72,7 +72,7 @@
       "source_file": "config/plugins.ts",
       "source_location": "L3",
       "id": "config_plugins_config",
-      "community": 2,
+      "community": 5,
       "norm_label": "config()"
     },
     {
@@ -135,7 +135,7 @@
       "source_file": "src/admin/app.example.tsx",
       "source_location": "L1",
       "id": "src_admin_app_example_tsx",
-      "community": 3,
+      "community": 2,
       "norm_label": "app.example.tsx"
     },
     {
@@ -144,7 +144,7 @@
       "source_file": "src/admin/app.example.tsx",
       "source_location": "L34",
       "id": "admin_app_example_bootstrap",
-      "community": 3,
+      "community": 2,
       "norm_label": "bootstrap()"
     },
     {
@@ -1532,9 +1532,9 @@
       "source_file": "config/admin.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_admin_ts",
-      "target": "config_admin_config",
-      "confidence_score": 1.0
+      "target": "config_admin_config"
     },
     {
       "relation": "contains",
@@ -1542,9 +1542,9 @@
       "source_file": "config/database.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_database_ts",
-      "target": "config_database_config",
-      "confidence_score": 1.0
+      "target": "config_database_config"
     },
     {
       "relation": "contains",
@@ -1552,9 +1552,9 @@
       "source_file": "config/plugins.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_plugins_ts",
-      "target": "config_plugins_config",
-      "confidence_score": 1.0
+      "target": "config_plugins_config"
     },
     {
       "relation": "contains",
@@ -1562,9 +1562,9 @@
       "source_file": "config/server.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "config_server_ts",
-      "target": "config_server_config",
-      "confidence_score": 1.0
+      "target": "config_server_config"
     },
     {
       "relation": "contains",
@@ -1572,9 +1572,9 @@
       "source_file": "src/index.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_index_ts",
-      "target": "src_index_setpublicpermissions",
-      "confidence_score": 1.0
+      "target": "src_index_setpublicpermissions"
     },
     {
       "relation": "contains",
@@ -1582,9 +1582,9 @@
       "source_file": "src/index.ts",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_index_ts",
-      "target": "src_index_register",
-      "confidence_score": 1.0
+      "target": "src_index_register"
     },
     {
       "relation": "contains",
@@ -1592,9 +1592,9 @@
       "source_file": "src/index.ts",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_index_ts",
-      "target": "src_index_bootstrap",
-      "confidence_score": 1.0
+      "target": "src_index_bootstrap"
     },
     {
       "relation": "calls",
@@ -1603,9 +1603,9 @@
       "source_file": "src/index.ts",
       "source_location": "L40",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_index_bootstrap",
-      "target": "src_index_setpublicpermissions",
-      "confidence_score": 1.0
+      "target": "src_index_setpublicpermissions"
     },
     {
       "relation": "contains",
@@ -1613,11 +1613,11 @@
       "source_file": "src/admin/app.example.tsx",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "src_admin_app_example_tsx",
-      "target": "admin_app_example_bootstrap",
-      "confidence_score": 1.0
+      "target": "admin_app_example_bootstrap"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "67a2a49f89692fb0c0501f5ed334680b05b47deb"
+  "built_at_commit": "10de8f5506e8ea4a9e1950404874a0827051e0bc"
 }

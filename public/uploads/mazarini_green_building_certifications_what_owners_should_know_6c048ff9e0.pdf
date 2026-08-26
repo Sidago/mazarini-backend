@@ -1,0 +1,58 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /FR 4 0 R /FB 5 0 R >> >> /MediaBox [0 0 612 792] /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Length 601 >>
+stream
+BT
+/FB 20 Tf
+72 740 Td
+24 TL
+(Green Building Certifications: What) Tj
+(Owners Should Know) '
+ET
+BT
+0.45 0.45 0.45 rg
+/FR 10 Tf
+72 678 Td
+(Reports - Prepared by MAZARINI Research & Development) Tj
+0 g
+ET
+BT
+/FR 11 Tf
+72 644 Td
+14 TL
+(LEED, WELL, and other green building certifications each come with distinct requirements,) Tj
+(documentation burdens, and cost implications. This report breaks down what property owners) '
+(should weigh when deciding whether  and which  certification path fits their project goals) '
+(and budget. Prepared by MAZARINI Contracting's Research & Development team.) '
+ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000000321 00000 n 
+0000000396 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+1048
+%%EOF

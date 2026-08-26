@@ -29,11 +29,21 @@
     "description": {
       "type": "text"
     },
+    "content": {
+      "type": "blocks"
+    },
     "image": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
         "images"
+      ]
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "videos"
       ]
     },
     "file": {
