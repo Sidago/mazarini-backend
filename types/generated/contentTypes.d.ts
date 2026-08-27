@@ -1814,6 +1814,7 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     publishedAt: Schema.Attribute.DateTime;
     schedule: Schema.Attribute.String;
     seo: Schema.Attribute.Component<'shared.seo', false>;
+    slug: Schema.Attribute.UID<'title'> & Schema.Attribute.Required;
     squareFeet: Schema.Attribute.String;
     teams: Schema.Attribute.Relation<'manyToMany', 'api::team.team'>;
     title: Schema.Attribute.String &
