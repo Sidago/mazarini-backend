@@ -157,9 +157,13 @@ docker compose up -d --build --remove-orphans strapi
 
 log "Waiting for Strapi on port $APP_PORT"
 for i in $(seq 1 90); do
-  if curl -fsS -o /dev/null "http://127.0.0.1:$APP_PORT/_health"; then
+  if curl -fs -o /dev/null "http://127.0.0.1:$APP_PORT/_health"; then
     ok "Strapi is up"
     break
+  fi
+  if [ "$(docker inspect -f '{{.RestartCount}}' mazarini-strapi 2>/dev/null || echo 0)" -gt 0 ]; then
+    docker compose logs --tail 80 strapi
+    die "Strapi crashed on startup (see logs above) — DB backup is in $BACKUP_DIR"
   fi
   if [ "$i" -eq 90 ]; then
     docker compose logs --tail 60 strapi
