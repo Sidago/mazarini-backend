@@ -126,3 +126,5 @@ dist
 build
 .strapi-updater.json
 .strapi-cloud.json
+# DB backups created by deploy.sh
+backups/

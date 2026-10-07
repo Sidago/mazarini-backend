@@ -5,3 +5,7 @@ dist
 .env
 npm-debug.log*
 .git
+
+# DB backups / dumps
+backups
+*.dump

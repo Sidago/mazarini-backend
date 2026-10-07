@@ -9,7 +9,7 @@
       "source_file": "config/admin.ts",
       "source_location": "L1",
       "id": "config_admin_ts",
-      "community": 2,
+      "community": 5,
       "norm_label": "admin.ts"
     },
     {
@@ -18,7 +18,7 @@
       "source_file": "config/admin.ts",
       "source_location": "L3",
       "id": "config_admin_config",
-      "community": 2,
+      "community": 5,
       "norm_label": "config()"
     },
     {
@@ -36,7 +36,7 @@
       "source_file": "config/database.ts",
       "source_location": "L1",
       "id": "config_database_ts",
-      "community": 3,
+      "community": 2,
       "norm_label": "database.ts"
     },
     {
@@ -45,7 +45,7 @@
       "source_file": "config/database.ts",
       "source_location": "L4",
       "id": "config_database_config",
-      "community": 3,
+      "community": 2,
       "norm_label": "config()"
     },
     {
@@ -63,7 +63,7 @@
       "source_file": "config/plugins.ts",
       "source_location": "L1",
       "id": "config_plugins_ts",
-      "community": 4,
+      "community": 1,
       "norm_label": "plugins.ts"
     },
     {
@@ -72,7 +72,7 @@
       "source_file": "config/plugins.ts",
       "source_location": "L3",
       "id": "config_plugins_config",
-      "community": 4,
+      "community": 1,
       "norm_label": "config()"
     },
     {
@@ -81,7 +81,7 @@
       "source_file": "config/server.ts",
       "source_location": "L1",
       "id": "config_server_ts",
-      "community": 1,
+      "community": 3,
       "norm_label": "server.ts"
     },
     {
@@ -90,7 +90,7 @@
       "source_file": "config/server.ts",
       "source_location": "L3",
       "id": "config_server_config",
-      "community": 1,
+      "community": 3,
       "norm_label": "config()"
     },
     {
@@ -135,7 +135,7 @@
       "source_file": "src/admin/app.example.tsx",
       "source_location": "L1",
       "id": "src_admin_app_example_tsx",
-      "community": 5,
+      "community": 4,
       "norm_label": "app.example.tsx"
     },
     {
@@ -144,7 +144,7 @@
       "source_file": "src/admin/app.example.tsx",
       "source_location": "L34",
       "id": "admin_app_example_bootstrap",
-      "community": 5,
+      "community": 4,
       "norm_label": "bootstrap()"
     },
     {
@@ -1619,5 +1619,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "0d447e05de050f0d3b9a55ce6ae586829806bbcd"
+  "built_at_commit": "e0a0562117959c4d3a219a79079c2b5fc33ab887"
 }

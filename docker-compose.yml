@@ -1,6 +1,7 @@
 services:
   strapi:
     build: .
+    container_name: mazarini-strapi
     env_file:
       - .env
     environment:
@@ -19,6 +20,7 @@ services:
 
   postgres:
     image: postgres:18.2-alpine
+    container_name: mazarini-postgres
     env_file:
       - .env
     environment:
