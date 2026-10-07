@@ -55,8 +55,14 @@ wait_for_db() {
 
 restore_db() { # file
   log "Restoring $1 into $DB_CONTAINER/$DB_NAME"
+  # Recreate the DB instead of `pg_restore --clean`: tables that exist only in the
+  # current DB would otherwise block dropping the dump's constraints.
+  docker exec "$DB_CONTAINER" psql -U "$DB_USER" -d postgres -v ON_ERROR_STOP=1 -q \
+    -c "DROP DATABASE IF EXISTS \"$DB_NAME\" WITH (FORCE)" \
+    -c "CREATE DATABASE \"$DB_NAME\" OWNER \"$DB_USER\"" \
+    || die "Could not recreate database $DB_NAME"
   docker exec -i "$DB_CONTAINER" pg_restore -U "$DB_USER" -d "$DB_NAME" \
-    --clean --if-exists --no-owner --no-privileges < "$1" \
+    --no-owner --no-privileges < "$1" \
     || warn "pg_restore reported errors (often harmless), verifying tables..."
   local n; n="$(table_count "$DB_CONTAINER" "$DB_USER" "$DB_NAME")"
   [ "$n" -gt 0 ] || die "Restore failed: no tables in $DB_NAME"
