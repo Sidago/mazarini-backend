@@ -6,6 +6,12 @@
 #   ./deploy.sh --no-pull          same, but skip `git pull`
 #   ./deploy.sh --import-shared    also copy the DB from the old shared `postgres` container
 #   ./deploy.sh --restore FILE     also restore FILE (pg_dump -Fc) into the DB
+#   ./deploy.sh --from-local [FILE]
+#                                  replace the production DB with your local DB export
+#                                  (default: newest database-export_*.dump in the repo,
+#                                  made with ./export-db.sh and committed). Contact form
+#                                  and report-download submissions from production are kept.
+#   ./deploy.sh --yes              don't ask for confirmation
 #
 # Every run takes a backup of the current DB into ./backups before touching anything.
 
@@ -20,6 +26,8 @@ SHARED_DB_USER="${SHARED_DB_USER:-xcellfund}"
 BACKUP_DIR="backups"
 KEEP_BACKUPS="${KEEP_BACKUPS:-10}"
 TIMESTAMP="$(date +%Y%m%d_%H%M%S)"
+# Tables filled by site visitors in production — kept when the DB is replaced with a local export
+FORM_TABLES=(contact_submissions report_downloads)
 
 # ---------- helpers ----------
 log()  { printf '\033[1;34m==>\033[0m %s\n' "$*"; }
@@ -69,10 +77,37 @@ restore_db() { # file
   ok "Restore done ($n tables)"
 }
 
+keep_form_submissions() { # backup file taken from production
+  if [ -z "$1" ]; then
+    warn "No pre-deploy backup, so production form submissions could not be kept"
+    return
+  fi
+  log "Keeping production form submissions (${FORM_TABLES[*]})"
+  local t restore_args=() truncate_list
+  for t in "${FORM_TABLES[@]}"; do restore_args+=(-t "$t"); done
+  truncate_list="$(IFS=,; echo "${FORM_TABLES[*]}")"
+  docker exec "$DB_CONTAINER" psql -U "$DB_USER" -d "$DB_NAME" -v ON_ERROR_STOP=1 -q \
+    -c "DELETE FROM files_related_mph WHERE related_type = 'api::contact-submission.contact-submission'" \
+    -c "TRUNCATE $truncate_list" \
+    || die "Could not clear local form submissions"
+  # --disable-triggers: rows may reference production admin users that the local DB doesn't have
+  docker exec -i "$DB_CONTAINER" pg_restore -U "$DB_USER" -d "$DB_NAME" \
+    --data-only --disable-triggers "${restore_args[@]}" < "$1" \
+    || die "Could not copy form submissions back — production DB backup: $1"
+  for t in "${FORM_TABLES[@]}"; do
+    docker exec "$DB_CONTAINER" psql -U "$DB_USER" -d "$DB_NAME" -q -tAc \
+      "SELECT setval(pg_get_serial_sequence('$t', 'id'), COALESCE(MAX(id), 0) + 1, false) FROM $t" >/dev/null
+    ok "$t: $(docker exec "$DB_CONTAINER" psql -U "$DB_USER" -d "$DB_NAME" -tAc "SELECT count(*) FROM $t") rows kept"
+  done
+  warn "Attachments of kept contact submissions are not re-linked (files stay in public/uploads and in $1)"
+}
+
 # ---------- args ----------
 PULL=1
 IMPORT_SHARED=0
 RESTORE_FILE=""
+FROM_LOCAL=0
+ASSUME_YES=0
 ARGS=("$@")
 while [ $# -gt 0 ]; do
   case "$1" in
@@ -80,7 +115,10 @@ while [ $# -gt 0 ]; do
     --import-shared) IMPORT_SHARED=1 ;;
     --restore)       RESTORE_FILE="${2:-}"; shift
                      [ -f "$RESTORE_FILE" ] || die "Dump file not found: $RESTORE_FILE" ;;
-    -h|--help)       sed -n '2,10p' "$0"; exit 0 ;;
+    --from-local)    FROM_LOCAL=1
+                     if [ -n "${2:-}" ] && [ "${2#--}" = "$2" ]; then RESTORE_FILE="$2"; shift; fi ;;
+    --yes|-y)        ASSUME_YES=1 ;;
+    -h|--help)       sed -n '2,/^$/{/^#/p}' "$0"; exit 0 ;;
     *)               die "Unknown option: $1 (see --help)" ;;
   esac
   shift
@@ -108,6 +146,22 @@ if [ "$PULL" -eq 1 ]; then
   if [ "$(sha1sum "$0" | cut -d' ' -f1)" != "$before" ]; then
     log "deploy.sh changed, restarting with the new version"
     exec bash "$0" --no-pull "${ARGS[@]}"
+  fi
+fi
+
+# ---------- local DB export to apply ----------
+if [ "$FROM_LOCAL" -eq 1 ]; then
+  if [ -z "$RESTORE_FILE" ]; then
+    RESTORE_FILE="$(ls -1 database-export_*.dump 2>/dev/null | sort | tail -n1)"
+    [ -n "$RESTORE_FILE" ] || die "No database-export_*.dump found — run ./export-db.sh locally and commit it"
+  fi
+  [ -s "$RESTORE_FILE" ] || die "Dump file not found or empty: $RESTORE_FILE"
+  warn "The production DB will be REPLACED with $RESTORE_FILE"
+  warn "Content edited in the production admin since that export is lost (form submissions are kept)"
+  if [ "$ASSUME_YES" -eq 0 ]; then
+    [ -t 0 ] || die "Refusing to replace the DB without confirmation — rerun with --yes"
+    read -r -p "Type 'yes' to continue: " answer
+    [ "$answer" = "yes" ] || die "Aborted"
   fi
 fi
 
@@ -145,6 +199,7 @@ ok "PostgreSQL is ready"
 
 if [ -n "$RESTORE_FILE" ]; then
   restore_db "$RESTORE_FILE"
+  if [ "$FROM_LOCAL" -eq 1 ]; then keep_form_submissions "$PRE_BACKUP"; fi
 elif [ "$(table_count "$DB_CONTAINER" "$DB_USER" "$DB_NAME")" -eq 0 ] && [ -n "$PRE_BACKUP" ]; then
   # DB came up empty (e.g. container/volume was recreated) — bring the data back
   warn "Database is empty after recreate, restoring the pre-deploy backup"
