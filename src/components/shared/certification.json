@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_shared_certifications",
+  "info": {
+    "displayName": "Certification",
+    "description": "A business certification: short code (e.g. DBE), full name, optional certifying agency"
+  },
+  "options": {},
+  "attributes": {
+    "code": {
+      "type": "string",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "agency": {
+      "type": "string"
+    }
+  }
+}

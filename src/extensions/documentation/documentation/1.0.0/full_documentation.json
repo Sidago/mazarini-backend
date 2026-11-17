@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2026-10-09T14:59:19.940Z"
+    "x-generation-date": "2026-11-17T16:36:34.591Z"
   },
   "x-strapi-config": {
     "plugins": [
@@ -22096,6 +22096,18 @@
                   "$ref": "#/components/schemas/SharedLifeImageComponent"
                 }
               },
+              "unionHeading": {
+                "type": "string"
+              },
+              "unionDescription": {
+                "type": "string"
+              },
+              "certifications": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/SharedCertificationComponent"
+                }
+              },
               "coreValuesImage": {
                 "oneOf": [
                   {
@@ -23651,6 +23663,18 @@
               "$ref": "#/components/schemas/SharedLifeImageComponent"
             }
           },
+          "unionHeading": {
+            "type": "string"
+          },
+          "unionDescription": {
+            "type": "string"
+          },
+          "certifications": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SharedCertificationComponent"
+            }
+          },
           "coreValuesImage": {
             "type": "object",
             "properties": {
@@ -24327,6 +24351,18 @@
                   "type": "array",
                   "items": {
                     "$ref": "#/components/schemas/SharedLifeImageComponent"
+                  }
+                },
+                "unionHeading": {
+                  "type": "string"
+                },
+                "unionDescription": {
+                  "type": "string"
+                },
+                "certifications": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SharedCertificationComponent"
                   }
                 },
                 "coreValuesImage": {
@@ -25180,6 +25216,30 @@
                 }
               }
             }
+          }
+        }
+      },
+      "SharedCertificationComponent": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "oneOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "number"
+              }
+            ]
+          },
+          "code": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "agency": {
+            "type": "string"
           }
         }
       },

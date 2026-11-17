@@ -96,6 +96,17 @@
       "component": "shared.life-image",
       "repeatable": true
     },
+    "unionHeading": {
+      "type": "string"
+    },
+    "unionDescription": {
+      "type": "text"
+    },
+    "certifications": {
+      "type": "component",
+      "component": "shared.certification",
+      "repeatable": true
+    },
     "coreValuesImage": {
       "type": "media",
       "multiple": false,

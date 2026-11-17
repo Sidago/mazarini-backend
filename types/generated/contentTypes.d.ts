@@ -455,6 +455,7 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    certifications: Schema.Attribute.Component<'shared.certification', true>;
     coreValues: Schema.Attribute.Component<'shared.core-value', true>;
     coreValuesImage: Schema.Attribute.Media<'images'>;
     createdAt: Schema.Attribute.DateTime;
@@ -489,6 +490,8 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
     timelineDescription: Schema.Attribute.Text;
     timelineHeading: Schema.Attribute.Text;
     title: Schema.Attribute.String & Schema.Attribute.Required;
+    unionDescription: Schema.Attribute.Text;
+    unionHeading: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

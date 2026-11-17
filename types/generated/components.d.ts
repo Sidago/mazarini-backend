@@ -198,6 +198,19 @@ export interface SharedAccordionItem extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedCertification extends Struct.ComponentSchema {
+  collectionName: 'components_shared_certifications';
+  info: {
+    description: 'A business certification: short code (e.g. DBE), full name, optional certifying agency';
+    displayName: 'Certification';
+  };
+  attributes: {
+    agency: Schema.Attribute.String;
+    code: Schema.Attribute.String & Schema.Attribute.Required;
+    name: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface SharedCoreValue extends Struct.ComponentSchema {
   collectionName: 'components_shared_core_values';
   info: {
@@ -512,6 +525,7 @@ declare module '@strapi/strapi' {
       'construction.sustainability-card': ConstructionSustainabilityCard;
       'quote.quote': QuoteQuote;
       'shared.accordion-item': SharedAccordionItem;
+      'shared.certification': SharedCertification;
       'shared.core-value': SharedCoreValue;
       'shared.culture-card': SharedCultureCard;
       'shared.footer-column': SharedFooterColumn;
