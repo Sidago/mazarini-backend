@@ -118,7 +118,6 @@ coverage
 # Strapi
 ############################
 
-.env
 license.txt
 exports
 .strapi
@@ -128,3 +127,4 @@ build
 .strapi-cloud.json
 # DB backups created by deploy.sh
 backups/
+config.bat
